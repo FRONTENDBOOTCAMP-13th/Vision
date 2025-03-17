@@ -2,18 +2,22 @@
 @import '../style.css';
 
 @layer components {
-    .header-market {
-        @apply h-12 bg-ui-primary p-2 flex justify-between items-center;
+    .header {
+        @apply h-11 bg-ui-primary p-2 flex justify-between items-center;
 
         .header-icons {
-            @apply inline-flex;
+            @apply inline-flex stroke-white;
+        }
+
+        .logo {
+            @apply fill-white;
         }
 
         .toggle-group {
-            @apply h-full w-36 flex items-center justify-between bg-ui-primary-transparent rounded-2xl text-xs;
+            @apply h-full w-32 flex items-center justify-between bg-ui-primary-transparent rounded-2xl text-xs;
 
             .toggle-label {
-                @apply font-semibold h-full flex items-center px-3 rounded-2xl has-checked:text-ui-primary text-white has-checked:bg-white;
+                @apply h-full flex items-center px-3 rounded-2xl font-semibold text-white whitespace-nowrap has-checked:text-ui-primary has-checked:font-bold has-checked:bg-white;
 
                 input {
                     @apply sr-only;
