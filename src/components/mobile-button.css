@@ -1,17 +1,28 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
 
-    /* 
-     ex) 
-     이렇게 사용하기
+    .mobile-button {
 
-     .TEST{
-     @apply bg-red-800;
-     }
+        @apply fixed bg-ui-white w-screen bottom-[0px] text-center h-[2.625rem];
 
-    */
+        .button-box {
+            @apply grid grid-cols-4 text-center justify-center items-center min-w-[25.625rem];
+        }
+
+        .button-icon {
+            @apply p-[.625rem];
+        }
+
+        @media(min-width : 64rem) {
+            display: none;
+        }
+
+        svg {
+            display: inline-block;
+        }
+
+    }
 
 }
