@@ -7,7 +7,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: 'index.html', // 기본 index.html
-                menu_list: './src/components/menu-list.html',
             },
         },
     },
