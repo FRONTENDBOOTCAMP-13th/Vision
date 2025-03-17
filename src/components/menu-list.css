@@ -1,8 +1,36 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
+
+    .menu-list {
+
+        ul {
+            display: contents
+        }
+
+        @apply grid grid-cols-6 grid-rows-2 text-base text-center min-w-[25.625rem];
+
+        /* 아이템 박스 */
+        .menu-item {
+            @apply bg-ui-white p-[.125rem];
+        }
+
+        /* 아이콘 */
+        .menu-icon {
+            @apply w-[3.25rem] h-[3.25rem] bg-contain bg-no-repeat bg-center bg-ui-white m-auto;
+        }
+
+        /* 아이콘 텍스트 텍스트 */
+        .menu-txt {
+            @apply text-[.625rem] font-thin mt-2;
+        }
+
+        @media(min-width: 64rem) {
+            display: none;
+        }
+    }
+
 
     /* 
      ex) 
