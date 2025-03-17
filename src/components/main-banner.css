@@ -1,17 +1,59 @@
 @import 'tailwindcss';
+@import '../style.css';
 
-@theme {}
+@theme {
+    --color-ui-black-transparent: rgba(0, 0, 0, 0.2);
+}
 
 @layer components {
+    .main-banner {
+        @apply relative grid;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+        .banner-count-wrapper {
+            @apply w-full;
 
-     .TEST{
-     @apply bg-red-800;
-     }
+            /* 웹 환경에서 상호작용 요소 위치를 고정하기 위해 wrapper 를 마크업 요소로 활용 */
+            @media (min-width: 1024px) {
+                @apply w-[65.625rem] h-[370px] relative row-start-1 col-start-1 row-end-1 col-end-1 mx-auto;
+            }
 
-    */
+            .banner-count {
+                @apply absolute inline-block text-xs text-right px-2 py-0.5 right-3 bottom-3 font-normal rounded-full text-white bg-ui-black-transparent;
 
+                @media (min-width: 1024px) {
+                    @apply text-base;
+                }
+            }
+
+            .banner-arrow {
+                @apply hidden;
+
+                @media (min-width: 1024px) {
+                    @apply block absolute top-1/2 -translate-y-1/2;
+                }
+            }
+
+            .banner-arrow-right {
+                @media (min-width: 1024px) {
+                    @apply right-0 rotate-180;
+                }
+            }
+        }
+
+        .banner-img-01 {
+            @media (min-width: 1024px) {
+                @apply row-start-1 col-start-1 row-end-1 col-end-1;
+            }
+
+            .banner-img {
+                @apply w-full;
+
+                @media (min-width: 1024px) {
+                    & {
+                        @apply w-[118.75rem] h-[23.125rem] object-cover mx-auto;
+                    }
+                }
+            }
+        }
+    }
 }
