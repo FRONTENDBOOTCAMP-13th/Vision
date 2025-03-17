@@ -1,17 +1,24 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
+    .header-market {
+        @apply h-12 bg-ui-primary p-2 flex justify-between items-center;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+        .header-icons {
+            @apply inline-flex;
+        }
 
-     .TEST{
-     @apply bg-red-800;
-     }
+        .toggle-group {
+            @apply h-full w-36 flex items-center justify-between bg-ui-primary-transparent rounded-2xl text-xs;
 
-    */
+            .toggle-label {
+                @apply font-semibold h-full flex items-center px-3 rounded-2xl has-checked:text-ui-primary text-white has-checked:bg-white;
 
+                input {
+                    @apply sr-only;
+                }
+            }
+        }
+    }
 }
