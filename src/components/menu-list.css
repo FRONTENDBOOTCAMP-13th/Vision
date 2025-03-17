@@ -3,11 +3,11 @@
 
 @layer components {
 
-    ul {
-        display: contents
-    }
-
     .menu-list {
+
+        ul {
+            display: contents
+        }
 
         @apply grid grid-cols-6 grid-rows-2 text-base text-center min-w-[25.625rem];
 
@@ -26,7 +26,7 @@
             @apply text-[.625rem] font-thin mt-2;
         }
 
-        @media(min-width: 75rem) {
+        @media(min-width: 64rem) {
             display: none;
         }
     }
