@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import './item-img.css';
+@import './item-info.css';
+
+
+.test-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+
+.item-card {
+    max-width: 32.0625rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
