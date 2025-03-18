@@ -1,17 +1,17 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
+    .sub-banner {
+        @apply w-full;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+        /* 웹 환경에서 상호작용 요소 위치를 고정하기 위해 wrapper 를 마크업 요소로 활용 */
+        @media (min-width: 1024px) {
+            @apply w-[65.625rem] h-[8.75rem] mx-auto;
+        }
 
-     .TEST{
-     @apply bg-red-800;
-     }
-
-    */
-
+        .banner-img {
+            @apply w-full;
+        }
+    }
 }
