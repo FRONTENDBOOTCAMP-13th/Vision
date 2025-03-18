@@ -18,7 +18,7 @@
                 }
             }
 
-            .event-name-web {
+            .event-mobile {
                 @apply text-ui-primary text-xs;
             }
         }
@@ -51,7 +51,7 @@
                 @apply flex justify-center;
 
                 .event-name {
-                    @apply font-bold text-[28px] flex;
+                    @apply font-bold text-[28px] flex pointer-events-auto;
 
                     span {
                         display: block;
@@ -59,7 +59,7 @@
                     }
                 }
 
-                .event-name-web {
+                .event-mobile {
                     display: none;
                 }
             }
