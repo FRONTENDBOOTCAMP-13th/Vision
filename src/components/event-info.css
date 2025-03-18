@@ -1,17 +1,89 @@
 @import 'tailwindcss';
+@import '../style.css';
 
-@theme {}
+@theme {
+}
 
 @layer components {
+    .event-info {
+        @apply p-4;
+        .event-more {
+            @apply flex justify-between text-center items-center text-lg;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+            .event-name {
+                @apply font-bold pointer-events-none;
 
-     .TEST{
-     @apply bg-red-800;
-     }
+                span {
+                    display: none;
+                }
+            }
 
-    */
+            .event-mobile {
+                @apply text-ui-primary text-xs;
+            }
+        }
 
+        .about-sale {
+            @apply text-sm text-ui-gray-mid pt-1 pb-1;
+        }
+
+        .clock {
+            @apply flex text-center items-center;
+
+            .clock-icon {
+                @apply mr-2;
+            }
+
+            .clock-icon-web {
+                display: none;
+            }
+
+            p {
+                @apply font-bold text-[20px];
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .event-info {
+            @apply p-4;
+            .event-more {
+                @apply flex justify-center;
+
+                .event-name {
+                    @apply font-bold text-[28px] flex pointer-events-auto;
+
+                    span {
+                        display: block;
+                        @apply pl-3;
+                    }
+                }
+
+                .event-mobile {
+                    display: none;
+                }
+            }
+
+            .about-sale {
+                @apply text-center text-[16px] text-ui-gray-mid pb-3;
+            }
+
+            .clock {
+                @apply flex items-center text-center justify-center text-[32px] font-bold;
+
+                .clock-icon {
+                    display: none;
+                }
+
+                .clock-icon-web {
+                    display: block;
+                    @apply mr-2;
+                }
+
+                p {
+                    @apply text-black text-3xl;
+                }
+            }
+        }
+    }
 }
