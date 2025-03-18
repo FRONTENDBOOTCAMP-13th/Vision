@@ -1,16 +1,38 @@
 @import 'tailwindcss';
-
-@theme {
-}
+@import '../style.css';
 
 @layer components {
-    /* 
-     ex) 
-     이렇게 사용하기
+    body {
+        @apply relative min-h-screen;
+    }
 
-     .TEST{
-     @apply bg-red-800;
-     }
+    .recent-view {
+        @apply hidden bg-ui-white p-2 w-[4.6875rem] absolute top-1/2 -translate-y-1/2 right-5 border border-ui-mobilebtn-border;
 
-    */
+        @media (min-width: 1024px) {
+            @apply flex flex-col items-center gap-2;
+        }
+
+        .recent-view-title {
+            @apply text-[.625rem];
+        }
+
+        .previous {
+            @apply -order-1;
+        }
+
+        .recent-view-item-wrapper {
+            @apply flex flex-col gap-1 h-[10rem] overflow-hidden;
+        }
+
+        .recent-view-item {
+            img {
+                @apply w-12 aspect-auto;
+            }
+        }
+
+        .next {
+            @apply rotate-180;
+        }
+    }
 }
