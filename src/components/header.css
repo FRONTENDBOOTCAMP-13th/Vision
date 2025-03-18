@@ -1,17 +1,116 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
+    /* 웹에서만 표시되는 user 상단바 */
+    .web-upper-header {
+        @apply hidden lg:flex flex-row justify-end p-2.5 gap-3 bg-ui-white text-ui-black text-xs w-[65.625rem] mx-auto;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+        ul {
+            @apply contents;
+        }
+        span {
+            @apply text-ui-gray-light;
+        }
 
-     .TEST{
-     @apply bg-red-800;
-     }
+        .signup-link {
+            @apply text-ui-primary;
+        }
+    }
 
-    */
+    /* 웹에서만 표시되는 검색창 */
+    .web-search-bar {
+        @apply hidden lg:flex justify-between border border-ui-primary w-[25rem] h-10 rounded-sm pl-3.5;
 
+        fieldset {
+            @apply contents;
+        }
+        input {
+            @apply focus:outline-none w-80;
+        }
+    }
+
+    /* 웹에서만 표시되는 페이지 선택 버튼 */
+    .page-change-button {
+        @apply hidden lg:inline-flex place-items-center gap-2 text-ui-gray-mid;
+
+        span {
+            @apply text-ui-gray-light;
+        }
+        button {
+            @apply focus-within:text-ui-primary text-lg cursor-pointer;
+        }
+    }
+
+    /* mobile/web 반응형 header 스타일 */
+    .header {
+        @apply h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
+
+        .logo {
+            @apply w-[3.75rem] lg:fill-ui-primary lg:w-[5.125rem];
+        }
+
+        .header-toggle {
+            @apply h-full w-32 flex items-center justify-between rounded-2xl text-xs lg:text-lg lg:bg-white lg:ml-4;
+
+            span {
+                @apply hidden mx-1 lg:inline-flex lg:text-ui-gray-light;
+            }
+            .toggle-label {
+                @apply h-full flex items-center px-3 rounded-2xl whitespace-nowrap lg:cursor-pointer lg:px-1;
+
+                input {
+                    @apply sr-only;
+                }
+            }
+        }
+
+        .header-icons {
+            @apply inline-flex gap-2 items-center;
+
+            .heart-icon {
+                @apply hidden lg:flex;
+            }
+        }
+    }
+
+    /* mobile toggle에서 market 선택 시 적용되는 스타일 */
+    .header-market {
+        @apply bg-ui-primary lg:bg-ui-white;
+
+        .logo {
+            @apply fill-ui-white lg:fill-ui-primary;
+        }
+        .header-toggle {
+            @apply bg-ui-primary-transparent lg:bg-white;
+
+            .toggle-label {
+                @apply text-ui-white has-checked:text-ui-primary has-checked:bg-ui-white lg:text-ui-gray-mid;
+            }
+        }
+        .header-icons {
+            @apply stroke-ui-white lg:stroke-ui-black;
+        }
+    }
+
+    /* mobile toggle에서 beauty 선택 시 적용되는 스타일 */
+    .header-beauty {
+        @apply bg-ui-white;
+
+        .logo {
+            @apply fill-ui-primary;
+        }
+
+        .header-toggle {
+            @apply bg-ui-gray-light lg:bg-white;
+
+            .toggle-label {
+                @apply text-ui-gray-dark has-checked:text-ui-white has-checked:bg-ui-primary  lg:has-checked:text-ui-primary lg:has-checked:bg-ui-white;
+            }
+        }
+
+        .header-icons {
+            @apply stroke-ui-black;
+        }
+    }
 }
