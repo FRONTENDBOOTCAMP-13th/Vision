@@ -31,7 +31,7 @@
 
     @media (min-width: 1024px) {
         .nav {
-            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] shadow-lg p-1.5;
+            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] shadow-lg p-1.5 mx-auto;
 
             ul {
                 @apply font-bold flex justify-between p-5;
@@ -41,7 +41,7 @@
                 }
 
                 button {
-                    @apply flex justify-center items-center pointer-events-auto;
+                    @apply flex justify-center items-center pointer-events-auto cursor-pointer;
 
                     svg {
                         @apply pr-1;
