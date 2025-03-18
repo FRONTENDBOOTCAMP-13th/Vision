@@ -3,7 +3,7 @@
 
 @layer components {
     .sub-banner {
-        @apply w-full;
+        @apply w-full min-w-[17.75rem];
 
         /* 웹 환경에서 상호작용 요소 위치를 고정하기 위해 wrapper 를 마크업 요소로 활용 */
         @media (min-width: 1024px) {
