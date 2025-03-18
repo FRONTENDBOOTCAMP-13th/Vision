@@ -5,3 +5,7 @@
 @import '../components/sub-banner.css';
 @import '../components/mobile-button.css';
 @import '../components/footer.css';
+
+.header-nav {
+    display: grid;
+}

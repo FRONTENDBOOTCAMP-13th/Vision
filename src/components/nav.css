@@ -1,13 +1,17 @@
 @import 'tailwindcss';
 @import '../style.css';
 
-@theme {
-}
-
 @layer components {
     @media (max-width: 1023px) {
         .nav {
-            @apply text-ui-gray-dark m-4 text-[16px] min-w-[410px] p-2 bg-white fixed;
+            @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
+
+            padding-left: 10px;
+            padding-right: 10px;
+
+
+
+
 
             ul {
                 @apply flex justify-between text-center items-center text-sm;
@@ -19,6 +23,7 @@
                 li {
                     @apply focus-within:text-ui-primary focus-within:font-bold focus-within:border-b-2 focus-within:border-ui-primary pb-2;
                 }
+
                 li:first-child {
                     display: none;
                 }
@@ -32,7 +37,7 @@
 
     @media (min-width: 1024px) {
         .nav {
-            @apply justify-center m-4 text-[16px]  text-ui-gray-dark h-[72px] w-[1200px] bg-white fixed;
+            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] bg-white mx-auto;
 
             ul {
                 @apply font-bold flex justify-between p-5;

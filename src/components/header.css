@@ -2,6 +2,7 @@
 @import '../style.css';
 
 @layer components {
+
     /* 웹에서만 표시되는 user 상단바 */
     .web-upper-header {
         @apply hidden lg:flex flex-row justify-end p-2.5 gap-3 bg-ui-white text-ui-black text-xs w-[65.625rem] mx-auto;
@@ -9,6 +10,7 @@
         ul {
             @apply contents;
         }
+
         span {
             @apply text-ui-gray-light;
         }
@@ -25,6 +27,7 @@
         fieldset {
             @apply contents;
         }
+
         input {
             @apply focus:outline-none w-80;
         }
@@ -37,6 +40,7 @@
         span {
             @apply text-ui-gray-light;
         }
+
         button {
             @apply focus-within:text-ui-primary text-lg cursor-pointer;
         }
@@ -44,7 +48,10 @@
 
     /* mobile/web 반응형 header 스타일 */
     .header {
-        @apply h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
+        @apply w-full h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
+
+        top: 0;
+
 
         .logo {
             @apply w-[3.75rem] lg:fill-ui-primary lg:w-[5.125rem];
@@ -56,6 +63,7 @@
             span {
                 @apply hidden mx-1 lg:inline-flex lg:text-ui-gray-light;
             }
+
             .toggle-label {
                 @apply h-full flex items-center px-3 rounded-2xl whitespace-nowrap lg:cursor-pointer lg:px-1;
 
@@ -81,6 +89,7 @@
         .logo {
             @apply fill-ui-white lg:fill-ui-primary;
         }
+
         .header-toggle {
             @apply bg-ui-primary-transparent lg:bg-white;
 
@@ -88,6 +97,7 @@
                 @apply text-ui-white has-checked:text-ui-primary has-checked:bg-ui-white lg:text-ui-gray-mid;
             }
         }
+
         .header-icons {
             @apply stroke-ui-white lg:stroke-ui-black;
         }
@@ -105,7 +115,7 @@
             @apply bg-ui-gray-light lg:bg-white;
 
             .toggle-label {
-                @apply text-ui-gray-dark has-checked:text-ui-white has-checked:bg-ui-primary  lg:has-checked:text-ui-primary lg:has-checked:bg-ui-white;
+                @apply text-ui-gray-dark has-checked:text-ui-white has-checked:bg-ui-primary lg:has-checked:text-ui-primary lg:has-checked:bg-ui-white;
             }
         }
 
