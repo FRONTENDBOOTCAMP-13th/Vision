@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@theme {
+}
+
+@layer components {
+    /* 
+     ex) 
+     이렇게 사용하기
+
+     .TEST{
+     @apply bg-red-800;
+     }
+
+    */
+}
