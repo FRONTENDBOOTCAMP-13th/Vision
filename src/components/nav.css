@@ -2,42 +2,36 @@
 @import '../style.css';
 
 @layer components {
-    @media (max-width: 1023px) {
-        .nav {
-            @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
+    .nav {
+        @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
 
-            padding-left: 10px;
-            padding-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
 
+        ul {
+            @apply flex justify-between text-center items-center text-sm;
 
+            button {
+                display: none;
+            }
 
+            li {
+                @apply focus-within:text-ui-primary focus-within:font-bold focus-within:border-b-2 focus-within:border-ui-primary pb-2;
+            }
 
+            li:first-child {
+                display: none;
+            }
 
-            ul {
-                @apply flex justify-between text-center items-center text-sm;
-
-                button {
-                    display: none;
-                }
-
-                li {
-                    @apply focus-within:text-ui-primary focus-within:font-bold focus-within:border-b-2 focus-within:border-ui-primary pb-2;
-                }
-
-                li:first-child {
-                    display: none;
-                }
-
-                li:last-child {
-                    display: none;
-                }
+            li:last-child {
+                display: none;
             }
         }
     }
 
     @media (min-width: 1024px) {
         .nav {
-            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] bg-white mx-auto;
+            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] shadow-lg p-1.5;
 
             ul {
                 @apply font-bold flex justify-between p-5;
@@ -47,7 +41,7 @@
                 }
 
                 button {
-                    @apply flex justify-center items-center;
+                    @apply flex justify-center items-center pointer-events-auto;
 
                     svg {
                         @apply pr-1;
