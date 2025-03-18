@@ -1,17 +1,52 @@
 @import 'tailwindcss';
-
-@theme {}
+@import '../style.css';
 
 @layer components {
 
-    /* 
-     ex) 
-     이렇게 사용하기
 
-     .TEST{
-     @apply bg-red-800;
-     }
+    .item-img {
 
-    */
+        @apply grid grid-rows-[9fr_1fr] text-center min-w-[160px] max-w-[160px] h-[245px];
+
+        @media(min-width:64rem) {
+            @apply max-w-[15.625rem] h-[22.5625rem];
+        }
+
+        .item-img-box {
+            @apply flex flex-col justify-between bg-[url('/image/item-search/search-list-01.webp')] bg-cover bg-center relative;
+        }
+
+        .sale-info {
+            @apply flex flex-col absolute w-[2.125rem] h-[2.125rem] text-[.625rem] text-white rounded-full leading-[10px] items-center justify-center bottom-[6px] left-[6px] bg-[#5F0080];
+        }
+
+
+        .promo-list {
+            @apply flex flex-wrap gap-[.3125rem] text-[.625rem] p-[.3125rem];
+
+            .promo {
+                @apply text-white bg-[#BD76FF] p-[.1875rem] rounded-[.5rem];
+
+                &:last-child {
+                    @apply bg-[#4DBED7];
+                }
+            }
+
+        }
+
+        .item-save {
+            @apply text-[.75rem] h-[1.625rem] bg-[#00000066] text-white flex justify-center items-center;
+        }
+
+        .item-keep {
+
+            * {
+                @apply inline-block;
+            }
+
+            @apply border border-[#DFE4EB] rounded-[.3125rem] mt-[.375rem] h-[2.0625rem];
+        }
+
+    }
 
 }
