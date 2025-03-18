@@ -54,7 +54,7 @@
         }
 
         .header-toggle {
-            @apply h-full flex items-center justify-between rounded-2xl text-xs lg:text-lg lg:bg-white lg:ml-4;
+            @apply h-full w-[7.1875rem] flex items-center justify-between rounded-2xl text-xs lg:text-lg lg:bg-white lg:ml-4;
 
             span {
                 @apply hidden mx-1 lg:inline-flex lg:text-ui-gray-light;
@@ -71,6 +71,10 @@
 
         .header-icons {
             @apply inline-flex gap-2 items-center;
+
+            svg {
+                @apply lg:hover:stroke-ui-primary;
+            }
 
             .heart-icon {
                 @apply hidden lg:flex;
