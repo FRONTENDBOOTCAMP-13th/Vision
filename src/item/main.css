@@ -7,5 +7,5 @@
 @import '../components/footer.css';
 
 .header-nav {
-    display: grid;
+    @apply grid sticky top-0 z-1 lg:relative;
 }
