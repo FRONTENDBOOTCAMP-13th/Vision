@@ -1,17 +1,79 @@
 @import 'tailwindcss';
+@import '../style.css';
 
-@theme {}
+@theme {
+}
 
 @layer components {
+    @media (max-width: 1024px) {
+        .event-info {
+            .event-more {
+                @apply flex justify-between text-center items-center text-lg;
 
-    /* 
-     ex) 
-     이렇게 사용하기
+                .a1 {
+                    @apply font-bold pointer-events-none;
 
-     .TEST{
-     @apply bg-red-800;
-     }
+                    span {
+                        display: none;
+                    }
+                }
 
-    */
+                .a2 {
+                    @apply text-ui-primary text-xs;
+                }
+            }
 
+            p {
+                @apply text-sm text-ui-gray-mid pt-1 pb-1;
+            }
+
+            .clock {
+                @apply flex text-center items-center;
+
+                .svg1 {
+                    @apply mr-2;
+                }
+
+                .svg2 {
+                    display: none;
+                }
+
+                time {
+                    @apply font-bold text-[20px];
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .event-info {
+            .event-more {
+                @apply flex justify-center;
+
+                .a1 {
+                    @apply font-bold text-[28px];
+                }
+
+                .a2 {
+                    display: none;
+                }
+            }
+
+            p {
+                @apply text-center text-[16px] text-ui-gray-mid;
+            }
+            .clock {
+                @apply flex items-center text-center justify-center text-[32px] font-bold;
+
+                .svg1 {
+                    display: none;
+                }
+
+                .svg2 {
+                    display: block;
+                    @apply mr-2;
+                }
+            }
+        }
+    }
 }
