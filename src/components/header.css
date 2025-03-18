@@ -2,26 +2,80 @@
 @import '../style.css';
 
 @layer components {
+    .web-upper-header {
+        @apply hidden lg:flex flex-row justify-end p-2.5 gap-3 bg-ui-white text-ui-black text-xs w-[65.625rem] mx-auto;
+
+        ul {
+            @apply contents;
+        }
+        span {
+            @apply text-ui-gray-light;
+        }
+
+        .signup-link {
+            @apply text-ui-primary;
+        }
+    }
+
     .header {
-        @apply h-11 bg-ui-primary p-2 flex justify-between items-center;
+        @apply h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
 
-        .header-icons {
-            @apply inline-flex stroke-white;
-        }
+        /* .logo {
+            @apply fill-ui-white lg:fill-ui-primary;
+        } */
 
-        .logo {
-            @apply fill-white;
-        }
-
-        .toggle-group {
-            @apply h-full w-32 flex items-center justify-between bg-ui-primary-transparent rounded-2xl text-xs;
+        .header-toggle {
+            @apply h-full w-32 flex items-center justify-between bg-ui-primary-transparent rounded-2xl text-xs lg:hidden;
 
             .toggle-label {
-                @apply h-full flex items-center px-3 rounded-2xl font-semibold text-white whitespace-nowrap has-checked:text-ui-primary has-checked:font-bold has-checked:bg-white;
+                @apply h-full flex items-center px-3 rounded-2xl font-semibold text-ui-white whitespace-nowrap has-checked:text-ui-primary has-checked:font-bold has-checked:bg-ui-white;
 
                 input {
                     @apply sr-only;
                 }
+            }
+        }
+
+        .header-icons {
+            @apply inline-flex stroke-ui-white  gap-1.5 items-center  lg:stroke-ui-black;
+
+            .heart-icon {
+                @apply hidden lg:flex;
+            }
+        }
+    }
+
+    .header-market {
+        @apply bg-ui-primary lg:bg-ui-white;
+
+        .logo {
+            @apply fill-ui-white lg:fill-ui-primary;
+        }
+        .header-toggle {
+            @apply bg-ui-primary-transparent;
+        }
+    }
+
+    .header-beauty {
+        @apply bg-ui-white;
+
+        .logo {
+            @apply fill-ui-primary;
+        }
+
+        .header-toggle {
+            @apply bg-ui-gray-light;
+
+            .toggle-label {
+                @apply h-full flex items-center px-3 rounded-2xl font-semibold text-ui-gray-dark whitespace-nowrap has-checked:text-ui-white has-checked:font-bold has-checked:bg-ui-primary;
+            }
+        }
+
+        .header-icons {
+            @apply inline-flex stroke-ui-black gap-1.5;
+
+            .heart-icon {
+                @apply hidden lg:flex;
             }
         }
     }
