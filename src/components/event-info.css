@@ -5,73 +5,83 @@
 }
 
 @layer components {
-    @media (max-width: 1024px) {
-        .event-info {
-            .event-more {
-                @apply flex justify-between text-center items-center text-lg;
+    .event-info {
+        @apply p-4;
+        .event-more {
+            @apply flex justify-between text-center items-center text-lg;
 
-                .a1 {
-                    @apply font-bold pointer-events-none;
+            .event-name {
+                @apply font-bold pointer-events-none;
 
-                    span {
-                        display: none;
-                    }
+                span {
+                    display: none;
                 }
+            }
 
-                .a2 {
-                    @apply text-ui-primary text-xs;
-                }
+            .event-name-web {
+                @apply text-ui-primary text-xs;
+            }
+        }
+
+        .about-sale {
+            @apply text-sm text-ui-gray-mid pt-1 pb-1;
+        }
+
+        .clock {
+            @apply flex text-center items-center;
+
+            .clock-icon {
+                @apply mr-2;
+            }
+
+            .clock-icon-web {
+                display: none;
             }
 
             p {
-                @apply text-sm text-ui-gray-mid pt-1 pb-1;
-            }
-
-            .clock {
-                @apply flex text-center items-center;
-
-                .svg1 {
-                    @apply mr-2;
-                }
-
-                .svg2 {
-                    display: none;
-                }
-
-                time {
-                    @apply font-bold text-[20px];
-                }
+                @apply font-bold text-[20px];
             }
         }
     }
 
     @media (min-width: 1024px) {
         .event-info {
+            @apply p-4;
             .event-more {
                 @apply flex justify-center;
 
-                .a1 {
-                    @apply font-bold text-[28px];
+                .event-name {
+                    @apply font-bold text-[28px] flex;
+
+                    span {
+                        display: block;
+                        @apply pl-3;
+                    }
                 }
 
-                .a2 {
+                .event-name-web {
                     display: none;
                 }
             }
 
-            p {
-                @apply text-center text-[16px] text-ui-gray-mid;
+            .about-sale {
+                @apply text-center text-[16px] text-ui-gray-mid pb-3;
             }
+
             .clock {
                 @apply flex items-center text-center justify-center text-[32px] font-bold;
 
-                .svg1 {
+                .clock-icon {
                     display: none;
                 }
 
-                .svg2 {
+                .clock-icon-web {
                     display: block;
                     @apply mr-2;
+                }
+
+                p {
+                    @apply text-black text-3xl;
                 }
             }
         }
