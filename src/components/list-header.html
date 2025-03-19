@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="list-header.css" />
+
+        <title>pagination</title>
+    </head>
+    <body class="bg-amber-300">
+        <header class="list-header">
+            <!-- back-button -->
+            <a href="javascript:window.history.back();" class="back-button">
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 1.79799L10.2153 0L0.494453 9.79907C0.337758 9.95609 0.213403 10.1428 0.128545 10.3485C0.0436863 10.5541 0 10.7747 0 10.9975C0 11.2202 0.0436863 11.4408 0.128545 11.6464C0.213403 11.8521 0.337758 12.0388 0.494453 12.1958L10.2153 22L11.9983 20.202L2.87462 11L12 1.79799Z"
+                        fill="#222222"
+                    />
+                </svg>
+            </a>
+
+            <!-- search bar-->
+            <form action="/" class="mobile-search-bar">
+                <legend class="sr-only">검색 폼</legend>
+                <label for="keyword" class="sr-only">검색어</label>
+                <input type="search" id="keyword" placeholder="검색어를 입력해주세요" required />
+                <button type="submit" class="cursor-pointer m-2.5">
+                    <span class="sr-only">검색</span>
+                    <svg class="stroke-ui-primary w-4" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.0811 18.081L13.9611 13.961M8.4671 15.334C9.36888 15.334 10.2618 15.1564 11.095 14.8113C11.9281 14.4662 12.6851 13.9603 13.3228 13.3227C13.9605 12.685 14.4663 11.928 14.8114 11.0949C15.1565 10.2617 15.3341 9.36876 15.3341 8.46697C15.3341 7.56519 15.1565 6.67223 14.8114 5.83909C14.4663 5.00595 13.9605 4.24893 13.3228 3.61127C12.6851 2.97361 11.9281 2.46779 11.095 2.12269C10.2618 1.77759 9.36888 1.59998 8.4671 1.59998C6.64585 1.59998 4.89921 2.32346 3.61139 3.61127C2.32358 4.89909 1.6001 6.64573 1.6001 8.46697C1.6001 10.2882 2.32358 12.0349 3.61139 13.3227C4.89921 14.6105 6.64585 15.334 8.4671 15.334V15.334Z"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </button>
+            </form>
+
+            <!-- icon group -->
+            <div class="header-icons">
+                <a href="#">
+                    <!-- map icon -->
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_42_669)">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M18.0062 30C18.0062 30 8.7002 22.544 8.7002 15.306C8.7002 12.8379 9.68065 10.4709 11.4259 8.72566C13.1711 6.98045 15.5381 6 18.0062 6C20.4743 6 22.8413 6.98045 24.5865 8.72566C26.3317 10.4709 27.3122 12.8379 27.3122 15.306C27.3122 22.544 18.0062 30 18.0062 30Z"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M17.9124 17.907C19.45 17.907 20.6964 16.6606 20.6964 15.123C20.6964 13.5854 19.45 12.339 17.9124 12.339C16.3749 12.339 15.1284 13.5854 15.1284 15.123C15.1284 16.6606 16.3749 17.907 17.9124 17.907Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- heart icon -->
+                <a class="heart-icon" href="#">
+                    <svg width="36" height="36" viewBox="-6 -6 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M24.9269 2.89301C24.3269 2.29267 23.6146 1.81642 22.8305 1.4915C22.0465 1.16657 21.2061 0.999329 20.3574 0.999329C19.5086 0.999329 18.6682 1.16657 17.8842 1.4915C17.1001 1.81642 16.3878 2.29267 15.7879 2.89301L13.9589 4.72101L12.1319 2.89301C10.9201 1.68097 9.27646 0.999948 7.56257 0.999761C5.84867 0.999573 4.2049 1.68024 2.99286 2.89201C1.78082 4.10378 1.0998 5.74741 1.09961 7.4613C1.09942 9.1752 1.78008 10.819 2.99186 12.031L4.81986 13.86L13.2519 22.294C13.4394 22.4815 13.6937 22.5868 13.9589 22.5868C14.224 22.5868 14.4783 22.4815 14.6659 22.294L23.0989 13.86L24.9269 12.032C25.5271 11.4321 26.0032 10.7198 26.328 9.93586C26.6528 9.15189 26.82 8.31161 26.82 7.46301C26.82 6.61441 26.6528 5.77413 26.328 4.99016C26.0032 4.2062 25.5271 3.49392 24.9269 2.89401V2.89301Z"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </a>
+
+                <!-- cart icon -->
+                <a href="#">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_42_667)">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M30.8442 10.207L28.1242 21.777H12.5342L9.82422 10.207H30.8442Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M25.6839 29.467C26.8658 29.467 27.8239 28.5089 27.8239 27.327C27.8239 26.1451 26.8658 25.187 25.6839 25.187C24.5021 25.187 23.5439 26.1451 23.5439 27.327C23.5439 28.5089 24.5021 29.467 25.6839 29.467Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M14.974 29.467C16.1559 29.467 17.114 28.5089 17.114 27.327C17.114 26.1451 16.1559 25.187 14.974 25.187C13.7921 25.187 12.834 26.1451 12.834 27.327C12.834 28.5089 13.7921 29.467 14.974 29.467Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path d="M5.16406 6.547H8.96406L10.7241 14.047" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_42_667">
+                                <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    </body>
+</html>
