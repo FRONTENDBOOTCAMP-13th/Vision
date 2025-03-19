@@ -6,7 +6,7 @@
 
     /* mobile/web 반응형 header 스타일 */
     .list-header {
-        @apply w-full h-9 px-4 flex justify-center items-center bg-ui-white lg:justify-between lg:h-17 lg:w-[65.625rem] mx-auto;
+        @apply w-full h-9 flex justify-center items-center px-2 bg-ui-white lg:justify-between lg:h-17 lg:w-[65.625rem] mx-auto;
 
         .logo {
             @apply hidden lg:flex fill-ui-primary w-[5.125rem];
@@ -34,14 +34,14 @@
 
         /* 검색창 */
         .web-search-bar {
-            @apply flex justify-between w-full h-full mx-4 border border-ui-primary rounded-sm lg:w-[25rem] lg:h-10  lg:pl-3.5;
+            @apply flex justify-between w-full h-full mx-4 border border-ui-primary rounded-sm lg:w-[25rem] lg:h-10 pl-3.5;
 
             fieldset {
                 @apply contents;
             }
 
             input {
-                @apply focus:outline-none w-80;
+                @apply focus:outline-none w-full;
             }
 
             button {

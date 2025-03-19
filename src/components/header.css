@@ -32,19 +32,6 @@
         }
     }
 
-    /* 웹에서만 표시되는 페이지 선택 버튼 */
-    .page-change-button {
-        @apply hidden lg:inline-flex place-items-center gap-2 text-ui-gray-mid;
-
-        span {
-            @apply text-ui-gray-light;
-        }
-
-        button {
-            @apply focus-within:text-ui-primary text-lg cursor-pointer;
-        }
-    }
-
     /* mobile/web 반응형 header 스타일 */
     .header {
         @apply w-full h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
