@@ -30,6 +30,11 @@
         .side-panel-title {
             @apply flex flex-row items-center gap-1;
 
+            &::-webkit-details-marker {
+                content: '';
+                display: none;
+            }
+
             @media (min-width: 1024px) {
                 @apply justify-between text-ui-black;
 
