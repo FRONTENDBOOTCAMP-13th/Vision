@@ -10,6 +10,7 @@
     <body>
         <!-- 컴포넌트 -->
         <div class="list-side-panel">
+            <!-- 카테고리 -->
             <details class="side-panel-item category">
                 <summary class="side-panel-title">
                     카테고리
@@ -25,36 +26,36 @@
                         <legend class="sr-only">카테고리</legend>
                         <ul class="list-wrapper">
                             <li class="list">
-                                <input type="checkbox" id="list-01" class="list-check" />
-                                <label for="list-01" class="list-title">떡볶이/튀김/순대</label>
+                                <input type="checkbox" id="category-01" class="list-check" />
+                                <label for="category-01" class="list-title">떡볶이/튀김/순대</label>
                                 <span class="list-count">89</span>
                             </li>
                             <li class="list">
-                                <input type="checkbox" id="list-02" class="list-check" />
-                                <label for="list-02" class="list-title">파스타/면류/조리용 떡</label>
+                                <input type="checkbox" id="category-02" class="list-check" />
+                                <label for="category-02" class="list-title">파스타/면류/조리용 떡</label>
                                 <span class="list-count">17</span>
                             </li>
                             <li class="list">
-                                <input type="checkbox" id="list-03" class="list-check" />
-                                <label for="list-03" class="list-title">양념/액젓/장류</label>
+                                <input type="checkbox" id="category-03" class="list-check" />
+                                <label for="category-03" class="list-title">양념/액젓/장류</label>
                                 <span class="list-count">17</span>
                             </li>
                             <li class="list">
-                                <input type="checkbox" id="list-04" class="list-check" />
-                                <label for="list-04" class="list-title">떡/한과</label>
+                                <input type="checkbox" id="category-04" class="list-check" />
+                                <label for="category-04" class="list-title">떡/한과</label>
                                 <span class="list-count">13</span>
                             </li>
                             <li class="list">
-                                <input type="checkbox" id="list-05" class="list-check" />
-                                <label for="list-05" class="list-title">여성의류</label>
+                                <input type="checkbox" id="category-05" class="list-check" />
+                                <label for="category-05" class="list-title">여성의류</label>
                                 <span class="list-count">10</span>
                             </li>
                         </ul>
                     </fieldset>
                 </form>
             </details>
-        </div>
-        <div class="list-side-panel">
+
+            <!-- 배송 -->
             <details class="side-panel-item delivery">
                 <summary class="side-panel-title">
                     배송
@@ -70,29 +71,189 @@
                         <legend class="sr-only">배송</legend>
                         <ul class="list-wrapper">
                             <li class="list">
-                                <input type="checkbox" id="list-01" class="list-check" />
-                                <label for="list-01" class="list-title">떡볶이/튀김/순대</label>
-                                <span class="list-count">89</span>
+                                <input type="checkbox" id="delivery-01" class="list-check" />
+                                <label for="delivery-01" class="list-title">샛별배송</label>
+                                <span class="list-count">154</span>
                             </li>
                             <li class="list">
-                                <input type="checkbox" id="list-02" class="list-check" />
-                                <label for="list-02" class="list-title">파스타/면류/조리용 떡</label>
-                                <span class="list-count">17</span>
-                            </li>
-                            <li class="list">
-                                <input type="checkbox" id="list-03" class="list-check" />
-                                <label for="list-03" class="list-title">양념/액젓/장류</label>
-                                <span class="list-count">17</span>
-                            </li>
-                            <li class="list">
-                                <input type="checkbox" id="list-04" class="list-check" />
-                                <label for="list-04" class="list-title">떡/한과</label>
-                                <span class="list-count">13</span>
-                            </li>
-                            <li class="list">
-                                <input type="checkbox" id="list-05" class="list-check" />
-                                <label for="list-05" class="list-title">여성의류</label>
+                                <input type="checkbox" id="delivery-02" class="list-check" />
+                                <label for="delivery-02" class="list-title">판매자 배송</label>
                                 <span class="list-count">10</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </details>
+
+            <!-- 포장타입 -->
+            <details class="side-panel-item package">
+                <summary class="side-panel-title">
+                    포장타입
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.594289 -1.84936e-07L-5.19753e-05 0.594902L3.23911 3.83518C3.29101 3.88741 3.35273 3.92887 3.42071 3.95715C3.4887 3.98544 3.56161 4 3.63524 4C3.70888 4 3.78178 3.98544 3.84977 3.95715C3.91775 3.92887 3.97947 3.88741 4.03138 3.83518L7.27222 0.594901L6.67788 0.00056031L3.63608 3.04179L0.594289 -1.84936e-07Z"
+                            fill="#848F9A"
+                        />
+                    </svg>
+                </summary>
+                <form class="side-panel-list" action="/">
+                    <fieldset>
+                        <legend class="sr-only">포장타입</legend>
+                        <ul class="list-wrapper">
+                            <li class="list">
+                                <input type="checkbox" id="package-01" class="list-check" />
+                                <label for="package-01" class="list-title">상온</label>
+                                <span class="list-count">47</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="package-02" class="list-check" />
+                                <label for="package-02" class="list-title">냉장</label>
+                                <span class="list-count">27</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="package-03" class="list-check" />
+                                <label for="package-03" class="list-title">냉동</label>
+                                <span class="list-count">92</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </details>
+
+            <!-- 가격 -->
+            <details class="side-panel-item price">
+                <summary class="side-panel-title">
+                    가격
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.594289 -1.84936e-07L-5.19753e-05 0.594902L3.23911 3.83518C3.29101 3.88741 3.35273 3.92887 3.42071 3.95715C3.4887 3.98544 3.56161 4 3.63524 4C3.70888 4 3.78178 3.98544 3.84977 3.95715C3.91775 3.92887 3.97947 3.88741 4.03138 3.83518L7.27222 0.594901L6.67788 0.00056031L3.63608 3.04179L0.594289 -1.84936e-07Z"
+                            fill="#848F9A"
+                        />
+                    </svg>
+                </summary>
+                <form class="side-panel-list" action="/">
+                    <fieldset>
+                        <legend class="sr-only">가격</legend>
+                        <ul class="list-wrapper">
+                            <li class="list">
+                                <input type="radio" id="price-01" name="price" class="list-radio" />
+                                <label for="price-01" class="list-title">4,790원 미만</label>
+                                <span class="list-count"></span>
+                            </li>
+                            <li class="list">
+                                <input type="radio" id="price-02" name="price" class="list-radio" />
+                                <label for="price-02" class="list-title">4,790원 ~ 5,900원</label>
+                                <span class="list-count"></span>
+                            </li>
+                            <li class="list">
+                                <input type="radio" id="price-03" name="price" class="list-radio" />
+                                <label for="price-03" class="list-title">5,900원 ~ 7,700원</label>
+                                <span class="list-count"></span>
+                            </li>
+                            <li class="list">
+                                <input type="radio" id="price-03" name="price" class="list-radio" />
+                                <label for="price-03" class="list-title">7,700원 이상</label>
+                                <span class="list-count"></span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </details>
+
+            <!-- 브랜드 -->
+            <details class="side-panel-item brand">
+                <summary class="side-panel-title">
+                    브랜드
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.594289 -1.84936e-07L-5.19753e-05 0.594902L3.23911 3.83518C3.29101 3.88741 3.35273 3.92887 3.42071 3.95715C3.4887 3.98544 3.56161 4 3.63524 4C3.70888 4 3.78178 3.98544 3.84977 3.95715C3.91775 3.92887 3.97947 3.88741 4.03138 3.83518L7.27222 0.594901L6.67788 0.00056031L3.63608 3.04179L0.594289 -1.84936e-07Z"
+                            fill="#848F9A"
+                        />
+                    </svg>
+                </summary>
+                <form class="side-panel-list" action="/">
+                    <fieldset>
+                        <legend class="sr-only">브랜드</legend>
+                        <ul class="brand">
+                            <li class="brand-title">
+                                <span class="brand-type">ㄱ</span>
+                                <input type="raio" id="brand-a" name="brand" class="brand-select" />
+                                <label for="brand-a" class="sr-only">가나다순 ㄱ 선택</label>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="brand-a-01" class="list-check" />
+                                <label for="brand-a-01" class="list-title">경주미정당</label>
+                                <span class="list-count">1</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="brand-a-02" class="list-check" />
+                                <label for="brand-a-02" class="list-title">고래사</label>
+                                <span class="list-count">4</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="brand-a-03" class="list-check" />
+                                <label for="brand-a-03" class="list-title">곤미방</label>
+                                <span class="list-count">1</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="brand-a-04" class="list-check" />
+                                <label for="brand-a-04" class="list-title">공덕농협</label>
+                                <span class="list-count">1</span>
+                            </li>
+                            <li class="list">
+                                <input type="checkbox" id="brand-a-05" class="list-check" />
+                                <label for="brand-a-05" class="list-title">금미옥</label>
+                                <span class="list-count">3</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </details>
+
+            <!-- 혜택 -->
+            <details class="side-panel-item benefit">
+                <summary class="side-panel-title">
+                    혜택
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.594289 -1.84936e-07L-5.19753e-05 0.594902L3.23911 3.83518C3.29101 3.88741 3.35273 3.92887 3.42071 3.95715C3.4887 3.98544 3.56161 4 3.63524 4C3.70888 4 3.78178 3.98544 3.84977 3.95715C3.91775 3.92887 3.97947 3.88741 4.03138 3.83518L7.27222 0.594901L6.67788 0.00056031L3.63608 3.04179L0.594289 -1.84936e-07Z"
+                            fill="#848F9A"
+                        />
+                    </svg>
+                </summary>
+                <form class="side-panel-list" action="/">
+                    <fieldset>
+                        <legend class="sr-only">혜택</legend>
+                        <ul class="list-wrapper">
+                            <li class="list">
+                                <input type="checkbox" id="benefit-01" class="list-check" />
+                                <label for="benefit-01" class="list-title">할인상품</label>
+                                <span class="list-count">92</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </details>
+
+            <!-- 유형 -->
+            <details class="side-panel-item kurlyonly">
+                <summary class="side-panel-title">
+                    유형
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.594289 -1.84936e-07L-5.19753e-05 0.594902L3.23911 3.83518C3.29101 3.88741 3.35273 3.92887 3.42071 3.95715C3.4887 3.98544 3.56161 4 3.63524 4C3.70888 4 3.78178 3.98544 3.84977 3.95715C3.91775 3.92887 3.97947 3.88741 4.03138 3.83518L7.27222 0.594901L6.67788 0.00056031L3.63608 3.04179L0.594289 -1.84936e-07Z"
+                            fill="#848F9A"
+                        />
+                    </svg>
+                </summary>
+                <form class="side-panel-list" action="/">
+                    <fieldset>
+                        <legend class="sr-only">유형</legend>
+                        <ul class="list-wrapper">
+                            <li class="list">
+                                <input type="checkbox" id="kurlyonly-01" class="list-check" />
+                                <label for="kurlyonly-01" class="list-title">Kurly Only</label>
+                                <span class="list-count">29</span>
                             </li>
                         </ul>
                     </fieldset>
