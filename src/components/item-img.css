@@ -13,7 +13,7 @@
         }
 
         .item-img-box {
-            @apply flex flex-col justify-between bg-[url('/image/item-search/search-list-01.webp')] bg-cover bg-center relative;
+            @apply flex flex-col justify-between bg-[url('/image/item-search/search-list-01.webp')] bg-cover bg-center relative rounded-md;
         }
 
         .sale-info {

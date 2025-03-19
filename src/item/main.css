@@ -5,6 +5,16 @@
 @import '../components/sub-banner.css';
 @import '../components/mobile-button.css';
 @import '../components/footer.css';
+@import '../components/item-card.css';
+@import '../components/event-info.css';
+
+body {
+    @apply min-w-[18.75rem];
+
+    @media(max-width: 63.9375rem) {
+        @apply pb-[3.125rem];
+    }
+}
 
 .header-nav {
     @apply w-full grid sticky top-0 z-1 lg:contents;
@@ -16,4 +26,32 @@
             @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
         }
     }
+}
+
+.menu-list {
+    @apply mt-6 mb-8;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.sub-banner {
+    @apply mt-20 mb-6;
+}
+
+.item {
+    @apply m-4 m-auto;
+
+    @media(min-width:63.9375rem) {
+        @apply max-w-[65.625rem];
+
+        .item-card {
+            @apply flex-[0_0_24.25%];
+        }
+
+    }
+
+}
+
+.footer {
+    @apply border-t-2 border-t-[#fff4f4] mt-20;
 }
