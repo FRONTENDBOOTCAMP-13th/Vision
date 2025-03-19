@@ -2,7 +2,6 @@
 @import '../style.css';
 
 @layer components {
-
     /* 웹에서만 표시되는 user 상단바 */
     .web-upper-header {
         @apply hidden lg:flex flex-row justify-end p-2.5 gap-3 bg-ui-white text-ui-black text-xs w-[65.625rem] mx-auto;
@@ -50,22 +49,19 @@
     .header {
         @apply w-full h-11 p-2 flex justify-between items-center lg:h-17 lg:bg-ui-white lg:w-[65.625rem] mx-auto;
 
-        top: 0;
-
-
         .logo {
             @apply w-[3.75rem] lg:fill-ui-primary lg:w-[5.125rem];
         }
 
         .header-toggle {
-            @apply h-full w-32 flex items-center justify-between rounded-2xl text-xs lg:text-lg lg:bg-white lg:ml-4;
+            @apply h-full w-[7.1875rem] flex items-center justify-between rounded-2xl text-xs lg:text-lg lg:bg-white lg:ml-4;
 
             span {
                 @apply hidden mx-1 lg:inline-flex lg:text-ui-gray-light;
             }
 
             .toggle-label {
-                @apply h-full flex items-center px-3 rounded-2xl whitespace-nowrap lg:cursor-pointer lg:px-1;
+                @apply h-full flex items-center px-2 rounded-2xl whitespace-nowrap lg:cursor-pointer lg:px-1;
 
                 input {
                     @apply sr-only;
@@ -75,6 +71,10 @@
 
         .header-icons {
             @apply inline-flex gap-2 items-center;
+
+            svg {
+                @apply lg:hover:stroke-ui-primary;
+            }
 
             .heart-icon {
                 @apply hidden lg:flex;
