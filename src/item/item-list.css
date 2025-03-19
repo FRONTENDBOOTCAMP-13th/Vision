@@ -21,10 +21,10 @@ body {
 }
 
 .header-nav {
-    @apply px-2 lg:w-full grid sticky top-0 z-1 lg:contents;
+    @apply lg:w-full grid sticky top-0 z-1 lg:contents;
 
     .list-header {
-        @apply pt-1 my-0;
+        @apply pt-1 my-0 px-4 lg:px-0;
     }
 
     .nav {
@@ -36,7 +36,7 @@ body {
     }
 
     .list-filter {
-        @apply w-full bg-ui-white m-0 p-2 lg:w-[65.625rem] lg:mx-auto;
+        @apply w-full bg-ui-white m-0 py-2 px-4 lg:px-0 lg:w-[65.625rem] lg:mx-auto;
     }
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .item {
-    @apply grid grid-cols-2 gap-y-9 gap-x-2.5 m-auto;
+    @apply grid grid-cols-2 gap-y-9 gap-x-2.5 m-auto px-4 lg:px-0;
 
     .item-info {
         @apply mt-2.5;
@@ -63,6 +63,10 @@ body {
     @media (min-width: 64rem) {
         @apply grid-cols-3 max-w-3xl gap-y-[6.6875rem];
     }
+}
+
+.section-tab {
+    @apply mb-10;
 }
 
 .pagination {

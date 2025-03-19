@@ -6,7 +6,7 @@
         @apply hidden w-full lg:grid grid-cols-1 justify-center place-items-center items-center;
 
         h2 {
-            @apply mt-8 mb-6 font-semibold text-3xl text-ui-black text-center;
+            @apply mt-14 mb-6 font-semibold text-3xl text-ui-black text-center;
         }
 
         .categories {
