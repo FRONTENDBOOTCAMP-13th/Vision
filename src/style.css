@@ -1,18 +1,40 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Pretendard Variable', sans-serif;
-  --color-ui-black: #222222;
-  --color-ui-blue: #BD76FF;
-  --color-ui-category: #F2F5F8;
-  --color-ui-gray-dark: #565E67;
-  --color-ui-gray-light: #DFE4EB;
-  --color-ui-gray-mid: #848F9A;
-  --color-ui-memberssale: #4DBED7;
-  --color-ui-mobilebtn-border: #DDDDDD;
-  --color-ui-mobilebtn: #FCFCFC;
-  --color-ui-primary-transparent: #6F1A8C;
-  --color-ui-primary: #5F0080;
-  --color-ui-sale: #FA622F;
-  --color-ui-white: #FFFFFF
+    --font-sans: 'Pretendard Variable', sans-serif;
+    --color-ui-black: #222222;
+    --color-ui-blue: #bd76ff;
+    --color-ui-category: #f2f5f8;
+    --color-ui-gray-dark: #565e67;
+    --color-ui-gray-light: #dfe4eb;
+    --color-ui-gray-mid: #848f9a;
+    --color-ui-memberssale: #4dbed7;
+    --color-ui-mobilebtn-border: #dddddd;
+    --color-ui-mobilebtn: #fcfcfc;
+    --color-ui-primary-transparent: #6f1a8c;
+    --color-ui-primary: #5f0080;
+    --color-ui-sale: #fa622f;
+    --color-ui-white: #ffffff;
+}
+
+.index {
+    @apply p-4;
+    .shortcut {
+        @apply bg-ui-primary-transparent text-ui-white font-bold text-lg px-4 py-2 border border-ui-white rounded-lg hover:bg-ui-white hover:text-ui-primary;
+    }
+    h2 {
+        @apply text-xl font-bold mt-6;
+    }
+
+    h3 {
+        @apply font-bold mt-6;
+    }
+
+    a {
+        @apply text-lg px-2 bg-ui-memberssale text-ui-white rounded-lg hover:bg-ui-sale;
+    }
+
+    div {
+        @apply text-lg pt-5 pb-3 px-3 my-2 bg-ui-gray-light rounded-lg;
+    }
 }
