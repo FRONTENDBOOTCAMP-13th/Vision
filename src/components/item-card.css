@@ -9,7 +9,8 @@
     scrollbar-width: none;
 
     .item-card {
-        @apply flex-[0_0_30%];
+        @apply flex-[0_0_45%];
+
 
         @media(min-width:63.9375rem) {
             @apply flex-[0_0_25%];
