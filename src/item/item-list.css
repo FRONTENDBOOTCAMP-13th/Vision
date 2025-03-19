@@ -1,10 +1,14 @@
 @import '../components/header.css';
 @import '../components/list-header.css';
 @import '../components/nav.css';
+@import '../components/section-tab.css';
 @import '../components/list-filter.css';
 @import '../components/list-side-panel.css';
 @import '../components/item-card.css';
+@import '../components/pagination.css';
+@import '../components/recent-view.css';
 @import '../components/mobile-button.css';
+@import '../components/footer.css';
 
 /* 아이템 리스트 */
 
@@ -17,7 +21,7 @@ body {
 }
 
 .header-nav {
-    @apply w-full grid sticky top-0 z-1 lg:contents;
+    @apply px-2 lg:w-full grid sticky top-0 z-1 lg:contents;
 
     .list-header {
         @apply pt-1 my-0;
@@ -36,8 +40,17 @@ body {
     }
 }
 
-.list-header {
-    @apply my-1;
+/* web에서만 표시 */
+.section-tab {
+    @apply max-w-[65.625rem] mx-auto;
+}
+
+.list-side-panel {
+    @apply px-2 my-2;
+}
+
+.panel-item {
+    @apply max-w-[65.625rem] mx-auto lg:grid lg:grid-cols-[13.75rem_1fr];
 }
 
 .item {
@@ -50,4 +63,12 @@ body {
     @media (min-width: 64rem) {
         @apply grid-cols-3 max-w-3xl gap-y-[6.6875rem];
     }
+}
+
+.pagination {
+    @apply my-20;
+}
+
+.footer {
+    @apply mt-20;
 }
