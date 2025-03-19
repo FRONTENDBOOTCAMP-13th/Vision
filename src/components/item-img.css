@@ -35,7 +35,7 @@
         }
 
         .item-save {
-            @apply text-[.75rem] h-[1.625rem] bg-[#00000066] text-white flex justify-center items-center;
+            @apply text-[.75rem] h-[1.625rem] bg-[#00000066] text-white flex justify-center items-center rounded-b-[.375rem];
         }
 
         .item-keep {
