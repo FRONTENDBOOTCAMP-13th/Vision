@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    /* 최상위 컨테이너 */
+    .list-side-panel {
+        @apply w-full inline-flex justify-start gap-2 overflow-auto text-ui-gray-mid text-xs max-h-[calc(-48px_+_100vh)] sticky top-12 overflow-y-scroll;
+        /* 레이아웃 작업 시, scroll-width, overflow 등 속성 추가 필요 */
+
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+        @media (min-width: 1024px) {
+            @apply w-[220px] text-base flex flex-col;
+        }
+    }
+
+    /* 컴포넌트 주요 설정 */
+    .side-panel-item {
+        @apply px-3 py-2 border border-ui-gray-light rounded-2xl flex flex-col shrink-0;
+
+        &[open] .side-panel-title > svg {
+            @apply rotate-180;
+        }
+
+        @media (min-width: 1024px) {
+            @apply px-0 py-4 border-t-0 border-l-0 border-r-0 rounded-none;
+        }
+
+        .side-panel-title {
+            @apply flex flex-row items-center gap-1;
+
+            &::-webkit-details-marker {
+                content: '';
+                display: none;
+            }
+
+            @media (min-width: 1024px) {
+                @apply justify-between text-ui-black;
+
+                > svg {
+                    @apply w-[.625rem] h-[.3125rem] aspect-square bg-cover;
+                }
+            }
+        }
+
+        .side-panel-list {
+            @apply mt-4 hidden;
+
+            @media (min-width: 1024px) {
+                @apply flex flex-col gap-4 text-xs;
+            }
+
+            fieldset {
+                @apply contents;
+            }
+        }
+
+        .list-wrapper,
+        ul.brand {
+            @apply flex flex-col gap-2;
+
+            @media (min-width: 1024px) {
+                @apply gap-3;
+            }
+        }
+
+        .list {
+            @apply flex;
+        }
+
+        .list-check {
+            @apply w-4 aspect-square mr-2 appearance-none;
+
+            background-image: url(/public/image/icon/unchecked.svg);
+            background-size: cover;
+
+            &:checked {
+                background-image: url(/public/image/icon/checked.svg);
+            }
+        }
+
+        .list-radio {
+            @apply w-4 aspect-square mr-2 appearance-none;
+
+            background-image: url(/public/image/icon/unsellected.svg);
+            background-size: cover;
+
+            &:checked {
+                background-image: url(/public/image/icon/sellected.svg);
+            }
+        }
+
+        .list-title {
+            @apply text-ui-black;
+        }
+
+        .list-count {
+            @apply ml-1 text-[.625rem] leading-3.5;
+        }
+
+        /* 브랜드 카테고리 전용 */
+        .brand-type {
+            @apply text-ui-primary text-sm font-medium;
+        }
+
+        .brand-title {
+            @apply grid items-center w-4 aspect-square;
+        }
+
+        .brand-name {
+            @apply row-start-1 col-start-1 row-end-2 col-end-2 z-1 text-center text-[.625rem] text-ui-white;
+        }
+
+        .brand-select {
+            @apply w-4 aspect-square appearance-none row-start-1 col-start-1 row-end-2 col-end-2;
+            background-image: url(/public/image/icon/default-brand-category.svg);
+            background-size: cover;
+
+            &:checked {
+                background-image: url(/public/image/icon/selected-brand-category.svg);
+            }
+        }
+
+        .brand-more {
+            @apply flex self-center items-center gap-2;
+
+            > svg {
+                @apply aspect-square bg-cover rotate-270;
+            }
+        }
+    }
+}
