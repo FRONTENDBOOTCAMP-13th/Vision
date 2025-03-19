@@ -2,4 +2,42 @@
 @import '../style.css';
 
 @layer components {
+    .list-side-panel {
+        @apply px-3 py-2 border border-ui-gray-light rounded-2xl text-ui-gray-mid text-xs inline-block;
+
+        .side-panel-title {
+            @apply flex flex-row items-center gap-1;
+        }
+
+        .side-panel-list {
+            @apply py-2;
+        }
+
+        .list-wrapper {
+            @apply flex flex-col gap-2;
+        }
+
+        .list {
+            @apply flex;
+        }
+
+        .list-check {
+            @apply w-4 aspect-square mr-2 appearance-none;
+
+            background-image: url(/public/image/icon/unchecked.svg);
+            background-size: cover;
+
+            &:checked {
+                background-image: url(/public/image/icon/checked.svg);
+            }
+        }
+
+        .list-title {
+            @apply text-ui-black;
+        }
+
+        .list-count {
+            @apply ml-1 text-[.625rem] leading-3.5;
+        }
+    }
 }
