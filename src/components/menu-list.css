@@ -9,11 +9,12 @@
             display: contents
         }
 
-        @apply grid grid-cols-6 grid-rows-2 text-base text-center min-w-[25.625rem];
+        @apply grid grid-cols-6 grid-rows-2 text-base text-center;
+        gap : 5px;
 
         /* 아이템 박스 */
         .menu-item {
-            @apply bg-ui-white p-[.125rem];
+            @apply bg-ui-white;
         }
 
         /* 아이콘 */
@@ -30,16 +31,5 @@
             display: none;
         }
     }
-
-
-    /* 
-     ex) 
-     이렇게 사용하기
-
-     .TEST{
-     @apply bg-red-800;
-     }
-
-    */
 
 }

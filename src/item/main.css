@@ -5,6 +5,12 @@
 @import '../components/sub-banner.css';
 @import '../components/mobile-button.css';
 @import '../components/footer.css';
+@import '../components/item-card.css';
+@import '../components/event-info.css';
+
+body {
+    min-width: 18.75rem;
+}
 
 .header-nav {
     @apply w-full grid sticky top-0 z-1 lg:contents;
