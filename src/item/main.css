@@ -32,6 +32,7 @@ body {
     @apply mt-6 mb-8;
     margin-top: 24px;
     margin-bottom: 32px;
+
 }
 
 .sub-banner {
@@ -39,7 +40,11 @@ body {
 }
 
 .item {
-    @apply m-4 m-auto;
+    @apply m-auto;
+
+    @media(max-width:64rem) {
+        padding: 10px;
+    }
 
     @media(min-width:63.9375rem) {
         @apply max-w-[65.625rem];
