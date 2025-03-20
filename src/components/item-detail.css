@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+.item-detail {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-img {
+        width: 100%;
+        aspect-ratio: 125/163;
+
+        background-image: url("/public/image/item-search/Jjolmyeon.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .info-box {
+
+        padding: 16px;
+
+        .driver {
+
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+    }
+
+    .info {
+        position: relative;
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .title-info {
+            font-size: 14px;
+        }
+
+        .save-icon {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+        }
+
+    }
+
+    .price {
+        margin: 12px 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .reward-info {
+        color: #5F0080;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    .driver,
+    .title {
+        margin-bottom: 8px;
+    }
+
+    .driver,
+    .title-info {
+        color: #848F9A;
+        font-weight: 400;
+    }
+
+
+    .item-deail-info {
+        border-top: 2px solid lightgray;
+    }
+
+
+}
