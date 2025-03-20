@@ -9,15 +9,15 @@
         @apply w-full h-9 flex justify-between items-center px-2 bg-ui-white lg:hidden;
 
         .back-button {
-            @apply flex lg:hidden;
+            @apply flex;
         }
 
-        .header-title {
-            @apply min-w-0 h-full flex items-center px-2 bg-ui-white whitespace-nowrap text-ellipsis overflow-hidden;
+        h2 {
+            @apply min-w-0 content-center px-2 bg-ui-white truncate;
         }
 
         .header-icons {
-            @apply stroke-ui-black flex inline-flex gap-2 items-center;
+            @apply stroke-ui-black inline-flex gap-2 items-center;
         }
     }
 }
