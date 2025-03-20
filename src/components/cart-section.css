@@ -1,2 +1,69 @@
 @import 'tailwindcss';
 @import '../style.css';
+
+@layer components {
+    .cart-section {
+        @apply w-full px-4 py-2 inline-flex gap-3 justify-center items-center text-sm font-bold bg-ui-white;
+
+        @media (min-width: 1024px) {
+            @apply w-[560px];
+        }
+
+        @media (min-width: 1024px) {
+            @apply p-0;
+        }
+
+        .cart-form {
+            @apply inline-flex h-[3.25rem] gap-3;
+
+            fieldset {
+                @apply contents;
+            }
+
+            input {
+                @apply appearance-none w-[3.25rem] h-[3.25rem] aspect-square rounded-md border border-ui-mobilebtn-border;
+            }
+        }
+
+        .item-like {
+            @apply bg-[url(/image/icon/like.svg)] bg-no-repeat bg-center;
+
+            &:checked {
+                @apply bg-[url(/image/icon/like-fill.svg)];
+            }
+        }
+
+        .item-alarm {
+            @apply hidden bg-[url(/image/icon/alarm.svg)] bg-no-repeat bg-center;
+
+            &:checked {
+                @apply bg-[url(/image/icon/alarm-checked.svg)];
+            }
+
+            @media (min-width: 1024px) {
+                @apply block;
+            }
+        }
+
+        /* button */
+        .cart-action {
+            @apply w-full h-[3.25rem] aspect-square bg-ui-primary rounded-md text-ui-white;
+        }
+
+        .cart-action-mobile {
+            @apply inline-block;
+
+            @media (min-width: 1024px) {
+                @apply hidden;
+            }
+        }
+
+        .cart-action-web {
+            @apply hidden;
+
+            @media (min-width: 1024px) {
+                @apply inline-block;
+            }
+        }
+    }
+}
