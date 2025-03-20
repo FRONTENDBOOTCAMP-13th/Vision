@@ -6,14 +6,14 @@
 
     .item-img {
 
-        @apply grid grid-rows-[9fr_1fr] text-center min-w-[160px] max-w-[160px] h-[245px];
+        @apply grid grid-rows-[9fr_1fr] text-center h-[245px];
 
         @media(min-width:64rem) {
-            @apply max-w-[15.625rem] h-[22.5625rem];
+            @apply h-[22.5625rem];
         }
 
         .item-img-box {
-            @apply flex flex-col justify-between bg-[url('/image/item-search/search-list-01.webp')] bg-cover bg-center relative;
+            @apply flex flex-col justify-between bg-[url('/image/item-search/search-list-01.webp')] bg-cover bg-center relative rounded-md;
         }
 
         .sale-info {
@@ -35,7 +35,7 @@
         }
 
         .item-save {
-            @apply text-[.75rem] h-[1.625rem] bg-[#00000066] text-white flex justify-center items-center;
+            @apply text-[.75rem] h-[1.625rem] bg-[#00000066] text-white flex justify-center items-center rounded-b-[.375rem];
         }
 
         .item-keep {

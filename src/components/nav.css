@@ -3,7 +3,7 @@
 
 @layer components {
     .nav {
-        @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
+        @apply text-ui-gray-dark text-[16px] w-full p-2;
 
         padding-left: 10px;
         padding-right: 10px;
@@ -16,7 +16,7 @@
             }
 
             li {
-                @apply focus-within:text-ui-primary focus-within:font-bold focus-within:border-b-2 focus-within:border-ui-primary pb-2;
+                @apply focus-within:text-ui-primary focus-within:font-bold border-white border-b-2 focus-within:border-ui-primary pb-2 pt-1.5;
             }
 
             li:first-child {
@@ -34,14 +34,14 @@
             @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] shadow-lg p-1.5 bg-white;
 
             ul {
-                @apply font-bold flex justify-between p-5;
+                @apply font-bold flex justify-between p-2;
 
                 li {
                     @apply hover:underline hover:text-ui-primary underline-offset-4 focus-within:text-ui-primary focus-within:border-0;
                 }
 
                 button {
-                    @apply flex justify-center items-center pointer-events-auto;
+                    @apply flex justify-center items-center pointer-events-auto cursor-pointer;
 
                     svg {
                         @apply pr-1;
