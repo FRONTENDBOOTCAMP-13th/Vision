@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .brand-info {
+        @apply w-full;
+
+        .web-only {
+            @apply hidden md:flex;
+        }
+
+        .brand-info-title {
+            @apply w-full flex items-center text-2xl font-bold text-ui-gray-dark whitespace-nowrap;
+
+            h3 {
+                @apply mr-4 md:mx-4;
+            }
+            .title-line {
+                @apply w-full h-[.0625rem] bg-ui-gray-light flex-grow;
+            }
+        }
+        .info-card-section {
+            @apply w-full md:my-10 md:flex md:flex-wrap md:justify-center md:items-center mx-auto gap-y-8;
+
+            .brand-info-card {
+                @apply w-full md:w-1/2 lg:w-1/3 pt-5 grid grid-flow-col md:grid-flow-row-dense md:justify-center;
+
+                svg {
+                    @apply md:w-10 md:h-10 md:mx-auto md:mb-3;
+                }
+
+                .brand-info-detail {
+                    @apply ml-6 md:m-0 md:text-center;
+
+                    h4 {
+                        @apply text-lg font-semibold text-ui-primary;
+                    }
+
+                    p {
+                        @apply w-fit text-sm mt-3 text-ui-gray-dark lg:text-[1rem] text-balance;
+                    }
+                }
+            }
+        }
+    }
+}
