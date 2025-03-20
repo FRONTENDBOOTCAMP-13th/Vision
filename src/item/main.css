@@ -12,7 +12,7 @@
 body {
     @apply min-w-[18.75rem];
 
-    @media(max-width: 63.9375rem) {
+    @media (max-width: 63.9375rem) {
         @apply pb-[3.125rem];
     }
 }
@@ -33,7 +33,6 @@ body {
     @apply mt-6 mb-8;
     margin-top: 24px;
     margin-bottom: 32px;
-
 }
 
 .sub-banner {
@@ -43,19 +42,17 @@ body {
 .item {
     @apply m-auto;
 
-    @media(max-width:64rem) {
+    @media (max-width: 64rem) {
         padding: 10px;
     }
 
-    @media(min-width:63.9375rem) {
+    @media (min-width: 63.9375rem) {
         @apply max-w-[65.625rem];
 
         .item-card {
             @apply flex-[0_0_24.25%];
         }
-
     }
-
 }
 
 .footer {
