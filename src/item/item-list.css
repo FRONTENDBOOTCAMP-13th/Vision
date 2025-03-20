@@ -38,23 +38,15 @@ body {
     .list-filter {
         @apply w-full bg-ui-white m-0 py-3 px-4 lg:hidden;
     }
-    /* .item-header {
-        @apply lg:w-[65.625rem] lg:mx-auto lg:grid lg:grid-cols-[13.75rem_1fr] lg:gap-7;
-
-
-    } */
 }
 
 /* web에서만 표시 */
 .section-tab {
-    @apply max-w-[65.625rem] mx-auto;
+    @apply max-w-[65.625rem] mx-auto mb-10;
 }
 
-.list-side-panel {
-    @apply px-2 my-2;
-}
-
-.panel-item {
+/* side-panel-header+side-panel & item+pagination */
+.main {
     @apply max-w-[65.625rem] mx-auto lg:grid lg:grid-cols-[13.75rem_1fr] lg:gap-7;
 
     /* web에서만 표시 */
@@ -66,30 +58,30 @@ body {
         }
     }
 
+    .list-side-panel {
+        @apply px-2 my-2;
+    }
+
     /* web에서만 표시 */
     .list-filter-web {
         @apply hidden lg:block;
     }
 
     .item {
-        @apply grid grid-cols-2 gap-y-9 gap-x-2.5 mx-0 px-4 lg:px-0;
+        @apply grid grid-cols-2 gap-y-9 gap-x-2.5 mx-0 px-4;
 
         .item-info {
             @apply mt-2.5;
         }
 
         @media (min-width: 64rem) {
-            @apply grid-cols-3 max-w-3xl gap-y-[6.6875rem];
+            @apply grid-cols-3  gap-y-[6.6875rem] px-0;
         }
     }
-}
 
-.section-tab {
-    @apply mb-10;
-}
-
-.pagination {
-    @apply my-20;
+    .pagination {
+        @apply my-20;
+    }
 }
 
 .footer {
