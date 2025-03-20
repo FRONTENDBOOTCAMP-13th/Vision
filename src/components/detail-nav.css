@@ -2,4 +2,39 @@
 @import '../style.css';
 
 @layer components {
+    .detail-nav {
+        @apply w-full h-[46px] px-4 grid grid-cols-4 text-ui-gray-dark text-base;
+
+        > ul {
+            @apply contents;
+        }
+
+        .detail-nav-list {
+            @apply h-full flex justify-center;
+        }
+
+        .detail-nav-title {
+            @apply pt-4 flex flex-col justify-between;
+        }
+
+        .detail-nav-border {
+            @apply w-full h-0.5 bg-ui-white;
+        }
+
+        .detail-nav-item {
+            @apply text-ui-primary font-bold;
+
+            .detail-nav-border {
+                @apply bg-ui-primary;
+            }
+        }
+
+        .detail-nav-review {
+            @apply inline-flex items-center gap-2;
+
+            .detail-nav-count {
+                @apply text-xs;
+            }
+        }
+    }
 }
