@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .detail-nav {
+        @apply w-full h-[46px] px-4 grid grid-cols-4 text-ui-gray-dark text-base;
+
+        > ul {
+            @apply contents;
+        }
+
+        @media (min-width: 1024px) {
+            @apply w-[65.625rem] px-0 text-ui-black sticky top-[3.5rem];
+        }
+
+        .detail-nav-list {
+            @apply py-4 h-full flex justify-center;
+
+            @media (min-width: 1024px) {
+                @apply bg-[#f9f9f9] items-center;
+
+                &:first-child {
+                    @apply border-t border-l border-r border-ui-mobilebtn-border;
+                }
+
+                &:not(:first-child) {
+                    @apply border-t border-r border-b border-ui-gray-light;
+                }
+            }
+        }
+
+        .detail-nav-title {
+            @apply flex flex-col justify-between;
+        }
+
+        .detail-nav-border {
+            @apply w-full h-0.5 bg-ui-white;
+
+            @media (min-width: 1024px) {
+                @apply hidden;
+            }
+        }
+
+        /* 상품설명 영역 별도 설정 */
+        .detail-nav-item {
+            @apply text-ui-primary font-bold bg-ui-white;
+
+            .detail-nav-border {
+                @apply bg-ui-primary;
+
+                @media (min-width: 1024px) {
+                    @apply bg-transparent;
+                }
+            }
+        }
+
+        /* 리뷰 영역 별도 설정 */
+        .detail-nav-review {
+            @apply inline-flex items-center gap-2;
+
+            .detail-nav-count {
+                @apply text-xs;
+            }
+        }
+    }
+}
