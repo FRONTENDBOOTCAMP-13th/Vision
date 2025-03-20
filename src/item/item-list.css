@@ -66,7 +66,9 @@ body {
     .list-filter-web {
         @apply hidden lg:block;
     }
-
+    .web-only {
+        @apply hidden lg:block;
+    }
     .item {
         @apply grid grid-cols-2 gap-y-9 gap-x-2.5 mx-0 px-4;
 
