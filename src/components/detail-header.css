@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    /* 리스트 페이지 검색창 헤더 */
+
+    /* mobile/web 반응형 header 스타일 */
+    .detail-header {
+        @apply w-full h-9 flex justify-between items-center px-2 bg-ui-white lg:hidden;
+
+        .back-button {
+            @apply flex lg:hidden;
+        }
+
+        .header-title {
+            @apply min-w-0 h-full flex items-center px-2 bg-ui-white whitespace-nowrap text-ellipsis overflow-hidden;
+        }
+
+        .header-icons {
+            @apply stroke-ui-black flex inline-flex gap-2 items-center;
+        }
+    }
+}
