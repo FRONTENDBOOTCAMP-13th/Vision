@@ -2,85 +2,88 @@
 
 .item-detail {
 
-    display: grid;
+    @apply grid;
     grid-template-columns: repeat(auto-fit);
 
     * {
-        margin: 0;
-        padding: 0;
+        @apply m-0 p-0;
     }
 
     .item-img {
-        width: 100%;
-        aspect-ratio: 125/163;
-
-        background-image: url("/public/image/item-search/Jjolmyeon.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @apply w-full aspect-[125/163] bg-[url('/public/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat
     }
 
     .info-box {
 
-        padding: 16px;
+        @apply p-4;
 
         .driver {
-
-            font-size: 12px;
-            font-weight: 600;
+            @apply text-[.75rem] font-semibold;
         }
 
     }
 
     .info {
-        position: relative;
+        @apply relative;
 
         .title {
-            font-size: 18px;
-            font-weight: 600;
+            @apply text-[1.125rem] font-semibold
         }
 
         .title-info {
-            font-size: 14px;
+            @apply text-[.875rem];
         }
 
         .save-icon {
-            position: absolute;
-
-            top: 0;
-            right: 0;
+            @apply absolute top-0 right-0;
         }
 
     }
 
     .price {
-        margin: 12px 0;
-        font-size: 24px;
-        font-weight: 700;
+        @apply my-3 text-[1.5rem] font-bold;
     }
 
     .reward-info {
-        color: #5F0080;
-        font-size: 16px;
-        font-weight: 600;
+        @apply text-[#5F0080] text-[1rem] font-semibold;
     }
 
 
     .driver,
     .title {
-        margin-bottom: 8px;
+        @apply mb-2;
     }
 
     .driver,
     .title-info {
-        color: #848F9A;
-        font-weight: 400;
+        @apply text-[#848F9A] font-normal;
     }
 
 
     .item-deail-info {
-        border-top: 2px solid lightgray;
+
+        @apply grid gap-3 border-t-4 border-[#dfe4eb] p-[24px_16px];
+
+        .title {
+            @apply text-[1.125rem] font-bold;
+        }
+
+
+        .item-deail-box {
+            @apply grid grid-cols-[3fr_7fr] text-[.875rem];
+
+            span {
+                @apply block;
+            }
+
+            .bold {
+                @apply font-semibold;
+            }
+
+        }
     }
+
+
 
 
 }
