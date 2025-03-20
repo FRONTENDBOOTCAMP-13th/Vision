@@ -3,7 +3,7 @@
 
 @layer components {
     .nav {
-        @apply text-ui-gray-dark text-[16px] w-full p-2;
+        @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
 
         padding-left: 10px;
         padding-right: 10px;
