@@ -64,7 +64,7 @@ body {
 
     /* web에서만 표시 */
     .list-filter-web {
-        @apply hidden lg:block;
+        @apply hidden lg:block px-0;
     }
     .web-only {
         @apply hidden lg:block;
