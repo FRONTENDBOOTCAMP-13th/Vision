@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .item-guide {
+        @apply m-4;
+
+        .guide-header {
+            @apply text-center;
+
+            @media (min-width: 1024px) {
+                @apply flex justify-between pb-4;
+            }
+            h1 {
+                display: none;
+
+                @media (min-width: 1024px) {
+                    display: block;
+
+                    @apply text-3xl font-bold;
+                }
+            }
+
+            a {
+                .mobile-button {
+                    @apply text-ui-primary w-full block border-2 p-2 rounded-md active:bg-ui-primary active:text-white font-bold;
+
+                    @media (min-width: 1024px) {
+                        display: none;
+                    }
+                }
+
+                .web-button {
+                    display: none;
+
+                    @media (min-width: 1024px) {
+                        display: block;
+
+                        @apply pl-10 pr-10 p-2 w-auto text-white font-bold bg-ui-primary rounded-md active:bg-white active:text-ui-primary;
+                    }
+                }
+            }
+        }
+        .guide-content {
+            display: none;
+
+            @media (min-width: 1024px) {
+                display: block;
+
+                p {
+                    @apply text-ui-gray-dark before:content-['·_'];
+                }
+            }
+        }
+    }
+}
