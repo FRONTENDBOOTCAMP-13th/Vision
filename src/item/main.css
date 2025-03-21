@@ -21,7 +21,7 @@ body {
     @apply w-full grid sticky top-0 z-1 lg:contents;
 
     .nav {
-        @apply mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-1 lg:h-auto;
+        @apply mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-2 lg:h-auto;
 
         .nav-list {
             @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
