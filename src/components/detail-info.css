@@ -52,7 +52,7 @@
                     @apply w-full h-[.0625rem] bg-ui-gray-light flex-grow;
                 }
                 h3 {
-                    @apply text-[1.75rem] font-bold text-ui-gray-dark text-center mr-4 md:mx-4;
+                    @apply text-[1.75rem] font-bold text-ui-gray-dark text-center mr-4 mx-4;
                     @media (min-width: 1024px) {
                         @apply text-5xl text-black;
                     }
