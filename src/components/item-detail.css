@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 .item-detail {
-
     @apply grid;
     grid-template-columns: repeat(auto-fit);
 
@@ -10,24 +9,22 @@
     }
 
     .item-img {
-        @apply w-full aspect-[125/163] bg-[url('/public/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat
+        @apply w-full aspect-[125/163] bg-[url('/public/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat;
     }
 
     .info-box {
-
         @apply p-4;
 
         .driver {
             @apply text-[12px] font-semibold;
         }
-
     }
 
     .info {
         @apply relative;
 
         .title {
-            @apply text-[18px] font-semibold
+            @apply text-[18px] font-semibold;
         }
 
         .title-info {
@@ -37,7 +34,6 @@
         .save-icon {
             @apply absolute top-0 right-0;
         }
-
     }
 
     .price {
@@ -47,7 +43,6 @@
     .reward-info {
         @apply text-[#5F0080] text-[16px] font-semibold;
     }
-
 
     .driver,
     .title {
@@ -59,9 +54,7 @@
         @apply text-[#848F9A] font-normal;
     }
 
-
     .item-deail-info {
-
         @apply grid gap-3 border-t-1 border-[#dfe4eb] p-[1.5rem_1rem] text-[#898989] border-b-5 border-[#dfe4eb];
 
         .item-deail-box.pc-only {
@@ -71,7 +64,6 @@
         .title {
             @apply text-[1.125rem] font-bold;
         }
-
 
         .item-deail-box {
             @apply grid grid-cols-[3fr_7fr] text-[14px];
@@ -83,19 +75,16 @@
             .bold {
                 @apply font-semibold;
             }
-
         }
 
         .item-choose,
         .total-price {
             @apply hidden;
         }
-
     }
 
     /* pc 버전 */
-    @media(min-width: 64rem) {
-
+    @media (min-width: 64rem) {
         @apply grid grid-cols-[2fr_8fr] max-w-[1050px] gap-2.5;
 
         .item-img {
@@ -107,6 +96,7 @@
         }
 
         .item-deail-info {
+            @apply border-b-0;
 
             &.mobile-only {
                 @apply hidden;
@@ -116,19 +106,16 @@
                 @apply grid;
             }
 
-
             .title {
                 @apply hidden;
             }
 
             .item-deail-box {
-
                 &:nth-of-type(1) {
                     @apply border-t border-gray-300;
                 }
 
                 @apply py-[20px] border-b border-gray-300;
-
             }
 
             .item-choose {
@@ -141,7 +128,6 @@
                         @apply mt-[.75rem];
                     }
                 }
-
 
                 .price {
                     @apply absolute m-0 right-0 bottom-0 text-gray-800 text-xs;
@@ -175,13 +161,6 @@
             .item-deail-box:nth-child(1) {
                 @apply border-t-0;
             }
-
-
         }
-
     }
-
-
-
-
 }
