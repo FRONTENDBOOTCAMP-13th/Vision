@@ -8,6 +8,7 @@
         <title>item-detail</title>
     </head>
     <body>
+        <!-- detail-header (mobile-only) -->
         <header class="detail-header">
             <!-- SEO & previous page -->
             <div class="contents">
@@ -86,7 +87,7 @@
             </div>
         </header>
 
-        <!-- ☆ upper-header(web only) -->
+        <!-- register (web-only) -->
         <div class="web-upper-header">
             <ul>
                 <li class="signup-link"><a href="#">회원가입</a></li>
@@ -97,7 +98,7 @@
             </ul>
         </div>
 
-        <!-- header & nav & list-filter-->
+        <!-- common-header & nav & list-filter-->
         <div class="header-nav">
             <!-- ☆ list-header -->
             <header class="list-header">
@@ -264,7 +265,7 @@
             </nav>
         </div>
 
-        <!-- 콘텐츠 영역 -->
+        <!-- contents -->
         <main class="item-detail-main">
             <!-- item-header -->
             <div class="item-detail">
@@ -433,13 +434,13 @@
             <nav class="detail-nav web-only">
                 <ul>
                     <li class="detail-nav-list detail-nav-item">
-                        <a href="#" class="detail-nav-title">
+                        <a href="#info-01" class="detail-nav-title">
                             상품설명
                             <span class="detail-nav-border"></span>
                         </a>
                     </li>
                     <li class="detail-nav-list detail-nav-more">
-                        <a href="#" class="detail-nav-title">
+                        <a href="#info-02" class="detail-nav-title">
                             상세정보
                             <span class="detail-nav-border"></span>
                         </a>
@@ -466,7 +467,7 @@
                 <!-- item-info-all -->
 
                 <div class="detail-info">
-                    <div class="item-wrapper">
+                    <div class="item-wrapper" id="info-01">
                         <figure class="item-pic">
                             <figcaption class="sr-only">탱탱쫄면의 상품 사진</figcaption>
                         </figure>
@@ -491,7 +492,7 @@
                             <figcaption class="sr-only">생산 유통 과정, 브랜드와 생산자, 활용법</figcaption>
                         </figure>
                     </div>
-                    <div class="nutrition-wrapper">
+                    <div class="nutrition-wrapper" id="info-02">
                         <figure class="nutrition">
                             <figcaption class="sr-only">영양 정보</figcaption>
                         </figure>
@@ -763,7 +764,7 @@
             </div>
         </main>
 
-        <!-- ☆ footer -->
+        <!-- footer -->
         <footer class="footer">
             <div class="footer-main">
                 <div class="footer-content">
@@ -1244,7 +1245,7 @@
             </div>
         </footer>
 
-        <!-- ☆ recent-view -->
+        <!-- recent-view -->
         <aside class="recent-view">
             <!-- 웹 접근성을 위해, h3 태그를 최상단에 배치했습니다. -->
             <h3 class="recent-view-title">최근 본 상품</h3>
@@ -1278,7 +1279,7 @@
             </button>
         </aside>
 
-        <!-- 버튼 -->
+        <!-- cart (mobile-only) -->
         <div class="cart-section mobile-shown">
             <form action="#" class="cart-form">
                 <fieldset>
