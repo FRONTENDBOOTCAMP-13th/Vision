@@ -85,7 +85,7 @@
 
     /* pc 버전 */
     @media (min-width: 64rem) {
-        @apply grid grid-cols-[2fr_8fr] max-w-[1050px] gap-2.5;
+        @apply grid grid-cols-[2fr_8fr] max-w-[1050px] gap-[5.625rem];
 
         .item-img {
             @apply w-[400px] h-[514px] bg-center;
