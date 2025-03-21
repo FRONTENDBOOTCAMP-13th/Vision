@@ -3,11 +3,11 @@
 
 @layer components {
     body {
-        @apply relative min-h-screen;
+        @apply relative;
     }
 
     .recent-view {
-        @apply hidden bg-ui-white p-2 w-[4.6875rem] absolute top-1/2 -translate-y-1/2 right-5 border border-ui-mobilebtn-border;
+        @apply hidden bg-ui-white p-2 w-[4.6875rem] sticky top-1/2 -translate-y-1/2 right-5 border border-ui-mobilebtn-border;
 
         @media (min-width: 1024px) {
             @apply flex flex-col items-center gap-2;
