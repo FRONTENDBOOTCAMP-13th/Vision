@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .pagination-arrow {
+        .pagination-arrow-button {
+            @apply hidden lg:flex lg:justify-center lg:gap-4;
+
+            .previous,
+            .next {
+                @apply flex justify-center items-center bg-ui-white border border-ui-gray-light rounded-md;
+            }
+
+            a {
+                @apply py-5 px-6 aspect-square;
+            }
+
+            .next path {
+                @apply stroke-ui-primary;
+            }
+        }
+    }
+}
