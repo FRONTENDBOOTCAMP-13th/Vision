@@ -6,11 +6,12 @@
         @apply flex flex-col gap-20;
         .item-wrapper {
             @apply text-center;
+
             .item-pic {
                 @apply bg-[url('/image/item-detail/item-pic.png')] w-full h-[100vh] bg-cover bg-center mb-10;
 
                 @media (min-width: 1024px) {
-                    @apply bg-[url('/image/item-detail/item-pic-wide.png')] w-full h-[100vh] bg-center bg-cover bg-no-repeat mb-10;
+                    @apply bg-[url('/image/item-detail/item-pic-wide.png')] w-[1050px] h-[670px] bg-center bg-cover bg-no-repeat mb-10;
                 }
             }
 
