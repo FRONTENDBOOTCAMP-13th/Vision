@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .item-qna {
+        @apply w-full;
+
+        .qna-card {
+            @apply my-3 border-b border-ui-gray-light;
+
+            /* summary 기본 ▼ 아이콘 안 보이게 처리 */
+            summary {
+                list-style: none;
+                cursor: pointer;
+            }
+            summary::-webkit-details-marker {
+                display: none;
+            }
+
+            .lock-icon,
+            .question-icon,
+            .answer-icon {
+                @apply w-5 h-5;
+            }
+
+            .qna-info {
+                @apply px-4 flex gap-3 mb-5 text-ui-gray-mid;
+                span {
+                    @apply text-ui-gray-light;
+                }
+            }
+            .qna-content {
+                @apply p-4 bg-ui-gray-light;
+
+                .question-icon,
+                .answer-icon {
+                    @apply w-5 h-5;
+                }
+
+                .question,
+                .answer {
+                    @apply grid grid-cols-[auto_1fr] gap-2;
+                }
+                p {
+                    @apply whitespace-pre-line mb-3;
+                }
+            }
+        }
+
+        .qna-title {
+            @apply px-4 py-2 text-ui-black font-semibold flex items-center;
+
+            .lock-icon {
+                @apply hidden;
+            }
+        }
+        .secret {
+            .qna-title {
+                @apply text-ui-gray-mid;
+            }
+            .lock-icon {
+                @apply block mx-1;
+            }
+        }
+
+        .complete {
+            @apply text-ui-primary font-semibold;
+        }
+    }
+}
