@@ -1,0 +1,258 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+.item-review {
+
+    @media(min-width:64rem) {
+        /* width: 1000px; */
+    }
+
+    @apply grid;
+
+    /* 공지사항 */
+    .notice {
+
+        .info {
+            @apply flex items-center text-center p-1;
+
+            @media(min-width:64rem) {
+                @apply p-5 border-b border-[lightgray];
+            }
+
+            .notice-tite {
+                @apply text-[.625rem] w-[2.125rem] bg-[#F2F5F8] rounded;
+
+                @media(min-width:64rem) {
+                    @apply text-[.75rem] font-medium;
+                }
+
+            }
+
+            .notice-info {
+                @apply ml-5 text-[.875rem];
+
+                @media(min-width:64rem) {
+                    @apply text-[16px] font-normal;
+                }
+            }
+        }
+
+    }
+
+    /* 사진 후기 */
+    .picture-review {
+
+        @apply pb-6 border-b-[.3125rem] border-gray-300;
+
+        @media(min-width:64rem) {
+            @apply order-[-1] border-b-0;
+        }
+
+        .picture-tite {
+            @apply flex justify-between text-[.875rem] font-semibold mt-6;
+
+            * {
+                @apply px-[.3125rem] py-0;
+            }
+
+            .all-picture {
+                @apply text-[#848F9A];
+            }
+
+            @media(min-width: 64rem) {
+                @apply hidden;
+            }
+        }
+
+        .picture-box {
+
+            @apply grid gap-0.5 p-1;
+            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+            .picture {
+                @apply aspect-[1/1] bg-center bg-cover rounded-[.3125rem];
+
+            }
+
+            .only-pc {
+                @apply hidden;
+            }
+
+            @media(min-width: 64rem) {
+                @apply max-w-[63.125rem] mx-auto;
+
+                .only-mobile {
+                    @apply hidden;
+                }
+
+                .only-pc {
+                    @apply block;
+                }
+
+            }
+        }
+
+    }
+
+    /* 총 갯수 */
+    .all-length {
+        @apply flex justify-between p-6 text-[14px] font-semibold text-[#222222];
+
+        @media(min-width: 64rem) {
+            @apply border-b border-b-[1px] border-black order-[-1];
+
+        }
+
+        .recommend-box {
+
+            @apply flex;
+
+            .recommend {
+                @apply flex items-center gap-1;
+            }
+
+            .recent {
+
+                @apply text-[#A6A6A6] hidden;
+
+                &::before {
+                    @apply content-['|'] p-2;
+                }
+
+                @media(min-width: 64rem) {
+                    &.only-pc {
+                        @apply block;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    /* 유저 리뷰 */
+    .user-review {
+        @apply p-4;
+
+        @media(min-width:64rem) {
+            @apply grid-cols-[180px_1fr] border-b border-b-[1px] border-[lightgray];
+        }
+
+        .user-info {
+            @apply flex gap-2 text-center;
+
+            .best {
+                @apply w-[4rem] h-[1.625rem] bg-[#BD76FF] px-2 text-white rounded-[.0625rem];
+            }
+
+            .purple {
+                @apply w-[3.375rem] h-[1.625rem] rounded-[.0625rem] border border-[#5F0080] text-[#5F0080] font-semibold px-2;
+
+            }
+
+            .name {
+                @apply font-semibold h-[26px];
+            }
+
+
+        }
+
+        .review {
+            @apply mt-4 flex flex-col gap-2;
+
+            @media(max-width:64rem) {
+                .only-pc {
+                    @apply hidden;
+                }
+            }
+
+            @media(min-width:64rem) {
+                flex-direction: row;
+                margin: 0;
+                margin-left: 82px;
+
+                .only-mobile {
+                    display: none;
+                }
+            }
+
+            .item {
+                font-size: 12px;
+                font-weight: 400;
+                color: #848F9A;
+            }
+
+            .img {
+                width: 84px;
+                aspect-ratio: 1/1;
+                background-size: cover;
+                background-size: center;
+                border-radius: 8px;
+            }
+
+            .txt-box {
+
+                font-size: 12px;
+
+                .txt {
+                    font-weight: 400;
+                    margin-bottom: 20px;
+
+                    @media(min-width: 64rem) {
+                        margin: 20px 0;
+                    }
+                }
+
+                .date {
+                    font-weight: 600;
+                    color: #898989;
+                }
+
+            }
+        }
+
+        .date-box {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            align-items: center;
+
+            border-bottom: 2px solid lightgray;
+
+            @media(min-width:64rem) {
+                display: none;
+            }
+
+            .date {
+                font-size: 12px;
+                font-weight: 400;
+                color: #848F9A;
+            }
+
+            .help {
+                display: flex;
+
+                justify-content: center;
+                align-items: center;
+
+                font-size: 12px;
+                gap: 4px;
+
+                width: 82px;
+                border: 1px solid #DDDDDD;
+                border-radius: 50px;
+                color: #848F9A;
+
+                padding: 4px 8px;
+
+
+
+            }
+        }
+    }
+
+
+
+
+
+}
