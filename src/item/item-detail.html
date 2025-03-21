@@ -8,6 +8,84 @@
         <title>item-detail</title>
     </head>
     <body>
+        <header class="detail-header">
+            <!-- SEO & previous page -->
+            <div class="contents">
+                <!-- header(SEO) -->
+                <h1 class="sr-only">마켓컬리 - 풀무원 탱탱쫄면 4입 상세 페이지</h1>
+
+                <!-- back-button -->
+                <a href="javascript:window.history.back();" class="back-button">
+                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1.79799L10.2153 0L0.494453 9.79907C0.337758 9.95609 0.213403 10.1428 0.128545 10.3485C0.0436863 10.5541 0 10.7747 0 10.9975C0 11.2202 0.0436863 11.4408 0.128545 11.6464C0.213403 11.8521 0.337758 12.0388 0.494453 12.1958L10.2153 22L11.9983 20.202L2.87462 11L12 1.79799Z"
+                            fill="#222222"
+                        />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- item-title -->
+            <h2 class="header-title">[풀무원] 탱탱쫄면 4입</h2>
+
+            <!-- icon group -->
+            <div class="header-icons">
+                <a href="#">
+                    <!-- search icon -->
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_217_2857)">
+                            <path
+                                d="M29 29L21.6667 21.6667M7 15.5556C7 16.6791 7.2213 17.7916 7.65125 18.8296C8.08121 19.8676 8.71141 20.8108 9.50586 21.6052C10.3003 22.3997 11.2435 23.0299 12.2815 23.4599C13.3195 23.8898 14.432 24.1111 15.5556 24.1111C16.6791 24.1111 17.7916 23.8898 18.8296 23.4599C19.8676 23.0299 20.8108 22.3997 21.6052 21.6052C22.3997 20.8108 23.0299 19.8676 23.4599 18.8296C23.8898 17.7916 24.1111 16.6791 24.1111 15.5556C24.1111 14.432 23.8898 13.3195 23.4599 12.2815C23.0299 11.2435 22.3997 10.3003 21.6052 9.50586C20.8108 8.71141 19.8676 8.08121 18.8296 7.65125C17.7916 7.2213 16.6791 7 15.5556 7C14.432 7 13.3195 7.2213 12.2815 7.65125C11.2435 8.08121 10.3003 8.71141 9.50586 9.50586C8.71141 10.3003 8.08121 11.2435 7.65125 12.2815C7.2213 13.3195 7 14.432 7 15.5556Z"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_217_2857">
+                                <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <!-- cart icon -->
+                <a href="#">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_42_667)">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M30.8442 10.207L28.1242 21.777H12.5342L9.82422 10.207H30.8442Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M25.6839 29.467C26.8658 29.467 27.8239 28.5089 27.8239 27.327C27.8239 26.1451 26.8658 25.187 25.6839 25.187C24.5021 25.187 23.5439 26.1451 23.5439 27.327C23.5439 28.5089 24.5021 29.467 25.6839 29.467Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M14.974 29.467C16.1559 29.467 17.114 28.5089 17.114 27.327C17.114 26.1451 16.1559 25.187 14.974 25.187C13.7921 25.187 12.834 26.1451 12.834 27.327C12.834 28.5089 13.7921 29.467 14.974 29.467Z"
+                                stroke-width="1.7"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                            />
+                            <path d="M5.16406 6.547H8.96406L10.7241 14.047" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_42_667">
+                                <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
         <!-- ☆ upper-header(web only) -->
         <div class="web-upper-header">
             <ul>
@@ -184,42 +262,506 @@
                     </li>
                 </ul>
             </nav>
-            <!-- ☆ list-filter(mobile) -->
-            <div class="list-filter">
-                <span>총 127건</span>
+        </div>
 
-                <!--모바일 버전-->
-                <div class="list-filter-mobile filter-mobile">
-                    <label for="filter-radio-01">
-                        <input type="radio" id="filter-radio-01" name="filter-web-button" />
-                        <span>
-                            추천순
-                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.64414 0.5L0.455462 1.6898L6.93378 8.17036C7.03759 8.27483 7.16103 8.35773 7.297 8.4143C7.43296 8.47088 7.57878 8.5 7.72605 8.5C7.87332 8.5 8.01913 8.47088 8.1551 8.4143C8.29107 8.35773 8.41451 8.27483 8.51832 8.17036L15 1.6898L13.8113 0.501121L7.72773 6.58359L1.64414 0.5Z"
-                                    fill="#222222"
-                                />
-                            </svg>
-                        </span>
-                    </label>
-                    <label for="filter-radio-02">
-                        <input type="radio" id="filter-radio-02" name="filter-web-button" />
-                        <span>
-                            필터
-                            <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18 9.51222H6.64676M2.63935 9.51222H1M2.63935 9.51222C2.63935 8.98503 2.85041 8.47943 3.22609 8.10664C3.60177 7.73386 4.1113 7.52444 4.64259 7.52444C5.17389 7.52444 5.68342 7.73386 6.0591 8.10664C6.43478 8.47943 6.64584 8.98503 6.64584 9.51222C6.64584 10.0394 6.43478 10.545 6.0591 10.9178C5.68342 11.2906 5.17389 11.5 4.64259 11.5C4.1113 11.5 3.60177 11.2906 3.22609 10.9178C2.85041 10.545 2.63935 10.0394 2.63935 9.51222ZM18 3.48778H15.1468M11.1394 3.48778H1M11.1394 3.48778C11.1394 2.96059 11.3504 2.45499 11.7261 2.08221C12.1018 1.70943 12.6113 1.5 13.1426 1.5C13.4057 1.5 13.6662 1.55142 13.9092 1.65131C14.1522 1.75121 14.3731 1.89763 14.5591 2.08221C14.7451 2.26679 14.8927 2.48592 14.9934 2.72709C15.094 2.96826 15.1458 3.22674 15.1458 3.48778C15.1458 3.74882 15.094 4.0073 14.9934 4.24847C14.8927 4.48964 14.7451 4.70877 14.5591 4.89336C14.3731 5.07794 14.1522 5.22436 13.9092 5.32425C13.6662 5.42415 13.4057 5.47556 13.1426 5.47556C12.6113 5.47556 12.1018 5.26614 11.7261 4.89336C11.3504 4.52057 11.1394 4.01497 11.1394 3.48778Z"
-                                    stroke="black"
-                                    stroke-width="1.5"
-                                    stroke-miterlimit="10"
-                                    stroke-linecap="round"
-                                />
-                            </svg>
-                        </span>
-                    </label>
+        <!-- 콘텐츠 영역 -->
+        <main class="item-detail-main">
+            <!-- item-header -->
+            <div class="item-detail">
+                <!-- 제품 이미지 -->
+                <figure>
+                    <figcaption class="sr-only">탱탱쫄면 이미지</figcaption>
+                    <div class="item-img"></div>
+                </figure>
+
+                <!-- 제품 정보 -->
+                <div class="info">
+                    <!-- 가격 및 정보 -->
+                    <div class="info-box">
+                        <p class="driver">샛별배송</p>
+
+                        <section class="info">
+                            <h2 class="title">[풀무원] 탱탱쫄면 (4개입)</h2>
+                            <p class="title-info">튀기지 않아 부담 없는 매콤함</p>
+
+                            <a class="save-icon" href="#">
+                                <svg width="20" height="26" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 10.8496H18.5C19.163 10.8496 19.7989 11.113 20.2678 11.5818C20.7366 12.0507 21 12.6866 21 13.3496V25.3496C21 26.0127 20.7366 26.6485 20.2678 27.1174C19.7989 27.5862 19.163 27.8496 18.5 27.8496H3.5C2.83696 27.8496 2.20107 27.5862 1.73223 27.1174C1.26339 26.6485 1 26.0127 1 25.3496V13.3496C1 12.6866 1.26339 12.0507 1.73223 11.5818C2.20107 11.113 2.83696 10.8496 3.5 10.8496H6M16 6.84961L11 1.84961M11 1.84961L6 6.84961M11 1.84961V18.9121"
+                                        stroke="black"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </section>
+
+                        <p class="price">4,980 원</p>
+                        <p class="reward-info">로그인 후 적립 혜택이 적용됩니다.</p>
+                    </div>
+
+                    <!-- 배송 & 판매자 (모바일 버전에만 보여야함)-->
+                    <div class="item-deail-info mobile-only">
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">배송</h3>
+                            <div>
+                                <span class="bold text-sm">샛별배송</span>
+                                <span>23시 전 주문 시 내일 아침 7시 전 도착</span>
+                                <span>(대구 부산 울산 샛별배송 운영시간 별도 확인)</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">판매자</h3>
+                            <div>
+                                <span class="bold">칼리</span>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- 제품 상세 정보 -->
+                    <div class="item-deail-info">
+                        <section class="item-deail-box pc-only">
+                            <h3 class="sub-title">배송</h3>
+                            <div>
+                                <span class="bold text-sm">샛별배송</span>
+                                <span>23시 전 주문 시 내일 아침 7시 전 도착</span>
+                                <span>(대구 부산 울산 샛별배송 운영시간 별도 확인)</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box pc-only">
+                            <h3 class="sub-title">판매자</h3>
+                            <div>
+                                <span class="bold">칼리</span>
+                            </div>
+                        </section>
+
+                        <p class="title">상품정보</p>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">포장 타입</h3>
+                            <div>
+                                <span class="bold text-sm">상온(종이포장)</span>
+                                <span>택배배송은 에코 포장이 스티로폼으로 대체됩니다.</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">판매단위</h3>
+                            <div>
+                                <span class="bold">1봉</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">중량/용량</h3>
+                            <div>
+                                <span class="bold">123g*4봉</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">원산지</h3>
+                            <div>
+                                <span class="bold">상세페이지 별도 표기</span>
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box">
+                            <h3 class="sub-title">알레르기 정보</h3>
+                            <div>
+                                <span>-대두, 밀, 쇠고기 함유</span>
+                                <span
+                                    >-계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류, 호두, 잣, 닭고기, 오징어,
+                                    조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조</span
+                                >
+                            </div>
+                        </section>
+
+                        <section class="item-deail-box item-choose">
+                            <h3 class="sub-title">상품선택</h3>
+
+                            <div class="item-choose-box">
+                                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                                <svg class="count-set" width="84" height="30" viewBox="0 0 84 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="83" height="29" stroke="#C4C4C4" />
+                                    <path d="M20 14V16H10V14H20Z" fill="#A6A6A6" />
+                                    <path d="M43.5312 9.6875V21H41.4844V11.6719H41.4219L38.7812 13.3594V11.5L41.5781 9.6875H43.5312Z" fill="black" />
+                                    <path d="M70 10V14H74V16H70V20H68V16H64V14H68V10H70Z" fill="#333333" />
+                                </svg>
+                                <span class="price">4,980원</span>
+                            </div>
+                        </section>
+
+                        <div class="total-price">
+                            <div>
+                                <span class="all-price">총 상품금액:</span>
+                                <span class="all-price-number">4,980</span>
+                                <span class="unit"> 원</span>
+                            </div>
+
+                            <div>
+                                <span class="point-save">적립</span>
+                                <span class="login-point-save">로그인 후,적립 혜택 제공</span>
+                            </div>
+                        </div>
+
+                        <!-- 버튼 -->
+                        <div class="cart-section mobile-hidden">
+                            <form action="#" class="cart-form">
+                                <fieldset>
+                                    <legend class="sr-only">하트</legend>
+                                    <input type="checkbox" id="item-like" name="like" class="item-like" />
+                                    <label for="item-like" class="sr-only">하트</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="sr-only">알림 설정</legend>
+                                    <input type="checkbox" id="item-alarm" name="alarm" class="item-alarm" />
+                                    <label for="item-alarm" class="sr-only">알람 설정</label>
+                                </fieldset>
+                            </form>
+                            <button type="button" class="cart-action">
+                                <span class="cart-action-mobile">구매하기</span>
+                                <span class="cart-action-web">장바구니 담기</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <nav class="detail-nav web-only">
+                <ul>
+                    <li class="detail-nav-list detail-nav-item">
+                        <a href="#" class="detail-nav-title">
+                            상품설명
+                            <span class="detail-nav-border"></span>
+                        </a>
+                    </li>
+                    <li class="detail-nav-list detail-nav-more">
+                        <a href="#" class="detail-nav-title">
+                            상세정보
+                            <span class="detail-nav-border"></span>
+                        </a>
+                    </li>
+                    <li class="detail-nav-list detail-nav-review">
+                        <a href="#" class="detail-nav-title">
+                            <div class="detail-nav-review">
+                                후기
+                                <span class="detail-nav-count">4,540</span>
+                            </div>
+                            <span class="detail-nav-border"></span>
+                        </a>
+                    </li>
+                    <li class="detail-nav-list detail-nav-contact">
+                        <a href="#" class="detail-nav-title">
+                            문의
+                            <span class="detail-nav-border"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="item-detail-content">
+                <!-- item-info-all -->
+
+                <div class="detail-info">
+                    <div class="item-wrapper">
+                        <figure class="item-pic">
+                            <figcaption class="sr-only">탱탱쫄면의 상품 사진</figcaption>
+                        </figure>
+                        <div class="item-name-wrapper">
+                            <h2>튀기지 않아 부담 없는 매콤함</h2>
+                            <h2 class="item-name">[풀무원] 탱탱쫄면</h2>
+                        </div>
+                        <p>
+                            쫄면의 진가는 매콤새콤한 양념과 탱탱한 면발에서 찾을 수 있지요. 풀무원은 이 맛을 더 부담 없이 즐길 수 있도록 튀기지 않고
+                            만든 탱탱쫄면을 선보입니다. 밀가루와 감자 전분을 적절히 배합해 탄력이 좋고, 입에 넣었을 때는 찰지게 씹히죠. 고추장을 넣어
+                            숙성한 비빔장은 자연스럽고 깊은 맛을 냅니다. 간단하게 조리해 마지막 한 가닥까지 탱탱한 식감을 즐겨보세요. 취향에 따라
+                            다양한 고명을 올려 드셔도 좋아요.
+                        </p>
+                    </div>
+                    <div class="check-point-wrapper">
+                        <div class="check-point-title">
+                            <div class="line"></div>
+                            <h3>Karly's Check Point</h3>
+                            <div class="line"></div>
+                        </div>
+                        <figure class="check-point">
+                            <figcaption class="sr-only">생산 유통 과정, 브랜드와 생산자, 활용법</figcaption>
+                        </figure>
+                    </div>
+                    <div class="nutrition-wrapper">
+                        <figure class="nutrition">
+                            <figcaption class="sr-only">영양 정보</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <section class="brand-info">
+                    <div class="brand-info-title">
+                        <div class="title-line web-only"></div>
+                        <h3>WHY KARLY</h3>
+                        <div class="title-line"></div>
+                    </div>
+                    <div class="info-card-section">
+                        <div class="brand-info-card">
+                            <!-- brand-info-icon -->
+                            <svg class="brand-info-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_217_2880)">
+                                    <path
+                                        d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                        fill="#5F0080"
+                                    />
+                                    <path
+                                        d="M41.6998 14.4004H18.2998C17.4714 14.4004 16.7998 15.072 16.7998 15.9004V44.1004C16.7998 44.9288 17.4714 45.6004 18.2998 45.6004H41.6998C42.5282 45.6004 43.1998 44.9288 43.1998 44.1004V15.9004C43.1998 15.072 42.5282 14.4004 41.6998 14.4004Z"
+                                        stroke="white"
+                                    />
+                                    <path
+                                        d="M21.5996 21.7964L23.4448 24.0004L26.3996 20.4004"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M30 22.2002H38.4" stroke="white" stroke-linecap="round" />
+                                    <path
+                                        d="M21.5996 29.5962L23.4448 31.8002L26.3996 28.2002"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M30 30H38.4" stroke="white" stroke-linecap="round" />
+                                    <path d="M21.5996 37.396L23.4448 39.6L26.3996 36" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M30 37.7998H38.4" stroke="white" stroke-linecap="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_217_2880">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="brand-info-detail">
+                                <h4>깐깐한 상품위원회</h4>
+                                <p>
+                                    나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접 먹어보고, 경험해보고 성분, 맛 안정성 등 다각도의
+                                    기준을 통과한 상품만을 판매합니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 차별화  -->
+                        <div class="brand-info-card">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_217_2900)">
+                                    <path
+                                        d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                        fill="#5F0080"
+                                    />
+                                    <path
+                                        d="M44.1004 16.7998H15.9004C15.072 16.7998 14.4004 17.4714 14.4004 18.2998V20.0998C14.4004 20.9282 15.072 21.5998 15.9004 21.5998H44.1004C44.9288 21.5998 45.6004 20.9282 45.6004 20.0998V18.2998C45.6004 17.4714 44.9288 16.7998 44.1004 16.7998Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M15.5996 21.5996H44.3996V41.9996C44.3996 42.6623 43.8624 43.1996 43.1996 43.1996H16.7996C16.1369 43.1996 15.5996 42.6623 15.5996 41.9996V21.5996Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path d="M27 27.5996V36.5996" stroke="white" stroke-linecap="round" />
+                                    <path d="M28.9502 31.5596L33.4502 36.3596" stroke="white" stroke-linecap="round" />
+                                    <path d="M33 27.96L27 32.6269" stroke="white" stroke-linecap="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_217_2900">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="brand-info-detail">
+                                <h4>차별화된 Karly Only 상품</h4>
+                                <p>
+                                    전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너, 마켓칼리. 3천여 개가 넘는 칼리 단독 브랜드, 스펙의 Karly
+                                    Only 상품을 믿고 만나보세요.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 신선배송 -->
+                        <div class="brand-info-card">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_217_2916)">
+                                    <path
+                                        d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                        fill="#5F0080"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.9998 18H35.9998C36.6625 18 37.1998 18.5373 37.1998 19.2V38.4H11.9998C11.3371 38.4 10.7998 37.8627 10.7998 37.2V19.2C10.7998 18.5373 11.3371 18 11.9998 18Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M37.2002 27.5996H51.6002V37.1996C51.6002 37.8624 51.0629 38.3996 50.4002 38.3996H37.2002V27.5996Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M37.2002 22.7998H47.1043C47.4642 22.7998 47.8051 22.9614 48.033 23.2399L51.6002 27.5998H37.2002V22.7998Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M18.0004 43.2C19.9886 43.2 21.6004 41.5882 21.6004 39.6C21.6004 37.6118 19.9886 36 18.0004 36C16.0122 36 14.4004 37.6118 14.4004 39.6C14.4004 41.5882 16.0122 43.2 18.0004 43.2Z"
+                                        fill="#5F0080"
+                                        stroke="white"
+                                    />
+                                    <path
+                                        d="M44.3998 43.2C46.388 43.2 47.9998 41.5882 47.9998 39.6C47.9998 37.6118 46.388 36 44.3998 36C42.4116 36 40.7998 37.6118 40.7998 39.6C40.7998 41.5882 42.4116 43.2 44.3998 43.2Z"
+                                        fill="#5F0080"
+                                        stroke="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_217_2916">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="brand-info-detail">
+                                <h4>신선한 풀콜드체인 배송</h4>
+                                <p>
+                                    온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을 분리 포장 후 최적의 온도를 유지하는 냉장 배송
+                                    시스템, 풀콜드체인으로 상품을 신선하게 전해드립니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 고객, 생산자를 위한 최선의 가격 -->
+                        <div class="brand-info-card">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_217_2931)">
+                                    <path
+                                        d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                        fill="#5F0080"
+                                    />
+                                    <path
+                                        d="M28.8002 43.2C37.4158 43.2 44.4002 36.2156 44.4002 27.6C44.4002 18.9844 37.4158 12 28.8002 12C20.1846 12 13.2002 18.9844 13.2002 27.6C13.2002 36.2156 20.1846 43.2 28.8002 43.2Z"
+                                        fill="#5F0080"
+                                        stroke="white"
+                                    />
+                                    <path
+                                        d="M21.6006 22.7998L25.2006 33.5998L28.8006 22.7998L32.4006 33.5998L36.0006 22.7998"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M22.0502 26.3994H19.9502C19.536 26.3994 19.2002 26.7352 19.2002 27.1494C19.2002 27.5636 19.536 27.8994 19.9502 27.8994H22.0502C22.4644 27.8994 22.8002 27.5636 22.8002 27.1494C22.8002 26.7352 22.4644 26.3994 22.0502 26.3994Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M37.6498 26.3994H35.5498C35.1356 26.3994 34.7998 26.7352 34.7998 27.1494C34.7998 27.5636 35.1356 27.8994 35.5498 27.8994H37.6498C38.064 27.8994 38.3998 27.5636 38.3998 27.1494C38.3998 26.7352 38.064 26.3994 37.6498 26.3994Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M39.7451 38.0488L46.6876 44.9913C47.071 45.3748 47.1919 45.8755 46.9576 46.1098L46.1091 46.9584C45.8748 47.1927 45.374 47.0718 44.9906 46.6884L38.0481 39.7459"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_217_2931">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="brand-info-detail">
+                                <h4>고객, 생산자를 위한 최선의 가격</h4>
+                                <p>
+                                    매주 대형 마트와 주요 온라인 마트의 가격변동 상황을 확인해 신선식품은 품질을 타협하지 않는 선에서 최선의 가격으로,
+                                    가공식품은 언제나 합리적인 가격으로 정기 조정합니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 지속 가능한 유통 -->
+                        <div class="brand-info-card">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_217_2946)">
+                                    <path
+                                        d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                        fill="#5F0080"
+                                    />
+                                    <path
+                                        d="M30.0004 33.6004C31.9886 33.6004 33.6004 31.9886 33.6004 30.0004C33.6004 28.0122 31.9886 26.4004 30.0004 26.4004C28.0122 26.4004 26.4004 28.0122 26.4004 30.0004C26.4004 31.9886 28.0122 33.6004 30.0004 33.6004Z"
+                                        stroke="white"
+                                    />
+                                    <path
+                                        d="M20.502 24.7429L26.946 13.5829C28.626 10.6729 31.3752 10.6729 33.054 13.5829L37.5324 21.3385"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M37.6526 16.6924V19.1188V21.5452L35.5514 20.332L33.4502 19.1188"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M29.2585 42.478H16.3717C13.0117 42.478 11.6365 40.0972 13.3165 37.1872L17.7949 29.4316"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M13.7109 31.65L15.8121 30.4368L17.9133 29.2236V31.65V34.0764"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M40.2399 26.0303L46.6839 37.1915C48.3639 40.1015 46.9887 42.4811 43.6287 42.4811H34.6719"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M38.635 44.9085L36.5338 43.6953L34.4326 42.4821L36.5338 41.2689L38.635 40.0557"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_217_2946">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="brand-info-detail">
+                                <h4>환경을 생각하는 지속 가능한 유통</h4>
+                                <p>
+                                    친환경 포장재부터 생산자가 상품에만 집중할 수 있는 직매입 유통구조까지, 지속 가능한 유통을 고민하며 컬리를
+                                    있게하는 모든 환경(생산자,커뮤니티,직원)이 더 나아질 수 있도록 노력합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
         <!-- ☆ footer -->
         <footer class="footer">
@@ -735,5 +1277,25 @@
                 </svg>
             </button>
         </aside>
+
+        <!-- 버튼 -->
+        <div class="cart-section mobile-shown">
+            <form action="#" class="cart-form">
+                <fieldset>
+                    <legend class="sr-only">하트</legend>
+                    <input type="checkbox" id="item-like" name="like" class="item-like" />
+                    <label for="item-like" class="sr-only">하트</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="sr-only">알림 설정</legend>
+                    <input type="checkbox" id="item-alarm" name="alarm" class="item-alarm" />
+                    <label for="item-alarm" class="sr-only">알람 설정</label>
+                </fieldset>
+            </form>
+            <button type="button" class="cart-action">
+                <span class="cart-action-mobile">구매하기</span>
+                <span class="cart-action-web">장바구니 담기</span>
+            </button>
+        </div>
     </body>
 </html>

@@ -1,11 +1,11 @@
+/* 기본 컴포넌트 세팅 */
 @import '../components/header.css';
 @import '../components/list-header.css';
 @import '../components/nav.css';
 @import '../components/recent-view.css';
 @import '../components/footer.css';
 
-/* 아이템 리스트 */
-
+/* 기본 세팅(item-list.html 복제하여 사용) */
 body {
     @apply min-w-[18.75rem];
 
@@ -18,7 +18,7 @@ body {
     @apply lg:w-full grid sticky top-0 z-1 lg:contents;
 
     .list-header {
-        @apply pt-1 my-0 px-4 lg:px-0;
+        @apply hidden lg:px-0 lg:flex;
     }
 
     .nav {
@@ -34,52 +34,56 @@ body {
     }
 }
 
-/* web에서만 표시 */
-.section-tab {
-    @apply max-w-[65.625rem] mx-auto mb-10;
-}
-
-/* side-panel-header+side-panel & item+pagination */
-.main {
-    @apply max-w-[65.625rem] mx-auto lg:grid lg:grid-cols-[13.75rem_1fr] lg:gap-7;
-
-    /* web에서만 표시 */
-    .side-panel-header {
-        @apply hidden lg:flex py-4  text-ui-black items-center justify-between border-b border-ui-gray-light;
-
-        button {
-            @apply flex items-center text-ui-gray-light gap-1;
-        }
-    }
-
-    .list-side-panel {
-        @apply px-2 my-2;
-    }
-
-    /* web에서만 표시 */
-    .list-filter-web {
-        @apply hidden lg:block px-0;
-    }
-    .web-only {
-        @apply hidden lg:block;
-    }
-    .item {
-        @apply grid grid-cols-2 gap-y-9 gap-x-2.5 mx-0 px-4;
-
-        .item-info {
-            @apply mt-2.5;
-        }
-
-        @media (min-width: 64rem) {
-            @apply grid-cols-3  gap-y-[6.6875rem] px-0;
-        }
-    }
-
-    .pagination {
-        @apply my-20;
-    }
-}
-
 .footer {
     @apply mt-20;
+}
+
+/* 추가 컴포넌트 세팅 */
+@import '../components/item-detail.css';
+@import '../components/cart-section.css';
+@import '../components/detail-nav.css';
+@import '../components/detail-header.css';
+@import '../components/brand-info.css';
+@import '../components/detail-info.css';
+
+@layer components {
+    body {
+        @apply relative;
+    }
+
+    .detail-header {
+        @apply sticky top-0 z-1 lg:hidden;
+    }
+
+    .detail-nav {
+        @media (min-width: 1024px) {
+            @apply mt-8;
+        }
+    }
+
+    .item-detail-main {
+        @media (min-width: 1024px) {
+            @apply w-[1050px] my-14 mx-auto;
+        }
+    }
+
+    .item-detail-content {
+        @apply my-6 flex flex-col gap-[7.5rem] px-4;
+
+        @media (min-width: 1024px) {
+            @apply my-12 px-0;
+        }
+    }
+
+    .cart-section.mobile-hidden {
+        @media (max-width: 1023px) {
+            @apply hidden;
+        }
+    }
+
+    .cart-section.mobile-shown {
+        @media (min-width: 1024px) {
+            @apply hidden;
+        }
+    }
 }
