@@ -2,8 +2,7 @@
 @import '../style.css';
 
 .item-review {
-
-    @media(min-width:64rem) {
+    @media (min-width: 64rem) {
         /* width: 1000px; */
     }
 
@@ -11,45 +10,43 @@
 
     /* 공지사항 */
     .notice {
+        @apply px-4 lg:px-0;
 
         .info {
             @apply flex items-center text-center p-1;
 
-            @media(min-width:64rem) {
+            @media (min-width: 64rem) {
                 @apply p-5 border-b border-[lightgray];
             }
 
             .notice-tite {
                 @apply text-[.625rem] w-[2.125rem] bg-[#F2F5F8] rounded;
 
-                @media(min-width:64rem) {
+                @media (min-width: 64rem) {
                     @apply text-[.75rem] font-medium;
                 }
-
             }
 
             .notice-info {
                 @apply ml-5 text-[.875rem];
 
-                @media(min-width:64rem) {
+                @media (min-width: 64rem) {
                     @apply text-[16px] font-normal;
                 }
             }
         }
-
     }
 
     /* 사진 후기 */
     .picture-review {
-
         @apply pb-6 border-b-[.3125rem] border-gray-300;
 
-        @media(min-width:64rem) {
+        @media (min-width: 64rem) {
             @apply order-[-1] border-b-0;
         }
 
         .picture-tite {
-            @apply flex justify-between text-[.875rem] font-semibold mt-6;
+            @apply flex justify-between text-[.875rem] font-semibold mt-6 px-4;
 
             * {
                 @apply px-[.3125rem] py-0;
@@ -59,27 +56,25 @@
                 @apply text-[#848F9A];
             }
 
-            @media(min-width: 64rem) {
+            @media (min-width: 64rem) {
                 @apply hidden;
             }
         }
 
         .picture-box {
-
-            @apply grid gap-0.5 p-1;
+            @apply grid gap-0.5 p-4;
             grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 
             .picture {
                 @apply aspect-[1/1] bg-center bg-cover rounded-[.3125rem];
-
             }
 
             .only-pc {
                 @apply hidden;
             }
 
-            @media(min-width: 64rem) {
-                @apply max-w-[63.125rem] mx-auto;
+            @media (min-width: 64rem) {
+                @apply max-w-[65.625rem] p-0;
 
                 .only-mobile {
                     @apply hidden;
@@ -88,23 +83,19 @@
                 .only-pc {
                     @apply block;
                 }
-
             }
         }
-
     }
 
     /* 총 갯수 */
     .all-length {
-        @apply flex justify-between p-6 text-[14px] font-semibold text-[#222222];
+        @apply flex justify-between p-4 text-[14px] font-semibold text-[#222222];
 
-        @media(min-width: 64rem) {
+        @media (min-width: 64rem) {
             @apply border-b border-b-[1px] border-black order-[-1];
-
         }
 
         .recommend-box {
-
             @apply flex;
 
             .recommend {
@@ -112,29 +103,26 @@
             }
 
             .recent {
-
                 @apply text-[#A6A6A6] hidden;
 
                 &::before {
                     @apply content-['|'] p-2;
                 }
 
-                @media(min-width: 64rem) {
+                @media (min-width: 64rem) {
                     &.only-pc {
                         @apply block;
                     }
                 }
-
             }
         }
-
     }
 
     /* 유저 리뷰 */
     .user-review {
         @apply p-4;
 
-        @media(min-width:64rem) {
+        @media (min-width: 64rem) {
             @apply grid grid-cols-[180px_1fr] border-b border-b-[1px] border-[lightgray];
         }
 
@@ -147,26 +135,23 @@
 
             .purple {
                 @apply w-[3.375rem] h-[1.625rem] rounded-[.0625rem] border border-[#5F0080] text-[#5F0080] font-semibold px-2;
-
             }
 
             .name {
                 @apply font-semibold h-[26px];
             }
-
-
         }
 
         .review {
             @apply mt-4 flex flex-col gap-2;
 
-            @media(max-width:64rem) {
+            @media (max-width: 64rem) {
                 .only-pc {
                     @apply hidden;
                 }
             }
 
-            @media(min-width:64rem) {
+            @media (min-width: 64rem) {
                 @apply flex-row m-0 ml-[82px];
 
                 .only-mobile {
@@ -183,13 +168,12 @@
             }
 
             .txt-box {
-
                 @apply text-[.75rem];
 
                 .txt {
                     @apply font-normal mb-5;
 
-                    @media(min-width: 64rem) {
+                    @media (min-width: 64rem) {
                         @apply my-5;
                     }
                 }
@@ -197,14 +181,13 @@
                 .date {
                     @apply font-semibold text-[#898989];
                 }
-
             }
         }
 
         .date-box {
             @apply flex justify-between pb-5 items-center border-b-2 border-[lightgray];
 
-            @media(min-width:64rem) {
+            @media (min-width: 64rem) {
                 @apply hidden;
             }
 
@@ -217,9 +200,4 @@
             }
         }
     }
-
-
-
-
-
 }
