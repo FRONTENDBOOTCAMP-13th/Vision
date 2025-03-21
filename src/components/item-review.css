@@ -135,11 +135,11 @@
         @apply p-4;
 
         @media(min-width:64rem) {
-            @apply grid-cols-[180px_1fr] border-b border-b-[1px] border-[lightgray];
+            @apply grid grid-cols-[180px_1fr] border-b border-b-[1px] border-[lightgray];
         }
 
         .user-info {
-            @apply flex gap-2 text-center;
+            @apply flex gap-2 text-center w-[11.25rem];
 
             .best {
                 @apply w-[4rem] h-[1.625rem] bg-[#BD76FF] px-2 text-white rounded-[.0625rem];
@@ -167,86 +167,53 @@
             }
 
             @media(min-width:64rem) {
-                flex-direction: row;
-                margin: 0;
-                margin-left: 82px;
+                @apply flex-row m-0 ml-[82px];
 
                 .only-mobile {
-                    display: none;
+                    @apply hidden;
                 }
             }
 
             .item {
-                font-size: 12px;
-                font-weight: 400;
-                color: #848F9A;
+                @apply text-[.75rem] font-normal text-[#848F9A];
             }
 
             .img {
-                width: 84px;
-                aspect-ratio: 1/1;
-                background-size: cover;
-                background-size: center;
-                border-radius: 8px;
+                @apply w-[5.25rem] aspect-[1/1] bg-cover bg-center rounded-[.5rem];
             }
 
             .txt-box {
 
-                font-size: 12px;
+                @apply text-[.75rem];
 
                 .txt {
-                    font-weight: 400;
-                    margin-bottom: 20px;
+                    @apply font-normal mb-5;
 
                     @media(min-width: 64rem) {
-                        margin: 20px 0;
+                        @apply my-5;
                     }
                 }
 
                 .date {
-                    font-weight: 600;
-                    color: #898989;
+                    @apply font-semibold text-[#898989];
                 }
 
             }
         }
 
         .date-box {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 20px;
-            align-items: center;
-
-            border-bottom: 2px solid lightgray;
+            @apply flex justify-between pb-5 items-center border-b-2 border-[lightgray];
 
             @media(min-width:64rem) {
-                display: none;
+                @apply hidden;
             }
 
             .date {
-                font-size: 12px;
-                font-weight: 400;
-                color: #848F9A;
+                @apply text-[.75rem] font-normal text-[#848F9A];
             }
 
             .help {
-                display: flex;
-
-                justify-content: center;
-                align-items: center;
-
-                font-size: 12px;
-                gap: 4px;
-
-                width: 82px;
-                border: 1px solid #DDDDDD;
-                border-radius: 50px;
-                color: #848F9A;
-
-                padding: 4px 8px;
-
-
-
+                @apply flex justify-center items-center text-[12px] gap-1 w-[82px] border border-[#DDDDDD] rounded-full text-[#848F9A] p-1;
             }
         }
     }
