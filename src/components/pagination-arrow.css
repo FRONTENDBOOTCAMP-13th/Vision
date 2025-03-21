@@ -2,20 +2,21 @@
 @import '../style.css';
 
 @layer components {
-    .pagination {
-        .pagination-button {
-            @apply hidden lg:flex lg:justify-center min-h-8;
+    .pagination-arrow {
+        .pagination-arrow-button {
+            @apply hidden lg:flex lg:justify-center lg:gap-4;
 
-            li {
-                @apply w-8 h-8 flex justify-center items-center bg-ui-white border-t border-r border-b border-ui-gray-light;
+            .previous,
+            .next {
+                @apply flex justify-center items-center bg-ui-white border border-ui-gray-light rounded-md;
             }
 
-            li:first-child {
-                @apply border-l border-ui-gray-light;
+            a {
+                @apply py-5 px-6 aspect-square;
             }
-            .selected-page,
-            li:hover {
-                @apply bg-gray-100;
+
+            .next path {
+                @apply stroke-ui-primary;
             }
         }
     }
