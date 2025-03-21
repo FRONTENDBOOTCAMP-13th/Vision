@@ -62,10 +62,14 @@
 
     .item-deail-info {
 
-        @apply grid gap-3 border-t-4 border-[#dfe4eb] p-[1.5rem_1rem] text-[#898989];
+        @apply grid gap-3 border-t-1 border-[#dfe4eb] p-[1.5rem_1rem] text-[#898989] border-b-5 border-[#dfe4eb];
+
+        .item-deail-box.pc-only {
+            display: none;
+        }
 
         .title {
-            @apply text-[18px] font-bold;
+            @apply text-[1.125rem] font-bold;
         }
 
 
@@ -89,11 +93,10 @@
 
     }
 
-
-    @media(min-width: 1024px) {
+    /* pc 버전 */
+    @media(min-width: 64rem) {
 
         @apply grid grid-cols-[2fr_8fr] max-w-[1050px] gap-2.5;
-
 
         .item-img {
             @apply w-[400px] h-[514px] bg-center;
@@ -104,7 +107,15 @@
         }
 
         .item-deail-info {
-            @apply border-none gap-0;
+
+            &.mobile-only {
+                @apply hidden;
+            }
+
+            .item-deail-box.pc-only {
+                @apply grid;
+            }
+
 
             .title {
                 @apply hidden;
@@ -117,6 +128,7 @@
                 }
 
                 @apply py-[20px] border-b border-gray-300;
+
             }
 
             .item-choose {
@@ -152,12 +164,16 @@
                 }
 
                 .point-save {
-                    @apply w-[2.125rem] h-[1.5rem] text-white py-[0.375rem] px-[0.5rem] bg-[#FA622F] text-[0.625rem] rounded-[0.75rem];
+                    @apply w-[2.125rem] h-[1.5rem] text-white py-[.375rem] px-[.5rem] bg-[#FA622F] text-[.625rem] rounded-[.75rem];
                 }
 
                 .login-point-save {
                     @apply text-base text-black font-semibold;
                 }
+            }
+
+            .item-deail-box:nth-child(1) {
+                @apply border-t-0;
             }
 
 
