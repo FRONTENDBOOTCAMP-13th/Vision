@@ -45,6 +45,10 @@ body {
 @import '../components/detail-header.css';
 @import '../components/brand-info.css';
 @import '../components/detail-info.css';
+@import '../components/item-guide.css';
+@import '../components/item-review.css';
+@import '../components/item-qna.css';
+@import '../components/pagination-arrow.css';
 
 @layer components {
     body {
@@ -85,5 +89,19 @@ body {
         @media (min-width: 1024px) {
             @apply hidden;
         }
+    }
+
+    .item-guide {
+        @media (min-width: 1024px) {
+            @apply mb-8;
+        }
+    }
+
+    .item-review-wrapper {
+        @apply mb-30;
+    }
+
+    .pagination-arrow {
+        @apply mt-4;
     }
 }
