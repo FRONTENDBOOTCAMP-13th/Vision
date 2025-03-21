@@ -5,66 +5,89 @@
     .item-qna {
         @apply w-full;
 
-        .qna-card {
-            @apply my-3 border-b border-ui-gray-light;
+        /* web에서만 표시되는 문의게시판 헤더 */
+        .qna-web-header {
+            @apply hidden w-full lg:grid grid-cols-[4fr_1fr_1fr_1fr] border-b border-t-2 border-ui-black text-center;
 
-            /* summary 기본 ▼ 아이콘 안 보이게 처리 */
+            h3 {
+                @apply text-lg font-semibold text-ui-black;
+            }
+        }
+
+        .qna-card {
+            /* summary 기본스타일의 ▼ 아이콘 안 보이게 처리 */
             summary {
-                list-style: none;
-                cursor: pointer;
+                @apply list-none cursor-pointer;
             }
             summary::-webkit-details-marker {
                 display: none;
             }
 
+            /* 카드 내부 svg 아이콘들 사이즈 정의 */
             .lock-icon,
             .question-icon,
             .answer-icon {
                 @apply w-5 h-5;
             }
 
-            .qna-info {
-                @apply px-4 flex gap-3 mb-5 text-ui-gray-mid;
-                span {
-                    @apply text-ui-gray-light;
+            .qna-summary {
+                @apply border-b border-ui-gray-light lg:grid lg:grid-cols-[4fr_1fr_1fr_1fr] lg:text-center lg:items-center;
+
+                .qna-title {
+                    @apply px-4 py-2 text-ui-black font-semibold flex items-center;
+
+                    .title {
+                        @apply my-3;
+                    }
+                    .lock-icon {
+                        @apply hidden;
+                    }
+                }
+                .qna-info {
+                    @apply px-4 flex gap-3 mb-5 text-ui-gray-mid lg:contents;
+
+                    .status {
+                        @apply lg:order-3;
+                    }
+                    span {
+                        @apply text-ui-gray-light lg:hidden;
+                    }
                 }
             }
-            .qna-content {
-                @apply p-4 bg-ui-gray-light;
 
-                .question-icon,
-                .answer-icon {
-                    @apply w-5 h-5;
-                }
+            .qna-content {
+                @apply px-4 py-2 bg-ui-gray-light;
 
                 .question,
                 .answer {
-                    @apply grid grid-cols-[auto_1fr] gap-2;
+                    @apply grid grid-cols-[auto_1fr] gap-2 my-2;
                 }
-                p {
-                    @apply whitespace-pre-line mb-3;
-                }
+                /* p {
+                    @apply whitespace-pre-line;
+                } */
             }
         }
 
-        .qna-title {
-            @apply px-4 py-2 text-ui-black font-semibold flex items-center;
-
-            .lock-icon {
-                @apply hidden;
-            }
-        }
+        /* 비밀글: qna-card에 secret 클래스 추가 */
         .secret {
-            .qna-title {
-                @apply text-ui-gray-mid;
-            }
-            .lock-icon {
-                @apply block mx-1;
+            .qna-summary {
+                .qna-title {
+                    @apply text-ui-gray-mid;
+
+                    .lock-icon {
+                        @apply block mx-1;
+                    }
+                }
             }
         }
 
+        /* 답변 완료 시, qna-card에 complete 클래스 추가해서 완료 상태로 스타일 변경 */
         .complete {
-            @apply text-ui-primary font-semibold;
+            .qna-info {
+                .status {
+                    @apply text-ui-primary font-semibold;
+                }
+            }
         }
     }
 }

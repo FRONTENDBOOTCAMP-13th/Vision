@@ -8,10 +8,17 @@
 
         <title>item-qna</title>
     </head>
-    <body>
+    <body class="py-1">
         <section class="item-qna">
-            <details class="qna-card">
-                <summary>
+            <!-- 웹에서만 표시되는 헤더 -->
+            <div class="qna-web-header">
+                <h3>제목</h3>
+                <h3>작성자</h3>
+                <h3>작성일</h3>
+                <h3>답변상태</h3>
+            </div>
+            <details class="qna-card complete">
+                <summary class="qna-summary">
                     <div class="qna-title">
                         <h4 class="title">팩이 다 터져서 왔어요!!!</h4>
                         <svg class="lock-icon">
@@ -19,11 +26,11 @@
                         </svg>
                     </div>
                     <div class="qna-info">
-                        <p class="complete">답변완료</p>
+                        <p class="status">답변완료</p>
                         <span aria-hidden="true">|</span>
-                        <p>최*준</p>
+                        <p class="user-name">최*준</p>
                         <span aria-hidden="true">|</span>
-                        <time datetime="">2025.3.20</time>
+                        <time class="reg-tm" datetime="2025-03-20">2025.03.20</time>
                     </div>
                 </summary>
                 <section class="qna-content">
@@ -37,43 +44,81 @@
                         <svg class="answer-icon">
                             <use href="#answer-svg" />
                         </svg>
-                        <p> 안녕하세요. 고객님 죄송죄송죄송합니다. 
-                            신입 직원이 포장 담당했는데 박스테이프 대신 스카치 테이프를 썼다고 하네요 ㅜㅜ 
+                        <p>
+                            안녕하세요. 고객님 죄송죄송죄송합니다.<br />
+                            신입 직원이 포장 담당했는데 박스테이프 대신 스카치 테이프를 썼다고 하네요 ㅜㅜ <br />
                             사장님 조카라 자를 수도 없대요... 제 속도 함께 터지고 있어요...
                         </p>
                     </div>
                 </section>
             </details>
-            <div class="qna-card secret">
-                <div class="qna-title">
-                    <h4 class="title">비밀글입니다.</h4>
-                    <svg class="lock-icon">
-                        <use href="#lock-svg" />
-                    </svg>
-                </div>
-                <div class="qna-info">
-                    <p>답변대기</p>
-                    <span aria-hidden="true">|</span>
-                    <p>김*랑</p>
-                    <span aria-hidden="true">|</span>
-                    <time datetime="">2025.3.18</time>
-                </div>
-            </div>
-            <div class="qna-card secret">
-                <div class="qna-title">
-                    <h4 class="title">비밀글입니다.</h4>
-                    <svg class="lock-icon">
-                        <use href="#lock-svg" />
-                    </svg>
-                </div>
-                <div class="qna-info">
-                    <p class="complete">답변완료</p>
-                    <span aria-hidden="true">|</span>
-                    <p>황*영</p>
-                    <span aria-hidden="true">|</span>
-                    <time datetime="">2025.3.15</time>
-                </div>
-            </div>
+            <details class="qna-card complete secret">
+                <summary class="qna-summary">
+                    <div class="qna-title">
+                        <h4 class="title">비밀글입니다.</h4>
+                        <svg class="lock-icon">
+                            <use href="#lock-svg" />
+                        </svg>
+                    </div>
+                    <div class="qna-info">
+                        <p class="status">답변완료</p>
+                        <span aria-hidden="true">|</span>
+                        <p class="user-name">김*랑</p>
+                        <span aria-hidden="true">|</span>
+                        <time class="reg-tm" datetime="2025-03-18">2025.03.18</time>
+                    </div>
+                </summary>
+                <section class="qna-content">
+                    <div class="question">
+                        <svg class="question-icon">
+                            <use href="#question-svg" />
+                        </svg>
+                        <p>사장님한테 비밀로 하고 환불 되나요? 사장님 지인이라 샀는데 맛이 없어서요...</p>
+                    </div>
+                    <div class="answer">
+                        <svg class="answer-icon">
+                            <use href="#answer-svg" />
+                        </svg>
+                        <p>
+                            안녕하세요. 고객님.<br />
+                            원래는 여기다 쓰시면 사장님이 1빠로 보신답니다. <br />
+                            다행히 아직 출근 전이셔서 사장님한테 비밀로 하고 부분환불 해드릴게요! <br />
+                            대신 문의글 오늘 꼭 삭제하셔야해요!!
+                        </p>
+                    </div>
+                </section>
+            </details>
+            <details class="qna-card secret">
+                <summary class="qna-summary">
+                    <div class="qna-title">
+                        <h4 class="title">비밀글입니다.</h4>
+                        <svg class="lock-icon">
+                            <use href="#lock-svg" />
+                        </svg>
+                    </div>
+                    <div class="qna-info">
+                        <p class="status">답변대기</p>
+                        <span aria-hidden="true">|</span>
+                        <p class="user-name">이*준</p>
+                        <span aria-hidden="true">|</span>
+                        <time class="reg-tm" datetime="2025-03-18">2025.03.15</time>
+                    </div>
+                </summary>
+                <section class="qna-content">
+                    <div class="question">
+                        <svg class="question-icon">
+                            <use href="#question-svg" />
+                        </svg>
+                        <p>전체 성분 좀 받아볼 수 있을까요?</p>
+                    </div>
+                    <div class="answer">
+                        <svg class="answer-icon">
+                            <use href="#answer-svg" />
+                        </svg>
+                        <p>미답변 상태</p>
+                    </div>
+                </section>
+            </details>
         </section>
 
         <!-- 반복되는 svg sprite 별도 정의 -->
