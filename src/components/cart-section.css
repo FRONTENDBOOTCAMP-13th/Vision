@@ -6,7 +6,7 @@
         @apply w-full px-4 py-2 inline-flex gap-3 justify-center items-center text-sm font-bold bg-ui-white;
 
         @media (min-width: 1024px) {
-            @apply w-[560px];
+            @apply w-full;
         }
 
         @media (min-width: 1024px) {
