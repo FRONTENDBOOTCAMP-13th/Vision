@@ -43,6 +43,8 @@
         }
 
         .check-point-wrapper {
+            @apply contents;
+
             .check-point-title {
                 @apply bg-white w-full flex items-center text-2xl font-bold text-ui-gray-dark whitespace-nowrap;
 
@@ -58,10 +60,10 @@
             }
 
             .check-point {
-                @apply bg-[url('/image/item-detail/check-point.png')] w-full h-[100vh] bg-center bg-contain bg-no-repeat;
+                @apply bg-[url('/image/item-detail/check-point.png')] w-full h-[310px] bg-center bg-contain bg-no-repeat;
 
                 @media (min-width: 1024px) {
-                    @apply bg-[url('/image/item-detail/check-point-wide.png')] w-full h-[100vh] bg-center bg-contain bg-no-repeat;
+                    @apply bg-[url('/image/item-detail/check-point-wide.png')] w-[1050px] h-[283px] bg-center bg-contain bg-no-repeat;
                 }
             }
         }
@@ -71,7 +73,7 @@
             @apply bg-[url('/image/item-detail/nutrition.png')] w-full h-[588px] bg-center bg-contain bg-no-repeat pb-6;
 
             @media (min-width: 1024px) {
-                @apply bg-[url('/image/item-detail/nutrition-wide.png')] w-full h-[200vh] bg-center bg-contain bg-no-repeat pb-6;
+                @apply bg-[url('/image/item-detail/nutrition-wide.png')] w-full h-[1066px] bg-center bg-contain bg-no-repeat pb-6;
             }
         }
     }
