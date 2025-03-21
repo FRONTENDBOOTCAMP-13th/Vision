@@ -3,7 +3,7 @@
 
 @layer components {
     .detail-nav {
-        @apply w-full h-[46px] px-4 grid grid-cols-4 text-ui-gray-dark text-base;
+        @apply w-full h-[46px] px-4 grid grid-cols-4 text-ui-gray-dark text-base bg-ui-white absolute top-[2.25rem];
 
         > ul {
             @apply contents;
@@ -14,10 +14,10 @@
         }
 
         .detail-nav-list {
-            @apply py-4 h-full flex justify-center;
+            @apply pt-4 h-full flex justify-center;
 
             @media (min-width: 1024px) {
-                @apply bg-[#f9f9f9] items-center;
+                @apply bg-[#f9f9f9] items-center pb-4;
 
                 &:first-child {
                     @apply border-t border-l border-r border-ui-mobilebtn-border;

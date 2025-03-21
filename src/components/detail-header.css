@@ -6,7 +6,7 @@
 
     /* mobile/web 반응형 header 스타일 */
     .detail-header {
-        @apply w-full h-9 flex justify-between items-center px-2 bg-ui-white lg:hidden;
+        @apply w-full h-9 flex justify-between items-center px-4 pt-1 bg-ui-white lg:hidden;
 
         .back-button {
             @apply flex;
