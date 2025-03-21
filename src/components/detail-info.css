@@ -68,10 +68,10 @@
     }
     .nutrition-wrapper {
         .nutrition {
-            @apply bg-[url('/image/item-detail/nutrition.png')] w-full h-[588px] bg-center bg-contain bg-no-repeat border-b-1 border-ui-gray-light pb-6;
+            @apply bg-[url('/image/item-detail/nutrition.png')] w-full h-[588px] bg-center bg-contain bg-no-repeat pb-6;
 
             @media (min-width: 1024px) {
-                @apply bg-[url('/image/item-detail/nutrition-wide.png')] w-full h-[200vh] bg-center bg-contain bg-no-repeat border-b-1 border-ui-gray-light pb-6;
+                @apply bg-[url('/image/item-detail/nutrition-wide.png')] w-full h-[200vh] bg-center bg-contain bg-no-repeat pb-6;
             }
         }
     }
