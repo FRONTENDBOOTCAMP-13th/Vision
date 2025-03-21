@@ -15,6 +15,10 @@
     .info-box {
         @apply p-4;
 
+        @media (min-width: 64rem) {
+            @apply px-0;
+        }
+
         .driver {
             @apply text-[12px] font-semibold;
         }
@@ -56,6 +60,10 @@
 
     .item-deail-info {
         @apply grid gap-3 border-t-1 border-[#dfe4eb] p-[1.5rem_1rem] text-[#898989] border-b-5 border-[#dfe4eb];
+
+        @media (min-width: 64rem) {
+            @apply px-0;
+        }
 
         .item-deail-box.pc-only {
             display: none;
