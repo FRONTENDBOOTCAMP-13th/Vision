@@ -26,13 +26,12 @@
         }
 
         .card-radio {
-            /* @apply fixed bottom-0 left-1/2 -translate-x-1/2 z-10 flex gap-2 p-4 bg-ui-white rounded-t-xl shadow-lg; */
-            @apply w-full h-[25vh] pt-10 flex flex-row flex-nowrap fixed bottom-0 z-10 ml-24 max-w-[94.5rem];
+            @apply fixed bottom-0 left-1/2 -translate-x-1/2 z-10 flex flex-row px-4 bg-ui-white rounded-t-xl;
 
             .card {
                 @apply flex flex-col text-xl font-bold w-32 h-40 p-4 gap-6 z-0 mr-[-1.5rem] text-ui-primary border border-ui-primary rounded-t-xl bg-ui-white transition-all duration-300;
-                @apply hover:text-ui-white hover:bg-gradient-to-b hover:from-ui-primary hover:to-ui-black hover:opacity-90 hover:scale-120 hover:-translate-y-4;
-                @apply has-checked:border-0 has-checked:text-ui-white has-checked:bg-gradient-to-b has-checked:from-ui-primary has-checked:to-ui-black has-checked:opacity-90 has-checked:scale-120 has-checked:-translate-y-4 has-checked:text-2xl;
+                @apply hover:text-ui-white hover:bg-gradient-to-b hover:from-ui-primary hover:to-ui-black hover:opacity-90 hover:border-0 hover:scale-120 hover:-translate-y-4;
+                @apply has-checked:text-ui-white has-checked:bg-gradient-to-b has-checked:from-ui-primary has-checked:to-ui-black has-checked:opacity-90 has-checked:border-0 has-checked:scale-120 has-checked:-translate-y-4 has-checked:text-2xl;
 
                 input {
                     @apply sr-only;
