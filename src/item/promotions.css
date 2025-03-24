@@ -23,10 +23,6 @@ body {
 .header-nav {
     @apply lg:w-full grid sticky top-0 z-1 lg:contents;
 
-    .list-header {
-        @apply pt-1 my-0 px-4 lg:px-0;
-    }
-
     .nav {
         @apply hidden lg:block mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-1 lg:h-auto;
 
