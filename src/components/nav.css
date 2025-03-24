@@ -11,7 +11,7 @@
         ul {
             @apply flex justify-between text-center items-center text-sm;
 
-            button {
+            li.category {
                 display: none;
             }
 
@@ -19,11 +19,11 @@
                 @apply focus-within:text-ui-primary focus-within:font-bold border-white border-b-2 focus-within:border-ui-primary pb-2 pt-1.5;
             }
 
-            li:first-child {
+            .category {
                 display: none;
             }
 
-            li:last-child {
+            li.delivery {
                 display: none;
             }
         }
@@ -40,23 +40,34 @@
                     @apply hover:underline hover:text-ui-primary underline-offset-4 focus-within:text-ui-primary focus-within:border-0;
                 }
 
-                button {
-                    @apply flex justify-center items-center pointer-events-auto cursor-pointer;
+                li.category {
+                    @apply flex justify-center items-center cursor-pointer relative;
 
-                    svg {
-                        @apply pr-1;
+                    a {
+                        @apply flex items-center;
+                        svg {
+                            @apply pr-1;
+                        }
+                    }
+
+                    .sub-menu {
+                        @apply hidden absolute bg-white left-0 mt-100 w-50 border border-ui-gray-light max-h-90 overflow-y-auto;
+
+                        li {
+                            @apply flex text-center text-ui-gray-dark hover:text-ui-primary no-underline relative;
+                        }
                     }
                 }
 
-                li:first-child {
-                    @apply block hover:no-underline;
+                .category:hover .sub-menu {
+                    @apply block;
                 }
 
                 li:nth-child(2) {
                     display: none;
                 }
 
-                li:nth-child(7) {
+                li.delivery {
                     @apply block border-[#A6A6A6] border-1 text-[12px] rounded-2xl p-1 hover:no-underline hover:text-ui-gray-dark;
 
                     span {
