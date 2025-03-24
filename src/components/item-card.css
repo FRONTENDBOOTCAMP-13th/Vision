@@ -2,18 +2,21 @@
 @import './item-img.css';
 @import './item-info.css';
 
-
 .item {
-
     @apply flex overflow-x-auto gap-[0.625rem];
     scrollbar-width: none;
 
     .item-card {
         @apply flex-[0_0_45%];
 
-        @media(min-width:63.9375rem) {
+        @media (min-width: 63.9375rem) {
             @apply flex-[0_0_25%];
         }
-    }
 
+        .item-img-box {
+            @apply bg-[length:100%_auto] cursor-pointer transition-[background-size] duration-700 ease-in-out hover:bg-[length:105%_auto];
+        }
+
+        /* bg-[length:100%_100%] transition-all duration-300 hover:bg-[length:105%_105%] */
+    }
 }
