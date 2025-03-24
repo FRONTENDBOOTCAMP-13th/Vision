@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    body {
+        @apply m-5;
+        .team-wrapper {
+            @apply w-[56.25rem] h-[34.375rem] flex justify-center items-center gap-2;
+
+            .member-01 {
+                @apply w-[13.75rem] h-[33.75rem] border-2 rounded-2xl border-ui-gray-light text-center;
+
+                img {
+                    @apply w-[12.5rem] h-[12.5rem] p-[.625rem] mx-auto;
+                }
+
+                h2 {
+                    @apply font-bold pt-3 pb-3 text-2xl;
+
+                    span {
+                        @apply text-lg;
+                    }
+                }
+
+                a {
+                    @apply bg-ui-primary text-white p-1.5 rounded-sm;
+                }
+
+                p {
+                    @apply pt-3 p-2;
+                }
+            }
+
+            .member-02 {
+                @apply w-[13.75rem] h-[33.75rem] border-2 rounded-2xl border-ui-gray-light text-center;
+
+                img {
+                    @apply w-[12.5rem] h-[12.5rem] mx-auto;
+                }
+
+                h2 {
+                    @apply font-bold pt-3 pb-3 text-2xl;
+                }
+
+                a {
+                    @apply bg-ui-primary text-white p-1.5 rounded-sm;
+                }
+
+                p {
+                    @apply pt-3 p-2;
+                }
+            }
+
+            .member-03 {
+                @apply w-[13.75rem] h-[33.75rem] border-2 rounded-2xl border-ui-gray-light text-center;
+
+                img {
+                    @apply w-[12.5rem] h-[12.5rem] mx-auto;
+                }
+
+                h2 {
+                    @apply font-bold pt-3 pb-3 text-2xl;
+                }
+
+                a {
+                    @apply bg-ui-primary text-white p-1.5 rounded-sm;
+                }
+
+                p {
+                    @apply pt-3 p-2;
+                }
+            }
+
+            .member-04 {
+                @apply w-[13.75rem] h-[33.75rem] border-2 rounded-2xl border-ui-gray-light text-center;
+
+                img {
+                    @apply h-[12.5rem];
+                }
+
+                h2 {
+                    @apply font-bold pt-3 pb-3 text-2xl;
+                }
+
+                a {
+                    @apply bg-ui-primary text-white p-1.5 rounded-sm;
+                }
+
+                p {
+                    @apply pt-3 p-2;
+                }
+            }
+        }
+    }
+}
