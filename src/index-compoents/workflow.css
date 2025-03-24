@@ -1,15 +1,13 @@
 @import 'tailwindcss';
 
 @layer components {
-
     .workflow {
-        @apply w-[56.25rem] h-[34.375rem];
+        @apply w-[62.5rem] h-[34.375rem] flex flex-col justify-between;
 
-        &>.plan {
+        & > .plan {
+            @apply flex justify-between gap-[3.125rem];
 
-            @apply flex gap-[3.125rem];
-
-            &>.work {
+            & > .work {
                 .week {
                     @apply text-[1.5rem] text-[#5F0080] font-semibold;
                 }
@@ -18,27 +16,20 @@
                     @apply text-[1rem] font-normal text-[#000000];
                 }
 
-                &>.txt {
+                & > .txt {
                     @apply flex flex-col gap-[12px] pt-[12px] border-t border-black;
 
-                    &>.item {
+                    & > .item {
                         @apply text-[1rem] font-normal;
                     }
                 }
-
             }
-
         }
 
-        &>.tools {
+        & > .tools {
+            @apply flex flex-wrap justify-center gap-5;
 
-            margin-top: 60px;
-
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-
-            &>.item {
+            & > .item {
                 display: flex;
                 gap: 8px;
                 text-align: center;
@@ -47,13 +38,12 @@
 
                 height: 28px;
 
-                &>.title {
+                & > .title {
                     width: 90px;
                     font-size: 16px;
                     font-weight: 700;
                 }
             }
         }
-
     }
 }
