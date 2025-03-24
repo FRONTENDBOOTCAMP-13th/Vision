@@ -6,7 +6,7 @@
 
     /* mobile/web 반응형 header 스타일 */
     .list-header {
-        @apply w-full h-9 flex justify-center items-center px-2 bg-ui-white lg:justify-between lg:h-17 lg:w-[65.625rem] mx-auto;
+        @apply w-full h-9 flex justify-center items-center px-4 pt-1 bg-ui-white lg:justify-between lg:h-17 lg:w-[65.625rem] lg:px-0 mx-auto;
 
         .logo {
             @apply hidden lg:flex fill-ui-primary w-[5.125rem];
