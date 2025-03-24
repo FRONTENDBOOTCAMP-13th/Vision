@@ -9,7 +9,7 @@
     .recent-view {
         @apply hidden bg-ui-white p-2 w-[4.6875rem] sticky top-1/2 -translate-y-1/2 left-full -translate-x-1/3 border border-ui-mobilebtn-border z-1;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 64rem) {
             @apply flex flex-col items-center gap-2;
         }
 

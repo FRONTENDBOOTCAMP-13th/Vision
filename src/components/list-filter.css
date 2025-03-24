@@ -18,7 +18,7 @@
                 }
             }
 
-            @media (min-width: 1024px) {
+            @media (min-width: 64rem) {
                 display: none;
             }
         }
@@ -27,7 +27,7 @@
             display: none;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 64rem) {
             .filter-web {
                 display: block;
 
@@ -38,7 +38,7 @@
                         @apply flex after:content-['|'] after:ml-2 last:after:content-none;
 
                         a {
-                            @apply flex justify-center items-center  focus-within:text-black;
+                            @apply flex justify-center items-center focus-within:text-black;
 
                             svg {
                                 @apply ml-2;
