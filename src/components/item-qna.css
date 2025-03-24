@@ -49,7 +49,7 @@
                     .status {
                         @apply lg:order-3;
                     }
-                    span {
+                    .line {
                         @apply text-ui-gray-light lg:hidden;
                     }
                 }

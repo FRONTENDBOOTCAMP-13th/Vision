@@ -9,7 +9,7 @@
             @media (min-width: 1024px) {
                 @apply flex justify-between;
             }
-            h1 {
+            h3 {
                 display: none;
 
                 @media (min-width: 1024px) {
