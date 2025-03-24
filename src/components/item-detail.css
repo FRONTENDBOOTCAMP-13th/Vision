@@ -10,7 +10,7 @@
     }
 
     .item-img {
-        @apply w-full aspect-[125/163] bg-[url('/public/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat;
+        @apply w-full aspect-[125/163] bg-[url('/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat;
     }
 
     .info-box {
