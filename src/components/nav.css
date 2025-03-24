@@ -60,7 +60,8 @@
                     }
                 }
 
-                .category:hover .sub-menu {
+                .category:hover .sub-menu,
+                .category:focus-within .sub-menu {
                     @apply block;
                 }
 

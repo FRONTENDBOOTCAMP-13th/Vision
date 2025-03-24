@@ -33,8 +33,8 @@ body {
 
 .menu-list {
     @apply mt-6 mb-8;
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .sub-banner {
@@ -45,7 +45,7 @@ body {
     @apply m-auto;
 
     @media (max-width: 64rem) {
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     @media (min-width: 63.9375rem) {
