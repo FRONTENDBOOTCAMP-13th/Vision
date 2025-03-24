@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index-cards.css" />
+        <link rel="preload" as="style" href="/font/pretendardvariable.css" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="/font/pretendardvariable.css" /></noscript>
+        <link rel="shortcut icon" href="/image/icon/favicon.ico" type="image/x-icon" />
+        <title>index-card component</title>
+    </head>
+    <body class="h-100vh w-full">
+        <section class="index-contents">
+            <!-- contents section -->
+            <section class="contents-section">
+                <div id="contents01" class="hidden">card01</div>
+                <div id="contents02" class="hidden">card02</div>
+                <div id="contents03" class="hidden">card03</div>
+                <div id="contents04" class="hidden">card04</div>
+                <div id="contents05" class="hidden">card05</div>
+                <div id="contents06" class="hidden">card06</div>
+                <div id="contents07" class="hidden">card07</div>
+                <div id="contents08" class="hidden">card08</div>
+            </section>
+            <!-- radio tab button -->
+            <section class="card-radio">
+                <label class="card" for="card01"
+                    >01
+                    <span class="card-title">TEAM MEMBERS</span>
+                    <input type="radio" name="show-contents" value="card01" id="card01" checked
+                /></label>
+
+                <label class="card" for="card02"
+                    >02
+                    <span class="card-title">OUR <br />GOAL</span>
+                    <input type="radio" name="show-contents" value="card02" id="card02"
+                /></label>
+
+                <label class="card" for="card03"
+                    >03
+                    <span class="card-title">OUR <br />RULES</span>
+                    <input type="radio" name="show-contents" value="card03" id="card03"
+                /></label>
+
+                <label class="card" for="card04"
+                    >04
+                    <span class="card-title">WORK <br />FLOW</span>
+                    <input type="radio" name="show-contents" value="card04" id="card04"
+                /></label>
+
+                <label class="card" for="card05"
+                    >05
+                    <span class="card-title">PAGE <br />메인</span>
+                    <input type="radio" name="show-contents" value="card05" id="card05"
+                /></label>
+
+                <label class="card" for="card06"
+                    >06
+                    <span class="card-title">PAGE <br />제품검색</span>
+                    <input type="radio" name="show-contents" value="card06" id="card06"
+                /></label>
+
+                <label class="card" for="card07"
+                    >07
+                    <span class="card-title">PAGE <br />제품상세</span>
+                    <input type="radio" name="show-contents" value="card07" id="card07"
+                /></label>
+
+                <label class="card" for="card08"
+                    >08
+                    <span class="card-title">COMPO <br />NENTS</span>
+                    <input type="radio" name="show-contents" value="card08" id="card08"
+                /></label>
+            </section>
+        </section>
+
+        <!-- JavaScript -->
+        <script>
+            const radios = document.querySelectorAll('input[name="show-contents"]');
+            const contents = document.querySelectorAll('.contents-section > div');
+
+            radios.forEach((radio) => {
+                radio.addEventListener('change', () => {
+                    // 모든 콘텐츠 숨기고 애니메이션 제거
+                    contents.forEach((div) => {
+                        div.classList.add('hidden');
+                        div.classList.remove('fade-in');
+                    });
+
+                    // 선택된 라디오 id → contentsId로 변환
+                    const selectedId = radio.id.replace('card', 'contents');
+                    const selectedContent = document.getElementById(selectedId);
+                    if (selectedContent) {
+                        selectedContent.classList.remove('hidden');
+                        void selectedContent.offsetWidth; // 리플로우 강제
+                        selectedContent.classList.add('fade-in');
+                    }
+                });
+            });
+
+            // 페이지 로드 시 체크된 항목 표시
+            document.addEventListener('DOMContentLoaded', () => {
+                const checked = document.querySelector('input[name="show-contents"]:checked');
+                if (checked) {
+                    checked.dispatchEvent(new Event('change'));
+                }
+            });
+        </script>
+    </body>
+</html>
