@@ -5,7 +5,7 @@
 
     .mobile-button {
 
-        @apply fixed bg-ui-white w-screen bottom-[0px] text-center h-[2.625rem];
+        @apply fixed bg-ui-white w-screen bottom-[0rem] text-center h-[2.625rem];
 
         .button-box {
             @apply grid grid-cols-4 text-center justify-center items-center;
