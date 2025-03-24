@@ -122,15 +122,17 @@
 
                     <section class="item-deail-box item-choose">
                         <h3 class="sub-title">상품선택</h3>
-
                         <div class="item-choose-box">
                             <span>[풀무원] 탱탱쫄면 (4개입)</span>
-                            <svg class="count-set" width="84" height="30" viewBox="0 0 84 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="83" height="29" stroke="#C4C4C4" />
-                                <path d="M20 14V16H10V14H20Z" fill="#A6A6A6" />
-                                <path d="M43.5312 9.6875V21H41.4844V11.6719H41.4219L38.7812 13.3594V11.5L41.5781 9.6875H43.5312Z" fill="black" />
-                                <path d="M70 10V14H74V16H70V20H68V16H64V14H68V10H70Z" fill="#333333" />
-                            </svg>
+                            <form action="/" class="item-choose-count">
+                                <fieldset>
+                                    <legend class="sr-only">상품 수량 선택창</legend>
+                                    <button type="button" class="button-down">-</button>
+                                    <input type="number" id="item-number" required min="1" max="10" step="1" value="1" />
+                                    <label for="item-number" class="sr-only">제품 구매 개수</label>
+                                    <button type="button" class="button-up">+</button>
+                                </fieldset>
+                            </form>
                             <span class="price">4,980원</span>
                         </div>
                     </section>
@@ -150,5 +152,27 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const input = document.getElementById('item-number');
+                const btnUp = document.querySelector('.button-up');
+                const btnDown = document.querySelector('.button-down');
+
+                btnUp.addEventListener('click', function () {
+                    let currentValue = parseInt(input.value) || 1;
+                    if (currentValue < parseInt(input.max)) {
+                        input.value = currentValue + parseInt(input.step);
+                    }
+                });
+
+                btnDown.addEventListener('click', function () {
+                    let currentValue = parseInt(input.value) || 1;
+                    if (currentValue > parseInt(input.min)) {
+                        input.value = currentValue - parseInt(input.step);
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
