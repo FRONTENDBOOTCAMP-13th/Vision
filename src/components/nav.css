@@ -3,7 +3,7 @@
 
 @layer components {
     .nav {
-        @apply text-ui-gray-dark text-[16px] w-full p-2 bg-white;
+        @apply text-ui-gray-dark text-[16px] w-full bg-white;
 
         padding-left: 10px;
         padding-right: 10px;
@@ -16,7 +16,7 @@
             }
 
             li {
-                @apply focus-within:text-ui-primary focus-within:font-bold border-white border-b-2 focus-within:border-ui-primary pb-2 pt-1.5;
+                @apply focus-within:text-ui-primary focus-within:font-bold border-white border-b-2 focus-within:border-ui-primary pb-3 pt-2.5;
             }
 
             .category {
