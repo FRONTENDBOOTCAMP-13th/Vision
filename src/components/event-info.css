@@ -28,15 +28,7 @@
         }
 
         .clock {
-            @apply flex text-center items-center;
-
-            .clock-icon {
-                @apply mr-2;
-            }
-
-            .clock-icon-web {
-                display: none;
-            }
+            @apply flex text-center items-center gap-2;
 
             p {
                 @apply font-bold text-[20px];
@@ -71,12 +63,7 @@
             .clock {
                 @apply flex items-center text-center justify-center text-[32px] font-bold;
 
-                .clock-icon {
-                    display: none;
-                }
-
                 .clock-icon-web {
-                    display: block;
                     @apply mr-2;
                 }
 
@@ -85,5 +72,25 @@
                 }
             }
         }
+    }
+
+    /* 키프레임 애니메이션 추가 */
+    @keyframes rotateClockHand {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .clock-moving-web {
+        transform-origin: 16.5px 16px;
+        animation: rotateClockHand 2s linear infinite;
+    }
+
+    .clock-moving-mobile {
+        transform-origin: 11px 11px;
+        animation: rotateClockHand 2s linear infinite;
     }
 }
