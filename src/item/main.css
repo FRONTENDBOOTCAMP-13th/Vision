@@ -19,7 +19,9 @@ body {
 
 .header-nav {
     @apply w-full grid sticky top-0 z-1 lg:contents;
-
+    .header {
+        @apply lg:pt-1 lg:px-0 lg:pb-0;
+    }
     .nav {
         @apply mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-2 lg:h-auto;
 
