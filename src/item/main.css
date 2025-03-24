@@ -36,7 +36,7 @@ body {
 }
 
 .sub-banner {
-    @apply mt-20;
+    @apply mt-8 lg:mt-18;
 }
 
 .item {
@@ -62,5 +62,5 @@ body {
 /* 추가 리팩토링(25.3.21 15:15) */
 
 .event-info {
-    @apply py-0 mt-12 mb-6;
+    @apply py-0 mt-8 lg:mt-18 lg:mb-6;
 }
