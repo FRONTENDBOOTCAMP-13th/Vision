@@ -3,7 +3,7 @@
 
 @layer components {
     .footer {
-        @apply w-full hidden text-base text-ui-black;
+        @apply w-full hidden text-base text-ui-black border-t-2 border-t-[#fff4f4] mt-20;
 
         @media (min-width: 1024px) {
             @apply block;

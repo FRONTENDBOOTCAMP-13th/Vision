@@ -55,10 +55,6 @@ body {
     }
 }
 
-.footer {
-    @apply border-t-2 border-t-[#fff4f4] mt-20;
-}
-
 /* 추가 리팩토링(25.3.21 15:15) */
 
 .event-info {
