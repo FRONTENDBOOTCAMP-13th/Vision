@@ -3,7 +3,7 @@
 
 @layer components {
     .index-link {
-        @apply w-[56.25rem] h-[34.375rem] flex flex-col gap-[5rem];
+        @apply w-[56.25rem] h-[34.375rem] flex flex-col justify-center gap-[2rem];
 
         & > .compoents {
             @apply grid grid-cols-[2fr_8fr];
