@@ -8,6 +8,7 @@
 @import '../components/item-card.css';
 @import '../components/event-info.css';
 @import '../components/recent-view.css';
+@import '../components/modal.css';
 
 body {
     @apply min-w-[18.75rem];
@@ -19,9 +20,11 @@ body {
 
 .header-nav {
     @apply w-full grid sticky top-0 z-1 lg:contents;
+
     .header {
         @apply lg:pt-1 lg:px-0 lg:pb-0;
     }
+
     .nav {
         @apply mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-2 lg:h-auto;
 
@@ -61,4 +64,8 @@ body {
 
 .event-info {
     @apply py-0 mt-8 lg:mt-18 lg:mb-6;
+}
+
+.modal-backdrop {
+    @apply z-[3];
 }
