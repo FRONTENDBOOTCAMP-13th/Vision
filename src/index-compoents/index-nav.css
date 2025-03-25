@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+@import '../style.css';
+@import '../index-compoents/team.css';
+@import '../index-compoents/workflow.css';
+@import '../index-compoents/index-link.css';
+
+@layer components {
+    body {
+        @apply relative w-full min-h-full text-ui-black m-0;
+    }
+
+    .header {
+        @apply fixed top-8 left-8;
+    }
+
+    .nav {
+        @apply w-[80vw] grid grid-cols-[repeat(9,_minmax(7.5rem,_1fr))] text-ui-primary fixed bottom-0 left-[calc(50%_+_2vw)] -translate-x-1/2 z-10;
+
+        ul {
+            @apply contents;
+        }
+    }
+
+    .nav-list {
+        @apply h-[160px] flex flex-col justify-between  border-t border-l border-r border-current rounded-t-lg bg-ui-white drop-shadow-lg;
+
+        a {
+            @apply contents;
+        }
+
+        &:nth-child(2) {
+            @apply -translate-x-[20px];
+        }
+
+        &:nth-child(3) {
+            @apply -translate-x-[40px];
+        }
+
+        &:nth-child(4) {
+            @apply -translate-x-[60px];
+        }
+
+        &:nth-child(5) {
+            @apply -translate-x-[80px];
+        }
+
+        &:nth-child(6) {
+            @apply -translate-x-[100px];
+        }
+
+        &:nth-child(7) {
+            @apply -translate-x-[120px];
+        }
+
+        &:nth-child(8) {
+            @apply -translate-x-[140px];
+        }
+
+        &:nth-child(9) {
+            @apply -translate-x-[160px];
+        }
+
+        .nav-num {
+            @apply pl-4 pt-4 text-xl font-bold;
+        }
+
+        .nav-title {
+            @apply flex flex-col leading-4.5 px-4 pb-4 text-base font-bold;
+        }
+
+        /* hover 기능 구현 */
+        &:hover {
+            @apply scale-120 origin-bottom z-1 bg-linear-to-bl from-ui-primary-transparent to-ui-primary text-ui-white;
+        }
+    }
+
+    .content-list {
+        @apply max-w-[100vw] h-[80vh] mb-[20vh] flex flex-col justify-center items-center relative;
+
+        h3 {
+            @apply absolute top-8 right-8 text-xl;
+        }
+    }
+
+    .content-team-member {
+        .content-title {
+            @apply text-[3.75rem] font-bold text-ui-primary;
+        }
+
+        .content-text {
+            @apply text-[2.5rem];
+        }
+    }
+
+    .content-our-goal {
+        @apply text-[2.5rem];
+
+        .content-text-wrapper {
+            @apply flex flex-col gap-10;
+        }
+
+        .content-text {
+            @apply flex flex-row;
+
+            span {
+                @apply w-[3.125rem];
+            }
+        }
+    }
+
+    .content-page-main {
+        video {
+            @apply w-[62.5rem] border border-ui-mobilebtn-border;
+        }
+    }
+
+    .content-page-item-list {
+        video {
+            @apply w-[62.5rem] border border-ui-mobilebtn-border;
+        }
+    }
+
+    .content-page-item-detail {
+        video {
+            @apply w-[62.5rem] border border-ui-mobilebtn-border;
+        }
+    }
+}

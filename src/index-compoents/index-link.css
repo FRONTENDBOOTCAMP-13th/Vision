@@ -1,35 +1,28 @@
 @import 'tailwindcss';
+@import '../style.css';
 
 @layer components {
-
     .index-link {
+        @apply w-[56.25rem] h-[34.375rem] flex flex-col gap-[5rem];
 
-        @apply w-[56.25rem] h-[34.375rem] bg-gray-300 flex flex-col gap-[5rem];
-
-        &>.compoents {
+        & > .compoents {
             @apply grid grid-cols-[2fr_8fr];
 
-            &>.title {
+            & > .title {
                 @apply text-[1.5rem] text-black font-semibold;
             }
 
-            &>.item {
+            & > .item {
                 @apply flex flex-wrap gap-4 text-[16px];
 
-                &>li {
-                    @apply px-[20px] py-[12px] bg-gray-300 border-2 border-[#FCFCFC] rounded-[50px];
+                & > li {
+                    @apply px-[20px] py-[12px] bg-ui-mobilebtn border-2 border-ui-mobilebtn-border rounded-[50px];
                 }
 
-                &>.purple {
+                & > .purple {
                     @apply border-[#6F1A8C];
                 }
-
             }
         }
-
-
-
-
     }
-
 }
