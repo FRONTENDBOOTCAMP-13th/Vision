@@ -9,62 +9,575 @@
         <link rel="stylesheet" href="./src/style.css" />
     </head>
 
-    <body class="index">
-        <a href="./src/index-compoents/team-header.html">팀 헤더</a>
-        <a href="./src/index-compoents/team.html">팀</a>
-        <a href="./src/index-compoents/index-link.html">index-link</a>
-        <a href="./src/index-compoents/index-page-img.html">index-page-img</a>
-        <a href="./src/index-compoents/index-nav.html">index-nav</a>
-        <a href="./src/index-compoents/workflow.html">workflow</a>
-        <a href="./src/index-compoents/index-link-button.html">index-link-button</a>
+    <body>
+        <header class="header">
+            <h1 class="sr-only">UI Project 7팀 Vision</h1>
+            <img src="/image/icon/vision-logo.png" alt="Vision 로고" width="110" height="32" />
+        </header>
+        <nav class="nav">
+            <ul>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-00">
+                        <span class="nav-num">00</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">TEAM</span>
+                            <span class="nav-title-02">NAME</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-01">
+                        <span class="nav-num">01</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">TEAM</span>
+                            <span class="nav-title-02">MEMBER</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-02">
+                        <span class="nav-num">02</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">OUR</span>
+                            <span class="nav-title-02">GOAL</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-03">
+                        <span class="nav-num">03</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">OUR</span>
+                            <span class="nav-title-02">RULES</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-04">
+                        <span class="nav-num">04</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">WORK</span>
+                            <span class="nav-title-02">FLOW</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-05">
+                        <span class="nav-num">05</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">PAGE</span>
+                            <span class="nav-title-02">메인</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-06">
+                        <span class="nav-num">06</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">PAGE</span>
+                            <span class="nav-title-02">제품 목록</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-07">
+                        <span class="nav-num">07</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">PAGE</span>
+                            <span class="nav-title-02">제품 상세</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-list" tabindex="0">
+                    <a href="#content-08">
+                        <span class="nav-num">08</span>
+                        <div class="nav-title">
+                            <span class="nav-title-01">COMPO</span>
+                            <span class="nav-title-02">NENT</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section class="content-list content-team-member" id="content-00">
+                <h3>팀 소개</h3>
+                <p class="content-title">VISION</p>
+                <div class="content-text">
+                    <p>: 장래에 대한 전망. 미래상.</p>
+                    <p>: 비전(공자)</p>
+                </div>
+            </section>
+            <section class="content-list content-team-member" id="content-01">
+                <h3>팀 멤버</h3>
+                <div class="team-wrapper">
+                    <div class="member-01">
+                        <img src="/image/sanrio/pompompurin.webp" alt="폼폼푸린" />
+                        <h2>김태경<span>(조장)</span></h2>
+                        <a href="https://github.com/teakyungg"> 깃허브 바로가기 </a>
+                        <p>
+                            마크업을 어떻게 해야하냐에 따라 개발 난이도가 차이가 많이 난다는 것을 꺠달을 수 있었습니다. 페이지를 완성했을 때는
+                            뿌듯하였지만 최적화 확인을 하였을때 오류가 너무 많아서 너무 놀랐습니다. 다음에 만들때는 좀더 신경을 써서 만들면 좋을거
+                            같았습니다.
+                        </p>
+                    </div>
+                    <div class="member-02">
+                        <img src="/image/sanrio/kuromi.png" alt="쿠로미" />
+                        <h2>임지윤</h2>
+                        <a href="https://github.com/whynotKeys"> 깃허브 바로가기 </a>
+                        <p>
+                            유지보수를 신경써서 개발해야 하는 이유와 마크업의 중요성을 깨닫는 시간이었다. 밤늦게까지 개발할 때는 솔직히 힘들기도
+                            했지만 막상 만들고 나니 뿌듯하기도 하고 스스로 성장했다는 기분이 들어서 기쁘다. 앞으로 js도 열심히 배워서 더 멋진 결과물
+                            완성해보고싶다.
+                        </p>
+                    </div>
+                    <div class="member-03">
+                        <img src="/image/sanrio/keroppi.webp" alt="시나모롤" />
+                        <h2>최영준</h2>
+                        <a href="https://github.com/jjmullan"> 깃허브 바로가기 </a>
+                        <p>
+                            협업의 과정에서 조율해야 하는 것들이 기술적인 것 외에도 정말 많은 것이 있다는 것을 느꼈다. 하나의 작업물을 만드는 과정은
+                            정말 새로웠고, 협업에서 개개인의 기술적인 역량 외에 소프트 커뮤니케이션의 중요성 더욱 깊이 깨닫게 되었다.
+                        </p>
+                    </div>
+                    <div class="member-04">
+                        <img src="/image/sanrio/cinnamoroll.webp" alt="케로피" />
+                        <h2>배샛별</h2>
+                        <a href="https://github.com/Stella97415"> 깃허브 바로가기 </a>
+                        <p>
+                            처음 하는 프론트엔드 프로젝트라 걱정이 많았지만, 점점 더 나은 코드를 짜는 제 모습을 보며 신기하고 뿌듯한 순간이
+                            많았습니다. 처음엔 작은 기능도 어렵게 느껴졌지만, 시행착오를 거치며 점점 익숙해졌고, 문제를 해결할 때마다 자신감이
+                            생겼습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-list content-our-goal" id="content-02">
+                <h3>팀 목표</h3>
+                <div class="content-text-wrapper">
+                    <div class="content-text">
+                        <span>1.</span>
+                        <div>
+                            <p>결과 보다는 과정. 정해진 프로세스로 진행한다.</p>
+                            <p>물론, 결과도 나오면 좋다.</p>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <span>2.</span>
+                        <p>Github 를 활용한 팀 프로젝트에 익숙해진다.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-list content-our-rules" id="content-03">
+                <h3>팀 규칙</h3>
+                <img src="/image/etc/Frame 259.png" alt="팀 규칙 정보" width="702" height="516" />
+            </section>
+            <section class="content-list content-work-flow" id="content-04">
+                <h3>워크 플로우</h3>
+                <div class="workflow">
+                    <div class="plan">
+                        <section class="work">
+                            <h2>
+                                <span class="week">SPRINT 1</span>
+                                <span class="date"> ~ 25.3.14</span>
+                            </h2>
+                            <ul class="txt">
+                                <li class="item">프로젝트 환경 설정</li>
+                                <li class="item">UI시안 확정</li>
+                            </ul>
+                        </section>
 
-        <h2>메인페이지</h2>
-        <div>
-            <a class="shortcut" href="./src/item/main.html">페이지 바로가기</a>
+                        <section class="work">
+                            <h2>
+                                <span class="week">SPRINT 2</span>
+                                <span class="date"> ~ 25.3.19</span>
+                            </h2>
+                            <ul class="txt">
+                                <li class="item">
+                                    <a
+                                        href="https://www.figma.com/design/Bc9XHp0Q0g6bdcElDWOPtn/%5BUI-Project%5D-Kurly?node-id=0-1&t=dT0227knjSVW8do7-1"
+                                        >UI 시안 제작 및 분석</a
+                                    >
+                                </li>
+                                <li class="item">메인 페이지 컴포넌트 작업</li>
+                                <li class="item">메인 페이지 레이아웃 작업</li>
+                                <li class="item">1차 배포 테스트</li>
+                            </ul>
+                        </section>
 
-            <h3>메인페이지 컴포넌트</h3>
-            <a href="./src/components/header.html">header</a>
-            <a href="./src/components/nav.html">nav</a>
-            <a href="./src/components/main-banner.html">main-banner</a>
-            <a href="./src/components/menu-list.html">menu-list</a>
-            <a href="./src/components/event-info.html">event-info</a>
-            <a href="./src/components/item-img.html">item-img</a>
-            <a href="./src/components/item-info.html">item-info</a>
-            <a href="./src/components/sub-banner.html">sub-banner</a>
-            <a href="./src/components/mobile-button.html">mobile-button</a>
-            <a href="./src/components/footer.html">footer</a>
-            <a href="./src/components/item-card.html">item-card</a>
-            <a href="./src/components/recent-view.html">recent-view</a>
-            <a href="./src/components/modal.html">modal</a>
-        </div>
+                        <section class="work">
+                            <h2>
+                                <span class="week">SPRINT 3</span>
+                                <span class="date"> ~ 25.3.21</span>
+                            </h2>
+                            <ul class="txt">
+                                <li class="item">UI 시안 제작 및 분석</li>
+                                <li class="item">제품 목록 컴포넌트 작업</li>
+                                <li class="item">제품 목록 레이아웃 작업</li>
+                                <li class="item">제품 상세 컴포넌트 작업</li>
+                                <li class="item">제품 상세 레이아웃 작업</li>
+                                <li class="item">DB 반영 작업</li>
+                                <li class="item">2차 배포 테스트</li>
+                            </ul>
+                        </section>
 
-        <h2>아이템 리스트 페이지</h2>
-        <div>
-            <a class="shortcut" href="./src/item/item-list.html">페이지 바로가기</a>
+                        <section class="work">
+                            <h2>
+                                <span class="week">SPRINT 4</span>
+                                <span class="date"> ~ 25.3.25</span>
+                            </h2>
+                            <ul class="txt">
+                                <li class="item">추가 기능 구현</li>
+                                <li class="item">시멘틱 마크업 개선</li>
+                                <li class="item">웹 접근성 개선</li>
+                                <li class="item">성능 최적화</li>
+                                <li class="item">SEO 최적화</li>
+                                <li class="item">크로스 브라우징</li>
+                                <li class="item">최종 배포 테스트</li>
+                            </ul>
+                        </section>
+                    </div>
 
-            <h3>컴포넌트</h3>
-            <a href="./src/components/list-header.html">list-header</a>
-            <a href="./src/components/section-tab.html">section-tab</a>
-            <a href="./src/components/list-filter.html">list-filter</a>
-            <a href="./src/components/list-side-panel.html">list-side-panel</a>
-            <a href="./src/components/pagination.html">pagination</a>
-        </div>
+                    <div class="tools">
+                        <div class="item">
+                            <h2 class="title">언어</h2>
+                            <svg
+                                width="89"
+                                height="28"
+                                viewBox="0 0 89 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="88" height="28" fill="url(#pattern0_333_4989)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4989" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4989" transform="scale(0.0113636 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4989"
+                                        width="88"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAcCAYAAADlXHhOAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAWKADAAQAAAABAAAAHAAAAABK87aZAAAEeElEQVRoBe1ZbWxTVRh+em/px9qu7cY6BvOLEDYTSFQCSuJH4hQjSkaCgx/EIPxAxT8SwleiEZkh/iCGHybEGYxRp4kmBo2wH8SNGDV8LBGyCZluQ+aArWvXUtqV9vbe6zmn66W1F3du9cY475vce9/7nuc8p+e5733Puant99bFKiwzTQHBNGaLmClgCWxyIlgCWwKbrIDJ9FYGWwKbrIDJ9HYefrG2Hg1HvuOBapjRtU2a/392uEqEHI8a0ki5ETOEn81grgyGnIOSvA7B60fym4+ZryeKWNcAT8s6KAYfiB7XbInxCUxmq1yPMoFTPUchDfXrzt+1ooUJLBMstwkinM33Q0mnIF26yLqJNSHY590J6dplKLEJQBAI5gFdSml0CEqCvDHTPBSUHeyDms0wvP2ORRB9AeQi1yCHr+Q5dMbMN9w6O5rug00slSc7fBHqzdQtEIdXyvAXHWiZsC9YCDFQC7VxIea923VbtJEMFjw+1B3oRPbXPoR3Psc4qx55Bv7NexB/700kuz6FzeFiGL0Bowe3I/39cRR4KCb+fjuSxz6BzVWF+rc/g81TjcQXh5HoPMQoCtjiMf/MPff1DpZQxfHwrvXI/nK+ODSjzy0wyyRCJ/hroAycQ6b/TBm5PTQfYqgRcjxS1vZ3AmomjbFXnmYUtbsOYc5dTQjv3kBKVQJydLyM2rtmE5LHO+F5Yh0TtwzAGchdvYTI/q0aOhcd03xeh1tgmb6GxER/LavBE689XzYGzTpf62YYKhHTLPbQAgRf2sfu5tzdXMqtqshdGWYxNZN/9XNXSfnQWUypKPb598C98in4nt3E+tE3rxITA3Xwv7AbciyMqe4vgbERwzTcAhcy2Lt6I1zLHisZiE4+dvgNVj5ogxIznsE2lxu07lETyEOs1KSRIciRMQS37YdASkT8o4MIbNlrmE4a7AdNKqHKC++TbWxtGX+1FfQBGjGubRolLGRl5kIvaPaK1UE4l6xghzi3gY1Jn3gxlt1wnqSRQYxvX8uO5FcfcPbSh9H6S3c86VMnIE+G9UEzRCf2bcHkOzsQeetF3Pj6Q7IOOOFozifADF1LmrkzWJ7OSvrDqcWOHIDn0TVQSH2cOnmUxYRADbtWksGs4z90Sp/tZsLQXYnj3mW3ZRXJeuJZtV5rnyKLpTqVJDV+MarbXkb6TDdpU+F+sIVcVEi/DWhYXodbYLpNo0YXGPfKVcj8fBaT539kMZHUT/fDq2Gvb2T3hWxnN//GSVFws/fkjCPT3x3c1q7hMn2nkSMCq1IWzqUPsTnRRjWVQLyjHdLwBQ3L69h4/9Ggu4OGjm9LeGntpTVKCIZK4qNtSwHyI//rJviCpDQ48mWGZHAlxl+DyUqa/qELKvkgKBhdnYvFpV97qROfzwpx6RzpLoVtAysUl3JwZzAFMyNfN84ly+Fe/jg76B413dtD6lUPsgM/sVpVgFrXSgS2VDOkAHeJMMRqgTUFLIE1KcxxLIHN0VVjtQTWpDDHsQQ2R1eN1RJYk8Ic5w9c+JV9ooF0xQAAAABJRU5ErkJggg=="
+                                    />
+                                </defs>
+                            </svg>
 
-        <h2>아이템 디테일 페이지</h2>
-        <div>
-            <a class="shortcut" href="./src/item/item-detail.html">페이지 바로가기</a>
+                            <svg
+                                width="78"
+                                height="28"
+                                viewBox="0 0 78 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="77" height="28" fill="url(#pattern0_333_4990)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4990" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4990" transform="scale(0.012987 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4990"
+                                        width="77"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAcCAYAAAAk2zLiAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAATaADAAQAAAABAAAAHAAAAACpDMNoAAAFNklEQVRoBe1YaUxcVRT+WIXSYRj2lqUCqayWTSltglJspNaVhKSR2h+NNdZaNdp/NcVK1SY2xiWxSbFaI00al2hrW5GGtlQUi0UEoSy1LTvCMOxrgQHPucOjDxjIe89/ZE7yZu6795xz3/vud5YZO583fpqGTVQhYK9K26YsELCBpoEINtBsoGlAQIOJjWk20DQgoMHEUYmNp5sT6nI2K1Gd1YnILkTP8MTs/XIaKApPfvlpFd0c6y5XwPjwFTGNFY2Dd+Dnfg9OlDTDNDTOUwvEe6Uzdm4MFroLFpfRhGLQuggoBu378naUNvRahWBDqKcArYsAVis6F0fEBenFHs3doyhr6sXUPHbzoawPMWB03IyqtgHwM8nF3g6ID/bAar0LmntGSad/jo9VNB8ToIOHqxPa+8dw9XYvzPM3kTtcZKwcNAGEDmf3Jlt1lfTeFfgSqCzGeS9j1UA2mR7ti4+3rQPnTkkKa7uQdbxM3PqT3y93JiKeQDVT7DsSOpwCHjpSjPrOIaHzcmoIXtscBr2LExhrBvBMxb94Ia9CrPOBV2ZvEmPpg4FP/6gEkyqBUwwah6dcKlr6MUInLgmv++icxa1xYK6upGPt24fY82lWLJwd7bHjiz/x681uJId44qk4/1n1V9PCkBCsx/7TNThe3IRAgwt2JAdj3DwldAwrnJD9RARaekeR+E4RJml+PflYF+g+62NswowDZ2px7u8ODN8xI+/5RMFaZh/bqRHFoHXPY8/+H2oohPrm7OWnszDNNKQctJS13nCn0My72oKC60bh72JdF/iSxDRsCcO9qaEI9XJDye1uvF/wz2xocbiOEChBBlfkPheHYgI+v7oTRTdMkgv0j07i2C+NSL3PGwlrPBDm44YfKztUA8YOFYM2n2lHMmPoQSwtRcfAGHafrCSmWUDrVME0f73FpnWJ0z7xWxPC/VYiI34VdqWsEVdtxyAyjpaKKj02OYVXTlXicEY0Hon0EdebW8ORTcz6nGzlkrLWC5mJq6GnvNZNh8GhrjY8FbUcvKlUMc8SvX335YvQ2BjmCb6CDCvEc0lM44dRKg2mEaEaS/lKLnrXu+c5YZ7GiycrcP/bl7Drq79wvX0Qkf46PBrlK0xcKLR/rjYi/tBlPPbJ7/iw8BacHOywZ1OI3KUYHzpfj9icy/j6WqsoWltiLD4WKC4xcffJllDiJSlPceVhyTlXh8yEABEi35W3iTnvmZymhmlXKIS40m2N8cPBJyNETnuAwoer4Lbca8LvMQq5Lgr5wlqjaGd4DOjQ2jsm1qMD3HF0eyw+o/BjQG91DYtC0Tazzkpp4d54mphaVG8SaxvosFmMA8oPWBjQh2LQpDzFbcGBx8NxvqoDr39TJfwk3WvAW/TC4XT6LGpaDi4m26lKcri/9HAI9lAVHKa5XAJAkvLmPuymtaykQMHwssY+7Pu2WgDMOiYqQoOUs959Jgp2VDXb+sZwipj0wYWbkgvhc0u0H559MFDM8b6H82/gj0br7dOsoZWBndJ/bn0pX1UfTJvjghnlQDmB+ye5RGZfFPlCPqdkzGHmRb7Yr7U8wyzniimv2nK/HJKsM79/k+twW+Pi5CD20NKjsS/FTOM8dZr6nrQIH1Ht2Jh7H7lwhbpEVU9NTpPbc0JnliwmfTOFZ7F1zn1LAcZ2lp93/+83sWKmSQ/KzEoONSA9yg/clPJpFdQYcYHahdKGnjkduGSz3L5Vg7bcANDyPopbDi3Ol6uNDTQNJ2sDzQaaBgQ0mNiYZgNNAwIaTP4DZHkXX7sO6CIAAAAASUVORK5CYII="
+                                    />
+                                </defs>
+                            </svg>
 
-            <h3>컴포넌트</h3>
-            <a href="./src/components/item-detail.html">item-detail</a>
-            <a href="./src/components/cart-section.html">cart-section</a>
-            <a href="./src/components/detail-nav.html">detail-nav</a>
-            <a href="./src/components/detail-header.html">detail-header</a>
-            <a href="./src/components/brand-info.html">brand-info</a>
-            <a href="./src/components/detail-info.html">detail-info</a>
-            <a href="./src/components/item-review.html">item-review</a>
-            <a href="./src/components/item-qna.html">item-qna</a>
-            <a href="./src/components/item-guide.html">item-guide</a>
-            <a href="./src/components/pagination-arrow.html">pagination-arrow</a>
-        </div>
+                            <svg
+                                width="144"
+                                height="28"
+                                viewBox="0 0 144 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="143" height="28" fill="url(#pattern0_333_4991)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4991" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4991" transform="scale(0.00699301 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4991"
+                                        width="143"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,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"
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="item">
+                            <h2 class="title">개발 환경</h2>
+
+                            <svg
+                                width="172"
+                                height="28"
+                                viewBox="0 0 172 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="171" height="28" fill="url(#pattern0_333_4993)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4993" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4993" transform="scale(0.00584795 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4993"
+                                        width="171"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,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"
+                                    />
+                                </defs>
+                            </svg>
+
+                            <svg
+                                width="76"
+                                height="28"
+                                viewBox="0 0 76 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="75" height="28" fill="url(#pattern0_333_4994)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4994" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4994" transform="scale(0.0133333 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4994"
+                                        width="75"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAcCAYAAAApxUKlAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAS6ADAAQAAAABAAAAHAAAAAAOOHRgAAADjElEQVRoBe1YWUhUYRT+zJ3UjLJNHcclE8G0AsFKMQp8CHqoKIsigh6DeqgeehCCtod6rhejokRFw6gEo6DEZTClQKwwM5fIfV+YXDun0+XemRDvP/jieA+M8y/nnn/O93/n+3+vz7nz8/OwzBQCq0x5WU5/EbDAUiCCBZYFlgICCq4WsyywFBBQcPVT8HVxDQwA7DFAjA2IjwVsUcCjAuBrs4ubV3VMgZWdCQwNA7+6gL5+yf96HhC+RsdiagpoaQUCAwk8OxARAbyv0ue9oWUKrK3xQPouSXd6GqitA4KDXNP/0Q5cvQRER8p4XcMKBaukDNiZCvgRtP7+QFiYMMgIV3AwMDEB1NWTbxpQ+tw4u3A7JhoIoJJmsGdmxG9tOLB+nbB4eITWCwU2btBjTNGGtXdIP5rKP4jY7G78nFYF2hpGn94+YGTUOLJ42xSzuAQr3gIHcxYOyJrFepVALHzzDhgcWtjXOMMlvjcDuP8AaPgoM7lHZXNu3QU46bQU4PQJ/amubiDvhvTP0DjrpruxBDwpktGzp4DILa4ePKcqE6bA4mXKK4CsPUBoiOuixh7vFu/0K/I1a1zSDBaXOYPFmpeSDPRQrNY2iVLlALp7gcsXgHryyX+sR7+XL2zP2S9xCkuBpi/A5KTuo7Wu3dbZq8oqjmH6nsXU10orZDVQWQ1U1Wo/Q1iVnASUvQScTn18sVZzCzAwKAAxUDu2S/IOAlGzuTmAtZKN21q5cp+f7e4BxkkC2IapCrg/OiZ94999WcCBbPkEkJyommmwOHA17XDHTyq1uP9Z1kM7P0uJqFKb4zo+CEAMFDOM34Pw2FJbLF114uzyYZ1UNdNlqAUuLAGuXJSddv4GGpsk0aREoIjmPHnhw6XIesj6ZbfJFaR/QFtx6b5v3nFlpWpkJWZx8G/fSVs+/WNCKtUxRegi2rMQN35WXV78mZVtdBry5dbXV64mxkh8OvIcG9/t+CrjiWWSNmbtls/mTeoRlMHiJYqfUcnNAp2dUnrJ24CCYvXFjU/UELvYWI9YxI3Ggn/8iIwkJtDJmGucNd8+eUxOVT5ZOY6q+Xj6pvTwISCKjmO+VjAbHj5VXXr5+XvELE6z/LX8b5iRrp+Syy99tV+sLPBaeL4elL0gDSE9GRvXRr3722OwGJbKGu8Gxz07j8vQPdBK6FtgKeyyBZYFlgICCq4WsyywFBBQcP0DmxH2wUXsGccAAAAASUVORK5CYII="
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="item">
+                            <h2 class="title">저장소</h2>
+
+                            <svg
+                                width="69"
+                                height="28"
+                                viewBox="0 0 69 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="68" height="28" fill="url(#pattern0_333_4996)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4996" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4996" transform="scale(0.0147059 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4996"
+                                        width="68"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAcCAYAAADYzhkoAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAARKADAAQAAAABAAAAHAAAAADIuke1AAAD7klEQVRYCe1XW2gUVxj+zszsmr25MdHUG4I3YrzEGitahEKh+tAXa98EHxQVvCsqKkZNQrS0PsRoNQHbp4pCBCkIFvJQqXgD7ygiKt4vUeM1mV3X3bn0nN/sODuJm51YlC1zYPb8t/OfM9/5zzdn2asfKkx4zUJAsiRPIAQ8QByF4AHiAeJAwKF6FeIB4kDAofa8QgIhhLf9gciOA2C9Cx1p81ftMSDBBWshjxwDachwhGv3gIV75y8KtpW7B8TfCwWzl+DN/kYYjx9Qqv8TKMzVTbUgiPDmnZDLJkC/ehGxrSvAikoQqdsPKD7oN68iVrUQZky1YZ6j6PNDHlYKqWQgjdevX4aptlmDWWExpIFDLB2pJPQbV0iXh5YCgeB7X4dkvn4J4+GdTvZsBiWb0+5joQhCNY2Qh5eRWS77knrj/i1oV85DGT+ZfKGqBqibFwKJuH14VlkeU4Hg8hoCAyb/J8EYoGmI/bIG2tljNNY36RsEFm+08pjPn6Bt/vekB5ZsstZlBXAhdawZ8boNdlO3srx+1IDq7qJYtA/CW/aAdsIWzMJR2sXk34egjP0KUlE/SMUl8I2bhOTxZnopW3iXIotEee7fIRUWIV6/EfHtlUj+dQDQNV4p7TDu3aRx+p0b0C6egv+7GQSSWjmfx+jkE/Zk80EwSYY8YjQSe3/Fm9+2IXXmqKuNEclyqpBwdQMnzxE0uf1HvIzCiVWZtQjqmtl8hwcgsvtPyKXj+NHaBXXDPHt4l7JSPhkC8NQ/h2lHRZD5+gUSnKMymsFfPvn2nckuc4vxtIXsZvsr6o0Xra6PyrvEQE6kqj+8m47vslfGToTUf3CGL+O8Z3gyFam4HxkMft5FizadQPTgGXr802aS7VP+5ARIvK7SOstdLk6S+H2kCZH6JiJXscO5VIfIpbfcp5S+Kd9SH2/8Cdq543yr+NIEl3zilhMg4CVKBHf+ZMbyEvsakDxyCIjzr4q/gDN9CCYvV3X9XBiP7mXEfkjRLpyC8eA2pC8GIVRZT7xgvHzWKZxxbpJHlZOdRYs4Z03sFPNfGHIDRMwkWP/n1dAunbbmZX4/rwj+dDTB/KIy0veTtD1rr6UQq11GFahM+BrBVVvhn/4jcYDRUT1ivK9iKgIL1lEqubQcwZW1WdP21OnuHiJm4feFcE0D3UXsk5qtLWjnzG+2Prab3cmyAtanL8w2zidpAnWX4aOjc6+Q9FT8QqRWL4W4OKUbgcGPyUeBIZKJT+0zDuhnAkMswT0gYlQyAbVqEfRrl4gr2tfNIe4Qrnxv7o9Mvr9xN+vvWYV0kzSf3R4gjt3zAPEAcSDgUL0K8QBxIOBQ/wWqtkpmJBqbeQAAAABJRU5ErkJggg=="
+                                    />
+                                </defs>
+                            </svg>
+
+                            <svg
+                                width="97"
+                                height="28"
+                                viewBox="0 0 97 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="96" height="28" fill="url(#pattern0_333_4997)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4997" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4997" transform="scale(0.0104167 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4997"
+                                        width="96"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAcCAYAAACeeLqCAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAYKADAAQAAAABAAAAHAAAAACVEVKAAAAFHklEQVRoBe0YaUhcZ3DUWvFWPKJgA0ZdLzyKGDS1iKJF/FGjweOHFvRHShol1aYiGJqmIqilWqPFqoWGpokYERNQqv6qqQeIEA/EH55oPaK2gvdtZ6a+x3bdtc+t9hX6BnbffDPzZr6dmW9mvjVwunTpCBSQzQOGsllWDLMHlADInAhKAJQAyOwBmc0rJ0AJgMwekNn8G/rYDwsLg4DAQPD19QUcY2FxcRF+ePwYuru69FH3v37H4Cz3ACcnJ/i6vBzCw8O1Oq23txc+vHkTFhYWtPIV4kkPSA6At7c3ND1/DtbW1ie1qFF+W16GxMREGBkZUaMqqC4PSAqAsbExdGF5eevyZYi/fp1LTm5uLoyNjbFeNzc3aGlpYad3otzM9DSfkq2tLV12tdJ9fHyAdO3v78Pw8DBMox4B3N3dwd7eXljC0tISjI+Pg42NDXh5eYl0daS/vx+2t7fByMgIgoODYWNjA4aGhljEwcGBbc3MzMDs7CzTLmE5dXV1Zbtzc3NM8/PzA3Nzc+jr6+N9EVGgEb67u8snXpAn2pmAStDffT69e/dIgPeio3XKe3t5CWJHBQUFOuU07b0dGHjU09Mjvnt4eMj4w/JyUUdjY6PIJ6ShoYF5qampf6GrL965do1lPFUqJmNQRX2f5OQwrbioSKTl5eUxrbCwUKQNDg4yDfudSCM9mvBNZaXI1/x9p60ljaEJN25wUKm8TE1N6Qzw2tqaWHqSkpJ0ymkyHlZUQEhICFRVVYEHZrrblSvw8Z07YGBgIIrSGh3Dawwu5GRnM06N/10cCoS+ND8/z2uiqZ8gUdE5IqG459jYWNb4flycXpolTUFUFgh+7uiA1dVVnYaodLS2tgL1C5VKpVNOnUFlhaaqX7EUfPHggciqr68XcUL29vZgD4874/ikNcHm5iaXQkPDP3OJ6EJpZAG1L2dnZygqLmaKysNDjaMfGhEZCc44mOBpgO9qa/VSIikAgmZrKysB1fm0srTUydPGIKcQ/L6yws8fnzyBiIgIxpuamiDz9m3Gz+PL1NQUgoKCWJWtre0/VvnRrVvwpokJ66Gx3ATxnZ2dM+mVVIKo2RH4BwSwkdMshISGMpsyUwpMTk6yGDU2FxcXqKmuhm+xFFFGC1ktRY8UmYmJCYiOiuJPWWnpiVeoYROoB0fAd4556i9F4gkI8PeHhmfPID4+HqJQ91lBUgCEycHR0REqKivBzs7uhB1LzPzikhK+nBGzra3thIw2wvr6OtQ9fcr1/vtHj0Dl6am1dlNZcz8uGx5Y3mh93jCAUxOVkzis5wkJCZCNfYaSYnR0FGifmhATEwPJyckQfPUqs1aOT7Gm3GlrSSWotqYG0tPToa6ujm++gzjKUb2uxmwloLn/K8woGlcJ6EfU4DtSIf/ePVjFBv5BWhpQgyWgMbP/1StRRWZWFjuFCGkoR+UkKzNT5J8HQncXcnpKSgrQYEBOf4F3n0pMOm1AMtRzaATNz8+H7u5ubWKn0iTdA0jDZ/fvQ0ZGBuAYCt44r3d1dsIyTkUEgVj/fsLmK8CXeBJKtRxxgX/ak27bNK/TRCUn0ImmMnpwcHCh25B0AmgHlPFW2IQ7Xr6EgYEBWHz9WgyA+iZLcMooKyvTe9P/lb8x/q0EMLKwsPhcqrfa29vhFwwA3RipLwg3SDMzM/6LgiaW5uZmqeoUOfSA5BKkeOtiPCBpCroY04pW8oASAJnzQAmAEgCZPSCzeeUEKAGQ2QMym/8DnfdyDmwaBdoAAAAASUVORK5CYII="
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="item">
+                            <h2 class="title">협업 툴</h2>
+
+                            <svg
+                                width="106"
+                                height="28"
+                                viewBox="0 0 106 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="105" height="28" fill="url(#pattern0_333_4999)" />
+                                <defs>
+                                    <pattern id="pattern0_333_4999" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_4999" transform="scale(0.00952381 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_4999"
+                                        width="105"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,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"
+                                    />
+                                </defs>
+                            </svg>
+
+                            <svg
+                                width="99"
+                                height="28"
+                                viewBox="0 0 99 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="98" height="28" fill="url(#pattern0_333_5000)" />
+                                <defs>
+                                    <pattern id="pattern0_333_5000" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_5000" transform="scale(0.0102041 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_5000"
+                                        width="98"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,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"
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="item">
+                            <h2 class="title">배포 환경</h2>
+                            <svg
+                                width="101"
+                                height="28"
+                                viewBox="0 0 101 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <rect x="0.5" width="100" height="28" fill="url(#pattern0_333_5025)" />
+                                <defs>
+                                    <pattern id="pattern0_333_5025" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_333_5025" transform="scale(0.01 0.0357143)" />
+                                    </pattern>
+                                    <image
+                                        id="image0_333_5025"
+                                        width="100"
+                                        height="28"
+                                        preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAcCAYAAACXkxr4AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAZKADAAQAAAABAAAAHAAAAADmGXVPAAAEmElEQVRoBe1YbWyTVRR++rHPbqNso6tsBTZZJ0yn05AAJsaA/vCPRoMY/hgSdX7FqIkx0fgDA2r0h5poUAiJifwhwRh/aPwjZkFwygb7CFC6jXXsk5Wum+3abv2a59627167NW9f31dTzT3N+p6ee+655z7n3nPOOwO6flyGoIJBwFgwnghHOAIiIAV2EERAREAKDIECc0fcEBGQAkOgwNwRN+T/FJAjjmacaLqzwLb033ZH3JACi59ZrT/nW3fik2kPvvHPILG8jAS0veibYcDuSit3YyAcxHwijjKjETss6zAVW8LwYpiPyfXkPveGAggmE2gvr0SlafV2vLEori2G+JR7LVWoMJrwa3Ae8Sy/7UXFcJZaJNOLy0lcWPiD/64xF6G1rEIaY0yM9t61MI86mtdC85jfzH9GVvKjjfwJkqw3LeMDeXwZ1P7rZG9VDZ6qtaNj5Eoe5pVV1pPz/h0PccXTszexf6gPzaXlGLznARydGcPLnqt8TK4nt7rrchd+I+B67tqN+wjwbDo1O40DQ/1c3N92PwequvsnzBFYcnrO1oDjsvQ7EV2E41InV3m8ug7fOtvl6piNx1Dbcwa1FCw3+WoxmbCt7xd4liI8jT9D9pjvbA9qaPWRUph9JjAL9scAY8D5ybHXRl046ZtSmKk8/GSNHY/6bHBFFnIquyIhPOG+JI3fiEY4v2+wF6UGI169bQteqHPgrbFBfEe3OJAFvDQxi/nKO4mrtO45ygDfz92ig9GbpQF8fWsSH0yOcHkmM/ho/2ytY02t+GhzCw6ND+OgrR4X6eZ+qTIYzHBeAXmn/naYDQbJwSMT15GkK/+wqxvrTUV4b5OTB+Tt+iYUEygZOjQxnGEVn+eCc/z0Hm1sxWPuizn1bZQiGOiM4pRWXqHDwGiUTiYjXzzKn1N0wjOpigsUvlgKiySTXIuBneHl05rLLNhP2YGRKxzCUDqdnvCOg92IfdV2bKPUZqDPi5RBUtbkFpT5vAKyEooVg0ZalEHvWQrDas7LzMrkNbip6BJO+abxeeN2fLipZQ2NlKicasDOdM2JpQHMqazzwN1UF5pKyrnVH+a8OO2/yXkG/EueK7hAaZPVmmMz4+gOpeqPWhfyQvLw5PU17bKTIKf309dZLlPDf0FX/OkN9di7ribnNDcV6PaB8znH/8mB4wT06zeurbkES1GdlMr3UI1VWzfkBvMKiHzCnqpqHKjdCGffWUls6/lZ4rUw7KR1jFzmBVqeIuU2WcfTYXNIIlYnvOk0JQkVmIOUXkKJBNf6nTqlfuqEGopLpG6PpcUHaZ+dAb+Cpb8OR5OpjpN1n3+XVAfksMPJ21624LsNW2GnjTyvU8fFbDJwPp0exRsbG9nPVeQoLuUFNDMwEA7Au5CqGxmZ0vPjzXdIKm+Oufmaj1g34LMt27l8V4UVJ7e2SV2WpPwvMKrbXrlP7E3dXlSCZ+lUC9IHgZWWSB97wopGBFSnLPl6rMgV01u1IP0Q0BSQMer1BemLgDje+uKp2ZoIiGYI9TUgAqIvnpqtiYBohlBfAyIg+uKp2ZoIiGYI9TXwJ1R3freOmfp0AAAAAElFTkSuQmCC"
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-list content-page-main" id="content-05">
+                <h3>메인 페이지</h3>
+                <div class="video-wrapper">
+                    <video autoplay muted>
+                        <source src="/video/main.mov" />
+                    </video>
+                    <a
+                        href="/src/item/main.html"
+                        class="link-button mt-5 p-6 w-22 h-22 text-center font-semibold content-center bg-ui-primary text-ui-white rounded-[50%] border-3 border-ui-mobilebtn-border"
+                        >링크</a
+                    >
+                </div>
+            </section>
+            <section class="content-list content-page-item-list" id="content-06">
+                <h3>제품 목록 페이지</h3>
+                <div class="video-wrapper">
+                    <video autoplay muted>
+                        <source src="/video/item-list.mov" />
+                    </video>
+                    <a
+                        href="/src/item/item-list.html"
+                        class="link-button mt-5 p-6 w-22 h-22 text-center font-semibold content-center bg-ui-primary text-ui-white rounded-[50%] border-3 border-ui-mobilebtn-border"
+                        >링크</a
+                    >
+                </div>
+            </section>
+            <section class="content-list content-page-item-detail" id="content-07">
+                <h3>제품 상세 페이지</h3>
+                <div class="video-wrapper">
+                    <video autoplay muted>
+                        <source src="/video/item-detail.mov" />
+                    </video>
+                    <a
+                        href="/src/item/item-detail.html"
+                        class="link-button mt-5 p-6 w-22 h-22 text-center font-semibold content-center bg-ui-primary text-ui-white rounded-[50%] border-3 border-ui-mobilebtn-border"
+                        >링크</a
+                    >
+                </div>
+            </section>
+            <section class="content-list content-page-components" id="content-08">
+                <h3>컴포넌트</h3>
+                <div class="index-link">
+                    <div class="compoents">
+                        <span class="title">메인</span>
+                        <ul class="item">
+                            <li class="purple"><a href="./src/components/header.html">header</a></li>
+                            <li class="purple"><a href="./src/components/nav.html">nav</a></li>
+                            <li><a href="./src/components/main-banner.html">main-banner</a></li>
+                            <li><a href="./src/components/menu-list.html">menu-list</a></li>
+                            <li><a href="./src/components/event-info.html">event-info</a></li>
+                            <li class="purple"><a href="./src/components/item-img.html">item-img</a></li>
+                            <li class="purple"><a href="./src/components/item-info.html">item-info</a></li>
+                            <li><a href="./src/components/sub-banner.html">sub-banner</a></li>
+                            <li><a href="./src/components/mobile-button.html">mobile-button</a></li>
+                            <li class="purple"><a href="./src/components/footer.html">footer</a></li>
+                            <li class="purple"><a href="./src/components/item-card.html">item-card</a></li>
+                            <li><a href="./src/components/recent-view.html">recent-view</a></li>
+                            <li><a href="./src/components/modal.html">modal</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="compoents">
+                        <span class="title">제품 목록</span>
+                        <ul class="item">
+                            <li><a href="./src/components/list-header.html">list-header</a></li>
+                            <li><a href="./src/components/section-tab.html">section-tab</a></li>
+                            <li><a href="./src/components/list-filter.html">list-filter</a></li>
+                            <li><a href="./src/components/list-side-panel.html">list-side-panel</a></li>
+                            <li><a href="./src/components/pagination.html">pagination</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="compoents">
+                        <span class="title">제품 상세</span>
+                        <ul class="item">
+                            <li><a href="./src/components/item-detail.html">item-detail</a></li>
+                            <li><a href="./src/components/cart-section.html">cart-section</a></li>
+                            <li><a href="./src/components/detail-nav.html">detail-nav</a></li>
+                            <li><a href="./src/components/detail-header.html">detail-header</a></li>
+                            <li><a href="./src/components/brand-info.html">brand-info</a></li>
+                            <li><a href="./src/components/detail-info.html">detail-info</a></li>
+                            <li><a href="./src/components/item-review.html">item-review</a></li>
+                            <li><a href="./src/components/item-qna.html">item-qna</a></li>
+                            <li><a href="./src/components/item-guide.html">item-guide</a></li>
+                            <li><a href="./src/components/pagination-arrow.html">pagination-arrow</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
