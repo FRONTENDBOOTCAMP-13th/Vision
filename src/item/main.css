@@ -1,0 +1,71 @@
+@import '../components/header.css';
+@import '../components/nav.css';
+@import '../components/main-banner.css';
+@import '../components/menu-list.css';
+@import '../components/sub-banner.css';
+@import '../components/mobile-button.css';
+@import '../components/footer.css';
+@import '../components/item-card.css';
+@import '../components/event-info.css';
+@import '../components/recent-view.css';
+@import '../components/modal.css';
+
+body {
+    @apply min-w-[18.75rem];
+
+    @media (max-width: 63.9375rem) {
+        @apply pb-[3.125rem];
+    }
+}
+
+.header-nav {
+    @apply w-full grid sticky top-0 z-1 lg:contents;
+
+    .header {
+        @apply lg:pt-1 lg:px-0 lg:pb-0;
+    }
+
+    .nav {
+        @apply mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-2 lg:h-auto;
+
+        .nav-list {
+            @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
+        }
+    }
+}
+
+.menu-list {
+    @apply mt-6 mb-8;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sub-banner {
+    @apply mt-8 lg:mt-18;
+}
+
+.item {
+    @apply m-auto;
+
+    @media (max-width: 64rem) {
+        padding: 0.625rem;
+    }
+
+    @media (min-width: 63.9375rem) {
+        @apply max-w-[65.625rem];
+
+        .item-card {
+            @apply flex-[0_0_24.25%];
+        }
+    }
+}
+
+/* 추가 리팩토링(25.3.21 15:15) */
+
+.event-info {
+    @apply py-0 mt-8 lg:mt-18 lg:mb-6;
+}
+
+.modal-backdrop {
+    @apply z-[3];
+}

@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .list-filter {
+        @apply flex justify-between text-[1rem] m-2;
+
+        .filter-mobile {
+            @apply flex gap-4;
+
+            label {
+                input {
+                    @apply hidden;
+                }
+
+                span {
+                    @apply flex justify-center items-center cursor-pointer gap-1;
+                }
+            }
+
+            @media (min-width: 64rem) {
+                display: none;
+            }
+        }
+
+        .filter-web {
+            display: none;
+        }
+
+        @media (min-width: 64rem) {
+            .filter-web {
+                display: block;
+
+                ul {
+                    @apply flex gap-2 text-[#A6A6A6];
+
+                    li {
+                        @apply flex after:content-['|'] after:ml-2 last:after:content-none;
+
+                        a {
+                            @apply flex justify-center items-center focus-within:text-black;
+
+                            svg {
+                                @apply ml-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

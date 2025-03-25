@@ -1,0 +1,102 @@
+@import '../components/header.css';
+@import '../components/list-header.css';
+@import '../components/nav.css';
+@import '../components/section-tab.css';
+@import '../components/list-filter.css';
+@import '../components/list-side-panel.css';
+@import '../components/item-card.css';
+@import '../components/pagination.css';
+@import '../components/recent-view.css';
+@import '../components/mobile-button.css';
+@import '../components/footer.css';
+
+/* 아이템 리스트 */
+
+body {
+    @apply min-w-[18.75rem];
+
+    @media (max-width: 63.9375rem) {
+        @apply pb-[3.125rem];
+    }
+}
+
+.header-nav {
+    @apply lg:w-full grid sticky top-0 z-1 lg:contents;
+
+    .nav {
+        @apply hidden lg:block mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-1 lg:h-auto;
+
+        .nav-list {
+            @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
+        }
+    }
+    /* 모바일에서만 표시 */
+    .list-filter {
+        @apply w-full bg-ui-white m-0 py-3 px-4 lg:hidden;
+    }
+}
+
+/* web에서만 표시 */
+.section-tab {
+    @apply max-w-[65.625rem] mx-auto mb-10;
+}
+
+/* side-panel-header+side-panel & item+pagination */
+.main {
+    @apply max-w-[65.625rem] mx-auto lg:grid lg:grid-cols-[13.75rem_1fr] lg:gap-7;
+
+    /* web에서만 표시 */
+    .side-panel-header {
+        @apply hidden lg:flex py-4  text-ui-black items-center justify-between border-b border-ui-gray-light;
+
+        button {
+            @apply flex items-center text-ui-gray-light gap-1;
+        }
+    }
+
+    .list-side-panel {
+        @apply px-2 my-2;
+    }
+
+    /* web에서만 표시 */
+    .list-filter-web {
+        @apply hidden lg:block px-0;
+    }
+    .web-only {
+        @apply hidden lg:block;
+    }
+    .item {
+        @apply grid grid-cols-2 gap-y-9 gap-x-2.5 mx-0 px-4;
+
+        /* svg 별도 정의해서 사용할 수 있도록 태그에 사이즈 및 속성 정의 */
+        .item-keep {
+            @apply flex items-center justify-center gap-1;
+
+            svg {
+                @apply w-[1.25rem] h-[1.0625rem] block fill-none;
+            }
+        }
+
+        .item-info {
+            @apply mt-2.5;
+            /* svg 별도 정의해서 사용할 수 있도록 태그에 사이즈 및 속성 정의 */
+            .review-count {
+                svg {
+                    @apply w-3 h-3 block fill-current text-gray-700;
+                }
+            }
+        }
+
+        @media (min-width: 64rem) {
+            @apply grid-cols-3  gap-y-[6.6875rem] px-0;
+        }
+    }
+
+    .pagination {
+        @apply my-20;
+    }
+}
+
+.footer {
+    @apply mt-20;
+}

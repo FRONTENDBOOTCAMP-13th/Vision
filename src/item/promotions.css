@@ -1,0 +1,49 @@
+@import '../components/header.css';
+@import '../components/list-header.css';
+@import '../components/nav.css';
+@import '../components/section-tab.css';
+@import '../components/list-filter.css';
+@import '../components/list-side-panel.css';
+@import '../components/item-card.css';
+@import '../components/pagination.css';
+@import '../components/recent-view.css';
+@import '../components/mobile-button.css';
+@import '../components/footer.css';
+
+/* 아이템 리스트 */
+
+body {
+    @apply min-w-[18.75rem];
+
+    @media (max-width: 63.9375rem) {
+        @apply pb-[3.125rem];
+    }
+}
+
+.header-nav {
+    @apply lg:w-full grid sticky top-0 z-1 lg:contents;
+
+    .nav {
+        @apply hidden lg:block mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-1 lg:h-auto;
+
+        .nav-list {
+            @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
+        }
+    }
+    /* 모바일에서만 표시 */
+    .list-filter {
+        @apply w-full bg-ui-white m-0 py-3 px-4 lg:hidden;
+    }
+}
+
+/* side-panel-header+side-panel & item+pagination */
+.main {
+    @apply max-w-[65.625rem] mx-auto lg:grid lg:gap-7;
+    .promotions {
+        @apply grid grid-cols-1 gap-4;
+    }
+}
+
+.footer {
+    @apply mt-20;
+}

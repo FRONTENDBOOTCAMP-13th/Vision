@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .footer {
+        @apply w-full hidden text-base text-ui-black border-t-2 border-t-[#fff4f4] mt-20;
+
+        @media (min-width: 64rem) {
+            @apply block;
+        }
+    }
+
+    .footer-main {
+        @apply w-[65.625rem] mx-auto py-8;
+
+        [href^='mailto:'] {
+            @apply text-ui-primary;
+        }
+
+        @media (min-width: 64rem) {
+            @apply flex flex-col gap-6;
+        }
+    }
+
+    .footer-content {
+        @apply flex flex-row justify-between;
+    }
+
+    .footer-reps {
+        @apply flex flex-col gap-5;
+
+        .footer-title {
+            @apply text-xl font-bold;
+        }
+
+        .footer-contact {
+            @apply inline-flex gap-2 items-center;
+
+            .footer-contact-tel {
+                @apply text-4xl font-bold;
+            }
+        }
+
+        .footer-qa {
+            @apply flex flex-col gap-4;
+
+            .footer-qa-list {
+                @apply flex flex-row items-center gap-4;
+            }
+
+            .footer-qa-title {
+                @apply w-[9rem] px-[1.5rem] py-4 text-sm text-center leading-4 border border-ui-gray-light;
+            }
+
+            .footer-qa-hours {
+                @apply text-ui-gray-mid text-sm;
+            }
+        }
+
+        .footer-qa-nonmember {
+            @apply text-ui-gray-mid text-xs;
+        }
+    }
+
+    .footer-info {
+        @apply flex flex-col gap-8;
+
+        .footer-info-list {
+            @apply flex flex-row gap-3;
+        }
+
+        .footer-info-address {
+            @apply text-ui-gray-mid text-xs not-italic flex flex-col gap-0.5;
+        }
+
+        .footer-sns {
+            @apply inline-flex gap-2;
+        }
+    }
+
+    .footer-certificated {
+        @apply border-t border-t-ui-gray-light pt-6 inline-flex justify-between text-[.625rem] h-auto text-ui-gray-mid;
+
+        >a {
+            @apply inline-flex gap-3 leading-3;
+        }
+    }
+
+    .footer-notice {
+        @apply pt-6 pb-8 text-[.625rem] text-center text-ui-gray-mid bg-ui-category;
+
+        .footer-notice-copyright {
+            @apply mt-2;
+        }
+    }
+}

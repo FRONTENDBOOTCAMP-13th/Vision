@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .item-info {
+        p {
+            @apply text-xs text-ui-gray-mid lg:text-sm;
+        }
+
+        /* seller-info 구분 스타일 */
+        .seller-info::before {
+            content: '[';
+        }
+        .seller-info::after {
+            content: ']';
+        }
+
+        .item-name {
+            @apply text-sm lg:text-[1rem] leading-snug max-h-12 whitespace-normal overflow-hidden text-ellipsis break-words;
+        }
+
+        .price {
+            @apply my-1 text-sm lg:text-[1rem];
+
+            .original-price {
+                @apply block line-through;
+            }
+            .discount-rate {
+                @apply text-ui-sale font-bold;
+            }
+            .discount-price {
+                @apply text-ui-black font-bold;
+            }
+        }
+
+        .review-count {
+            @apply flex place-items-center my-2;
+
+            .review-number {
+                @apply mx-1;
+            }
+        }
+
+        .item-tag {
+            @apply bg-ui-gray-light text-ui-primary font-semibold text-xs p-1 rounded-sm lg:text-sm;
+        }
+    }
+}

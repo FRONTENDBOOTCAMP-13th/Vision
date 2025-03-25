@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@theme {
+}
+
+@layer components {
+    .event-info {
+        @apply p-4;
+        .event-more {
+            @apply flex justify-between text-center items-center text-lg;
+
+            .event-name {
+                @apply font-bold pointer-events-none;
+
+                span {
+                    display: none;
+                }
+            }
+
+            .event-mobile {
+                @apply text-ui-primary text-xs;
+            }
+        }
+
+        .about-sale {
+            @apply text-sm text-ui-gray-mid pt-1 pb-1;
+        }
+
+        .clock {
+            @apply flex text-center items-center gap-2;
+
+            p {
+                @apply font-bold text-[1.25rem];
+            }
+        }
+    }
+
+    @media (min-width: 64rem) {
+        .event-info {
+            @apply p-4;
+            .event-more {
+                @apply flex justify-center;
+
+                .event-name {
+                    @apply font-bold text-[1.75rem] flex pointer-events-auto;
+
+                    span {
+                        display: block;
+                        @apply pl-3;
+                    }
+                }
+
+                .event-mobile {
+                    display: none;
+                }
+            }
+
+            .about-sale {
+                @apply text-center text-[1rem] text-ui-gray-mid pb-3;
+            }
+
+            .clock {
+                @apply flex items-center text-center justify-center text-[2rem] font-bold;
+
+                .clock-icon-web {
+                    @apply mr-2;
+                }
+
+                p {
+                    @apply text-black text-3xl;
+                }
+            }
+        }
+    }
+
+    /* 키프레임 애니메이션 추가 */
+    @keyframes rotateClockHand {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .clock-moving-web {
+        transform-origin: 1.0313rem 1rem;
+        animation: rotateClockHand 2s linear infinite;
+    }
+
+    .clock-moving-mobile {
+        transform-origin: 0.6875rem 0.6875rem;
+        animation: rotateClockHand 2s linear infinite;
+    }
+}

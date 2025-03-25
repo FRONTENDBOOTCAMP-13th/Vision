@@ -1,0 +1,107 @@
+/* 기본 컴포넌트 세팅 */
+@import '../components/header.css';
+@import '../components/list-header.css';
+@import '../components/nav.css';
+@import '../components/recent-view.css';
+@import '../components/footer.css';
+
+/* 기본 세팅(item-list.html 복제하여 사용) */
+body {
+    @apply min-w-[18.75rem];
+
+    @media (max-width: 63.9375rem) {
+        @apply pb-[3.125rem];
+    }
+}
+
+.header-nav {
+    @apply lg:w-full grid sticky top-0 z-1 lg:contents;
+
+    .list-header {
+        @apply hidden lg:flex;
+    }
+
+    .nav {
+        @apply hidden lg:block mx-auto my-0 w-full lg:p-0 lg:sticky lg:top-0 lg:z-1 lg:h-auto;
+
+        .nav-list {
+            @apply lg:mx-auto lg:w-[65.625rem] lg:p-2.5;
+        }
+    }
+    /* 모바일에서만 표시 */
+    .list-filter {
+        @apply w-full bg-ui-white m-0 py-3 px-4 lg:hidden;
+    }
+}
+
+.footer {
+    @apply mt-20;
+}
+
+/* 추가 컴포넌트 세팅 */
+@import '../components/item-detail.css';
+@import '../components/cart-section.css';
+@import '../components/detail-nav.css';
+@import '../components/detail-header.css';
+@import '../components/brand-info.css';
+@import '../components/detail-info.css';
+@import '../components/item-guide.css';
+@import '../components/item-review.css';
+@import '../components/item-qna.css';
+@import '../components/pagination-arrow.css';
+
+@layer components {
+    body {
+        @apply relative;
+    }
+
+    .detail-header {
+        @apply sticky top-0 z-1 lg:hidden;
+    }
+
+    .detail-nav {
+        @media (min-width: 1024px) {
+            @apply mt-8;
+        }
+    }
+
+    .item-detail-main {
+        @media (min-width: 1024px) {
+            @apply w-[1050px] my-14 mx-auto;
+        }
+    }
+
+    .item-detail-content {
+        @apply my-6 flex flex-col gap-[7.5rem] px-4;
+
+        @media (min-width: 1024px) {
+            @apply my-12 px-0;
+        }
+    }
+
+    .cart-section.mobile-hidden {
+        @media (max-width: 1023px) {
+            @apply hidden;
+        }
+    }
+
+    .cart-section.mobile-shown {
+        @media (min-width: 1024px) {
+            @apply hidden;
+        }
+    }
+
+    .item-guide {
+        @media (min-width: 1024px) {
+            @apply mb-8;
+        }
+    }
+
+    .item-review-wrapper {
+        @apply mb-30;
+    }
+
+    .pagination-arrow {
+        @apply mt-4;
+    }
+}

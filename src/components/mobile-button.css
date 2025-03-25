@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+
+    .mobile-button {
+
+        @apply fixed bg-ui-white w-screen bottom-[0rem] text-center h-[2.625rem];
+
+        .button-box {
+            @apply grid grid-cols-4 text-center justify-center items-center;
+        }
+
+        .button-icon {
+            @apply p-[.625rem] relative;
+
+            .mobile-check-box {
+                @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[1.5625rem] h-[1.5625rem] opacity-[0];
+            }
+
+            .mobile-check-box:checked~.mobile-icon>path {
+                fill: #5F0080;
+                stroke: #5F0080;
+            }
+        }
+
+        @media(min-width : 64rem) {
+            @apply hidden;
+        }
+
+        svg {
+            @apply inline-block;
+        }
+
+    }
+
+}

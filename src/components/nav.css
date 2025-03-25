@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .nav {
+        @apply text-ui-gray-dark text-[1rem] w-full bg-white;
+
+        padding-left: .625rem;
+        padding-right: .625rem;
+
+        ul {
+            @apply flex justify-between text-center items-center text-sm;
+
+            li.category {
+                display: none;
+            }
+
+            li {
+                @apply focus-within:text-ui-primary focus-within:font-bold border-white border-b-2 focus-within:border-ui-primary pb-3 pt-2.5;
+            }
+
+            .category {
+                display: none;
+            }
+
+            li.delivery {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: 64rem) {
+        .nav {
+            @apply justify-center m-4 text-[1rem] text-ui-gray-dark h-[4.5rem] w-[65.625rem] shadow-lg p-1.5 bg-white;
+
+            ul {
+                @apply font-bold flex justify-between p-2;
+
+                li {
+                    @apply hover:underline hover:text-ui-primary underline-offset-4 focus-within:text-ui-primary focus-within:border-0;
+                }
+
+                li.category {
+                    @apply flex justify-center items-center cursor-pointer relative;
+
+                    a {
+                        @apply flex items-center;
+
+                        svg {
+                            @apply pr-1;
+                        }
+                    }
+
+                    .sub-menu {
+                        @apply hidden absolute bg-white left-0 mt-100 w-50 border border-ui-gray-light max-h-90 overflow-y-auto;
+
+                        li {
+                            @apply flex text-center text-ui-gray-dark hover:text-ui-primary no-underline relative;
+                        }
+                    }
+                }
+
+                .category:hover .sub-menu,
+                .category:focus-within .sub-menu {
+                    @apply block;
+                }
+
+                li:nth-child(2) {
+                    display: none;
+                }
+
+                li.delivery {
+                    @apply block border-[#A6A6A6] border-1 text-[.75rem] rounded-2xl p-1 hover:no-underline hover:text-ui-gray-dark;
+
+                    span {
+                        @apply text-ui-primary;
+                    }
+                }
+            }
+        }
+    }
+}

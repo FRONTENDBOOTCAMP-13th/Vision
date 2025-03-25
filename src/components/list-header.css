@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    /* 리스트 페이지 검색창 헤더 */
+
+    /* mobile/web 반응형 header 스타일 */
+    .list-header {
+        @apply w-full h-9 flex justify-center items-center px-4 pt-1 bg-ui-white lg:justify-between lg:h-17 lg:w-[65.625rem] lg:px-0 mx-auto;
+
+        .logo {
+            @apply hidden lg:flex fill-ui-primary w-[5.125rem];
+        }
+
+        .back-button {
+            @apply flex lg:hidden;
+        }
+
+        .header-toggle {
+            @apply hidden lg:flex h-full w-[7.1875rem]  items-center justify-between rounded-2xl text-lg bg-white ml-4;
+
+            span {
+                @apply hidden mx-1 lg:inline-flex lg:text-ui-gray-light;
+            }
+
+            .toggle-label {
+                @apply h-full flex items-center whitespace-nowrap cursor-pointer px-1 has-checked:text-ui-primary has-checked:bg-ui-white text-ui-gray-mid;
+
+                input {
+                    @apply sr-only;
+                }
+            }
+        }
+
+        /* 검색창 */
+        .web-search-bar {
+            @apply flex justify-between w-full h-full mx-4 border border-ui-primary rounded-sm lg:w-[25rem] lg:h-10 pl-3.5;
+
+            fieldset {
+                @apply contents;
+            }
+
+            input {
+                @apply focus:outline-none w-full;
+            }
+
+            button {
+                @apply flex items-center;
+            }
+        }
+
+        .header-icons {
+            @apply stroke-ui-black flex inline-flex gap-2 items-center;
+
+            svg {
+                @apply lg:hover:stroke-ui-primary;
+            }
+
+            .heart-icon {
+                @apply hidden lg:flex;
+            }
+        }
+    }
+}

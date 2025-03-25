@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="item-review.css" />
+        <link rel="icon" href="/public/image/icon/favicon.ico" />
+        <title>item-review</title>
+    </head>
+    <body>
+        <!-- 전체 컴포넌트 -->
+        <div class="item-review">
+            <!-- 공지 -->
+            <div class="notice">
+                <div class="info">
+                    <h2 class="notice-tite">공지</h2>
+                    <span class="notice-info">금주의 베스트 후기 안내</span>
+                </div>
+
+                <div class="info">
+                    <h2 class="notice-tite">공지</h2>
+                    <span class="notice-info">상품 후기 적립금 정책 안내</span>
+                </div>
+            </div>
+
+            <!-- 사진 후기 -->
+            <figure class="picture-review">
+                <figcaption class="picture-tite">
+                    <span>사진 후기</span>
+                    <span class="all-picture">전체보기</span>
+                </figcaption>
+
+                <ul class="picture-box">
+                    <li class="picture" style="background-image: url(/public/image/item-review/review01.png)"></li>
+                    <li class="picture" style="background-image: url(/public/image/item-review/review02.png)"></li>
+                    <li class="picture" style="background-image: url(/public/image/item-review/review03.png)"></li>
+                    <li class="picture only-mobile" style="background-image: url(/public/image/item-review/review04.png)"></li>
+
+                    <li class="picture only-pc" style="background-image: url(/public/image/item-review/review01.png)"></li>
+                    <li class="picture only-pc" style="background-image: url(/public/image/item-review/review02.png)"></li>
+                    <li class="picture only-pc" style="background-image: url(/public/image/item-review/review03.png)"></li>
+                </ul>
+            </figure>
+
+            <!-- 총 갯수 -->
+            <div class="all-length">
+                <p class="length">총 4,541개</p>
+                <div class="recommend-box">
+                    <button class="recommend">
+                        추천순
+                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.32207 -1.84936e-07L0.727731 0.594902L3.96689 3.83518C4.01879 3.88741 4.08051 3.92887 4.1485 3.95715C4.21648 3.98544 4.28939 4 4.36302 4C4.43666 4 4.50957 3.98544 4.57755 3.95715C4.64554 3.92887 4.70726 3.88741 4.75916 3.83518L8 0.594901L7.40566 0.00056031L4.36387 3.04179L1.32207 -1.84936e-07Z"
+                                fill="#222222"
+                            />
+                        </svg>
+                    </button>
+
+                    <button class="recent only-pc">최근 등록순</button>
+                </div>
+            </div>
+
+            <!-- 유저 후기 -->
+            <div class="user-review">
+                <div class="user-info">
+                    <p class="best">베스트</p>
+                    <p class="purple">퍼플</p>
+                    <p class="name">김*경</p>
+                </div>
+
+                <div class="review">
+                    <h2 class="item only-mobile">[풀무원] 탱탱쫄면(4개입)</h2>
+                    <div class="img only-mobile" style="background-image: url(/public/image/item-review/review01.png)"></div>
+                    <div class="txt-box">
+                        <h2 class="item only-pc">[풀무원] 탱탱쫄면(4개입)</h2>
+                        <p class="txt">너무 맛있어여~ 면이 쫄깃하고 양념도 짱맛나요!!</p>
+                        <p class="date only-pc">2025.3.20</p>
+                    </div>
+                </div>
+
+                <div class="date-box">
+                    <p class="date">2025.3.20</p>
+                    <div class="help">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6422 4.32C11.3472 3.97029 10.9218 3.77143 10.4622 3.77143H7.69742V1.88571C7.69742 0.843429 6.85359 0 5.75592 0C5.27568 0 4.84348 0.288 4.65138 0.733714L2.90883 4.8H1.62593C0.727207 4.8 0 5.52686 0 6.42514V10.3817C0 11.2731 0.734068 12 1.62593 12H9.5566C10.3044 12 10.9424 11.4651 11.0728 10.7246L11.9783 5.58171C12.0538 5.12914 11.9303 4.66971 11.6353 4.32H11.6422ZM1.62593 10.9714C1.29662 10.9714 1.02907 10.704 1.02907 10.3817V6.42514C1.02907 6.096 1.29662 5.82857 1.62593 5.82857H2.73046V10.9714H1.62593ZM10.0643 10.5463C10.0231 10.7931 9.81044 10.9714 9.5566 10.9714H3.76639V5.41714L5.59812 1.13143C5.62557 1.06971 5.68731 1.02171 5.81766 1.02171C6.29103 1.02171 6.66835 1.40571 6.66835 1.87886V4.79314H10.4622C10.62 4.79314 10.7572 4.85486 10.8532 4.97143C10.9493 5.088 10.9904 5.23886 10.963 5.39657L10.0574 10.5394L10.0643 10.5463Z"
+                                fill="#848F9A"
+                            />
+                        </svg>
+                        <span>도움돼요</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유저 후기 -->
+            <div class="user-review">
+                <div class="user-info">
+                    <p class="best">베스트</p>
+                    <p class="purple">퍼플</p>
+                    <p class="name">배*별</p>
+                </div>
+
+                <div class="review">
+                    <h2 class="item only-mobile">[풀무원] 탱탱쫄면(4개입)</h2>
+                    <div class="img only-mobile" style="background-image: url(/public/image/item-review/review02.png)"></div>
+                    <div class="txt-box">
+                        <h2 class="item only-pc">[풀무원] 탱탱쫄면(4개입)</h2>
+                        <p class="txt">또 주문할것 같습니다. 너무 맛있어요 내스타일이야~!</p>
+                        <p class="date only-pc">2025.3.20</p>
+                    </div>
+                </div>
+
+                <div class="date-box">
+                    <p class="date">2025.3.20</p>
+                    <div class="help">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6422 4.32C11.3472 3.97029 10.9218 3.77143 10.4622 3.77143H7.69742V1.88571C7.69742 0.843429 6.85359 0 5.75592 0C5.27568 0 4.84348 0.288 4.65138 0.733714L2.90883 4.8H1.62593C0.727207 4.8 0 5.52686 0 6.42514V10.3817C0 11.2731 0.734068 12 1.62593 12H9.5566C10.3044 12 10.9424 11.4651 11.0728 10.7246L11.9783 5.58171C12.0538 5.12914 11.9303 4.66971 11.6353 4.32H11.6422ZM1.62593 10.9714C1.29662 10.9714 1.02907 10.704 1.02907 10.3817V6.42514C1.02907 6.096 1.29662 5.82857 1.62593 5.82857H2.73046V10.9714H1.62593ZM10.0643 10.5463C10.0231 10.7931 9.81044 10.9714 9.5566 10.9714H3.76639V5.41714L5.59812 1.13143C5.62557 1.06971 5.68731 1.02171 5.81766 1.02171C6.29103 1.02171 6.66835 1.40571 6.66835 1.87886V4.79314H10.4622C10.62 4.79314 10.7572 4.85486 10.8532 4.97143C10.9493 5.088 10.9904 5.23886 10.963 5.39657L10.0574 10.5394L10.0643 10.5463Z"
+                                fill="#848F9A"
+                            />
+                        </svg>
+                        <span>도움돼요</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유저 후기 -->
+            <div class="user-review">
+                <div class="user-info">
+                    <p class="best">베스트</p>
+                    <p class="purple">퍼플</p>
+                    <p class="name">임*윤</p>
+                </div>
+
+                <div class="review">
+                    <h2 class="item only-mobile">[풀무원] 탱탱쫄면(4개입)</h2>
+                    <div class="img only-mobile" style="background-image: url(/public/image/item-review/review03.png)"></div>
+                    <div class="txt-box">
+                        <h2 class="item only-pc">[풀무원] 탱탱쫄면(4개입)</h2>
+                        <p class="txt">대존맛</p>
+                        <p class="date only-pc">2025.3.19</p>
+                    </div>
+                </div>
+
+                <div class="date-box">
+                    <p class="date">2025.3.20</p>
+                    <div class="help">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6422 4.32C11.3472 3.97029 10.9218 3.77143 10.4622 3.77143H7.69742V1.88571C7.69742 0.843429 6.85359 0 5.75592 0C5.27568 0 4.84348 0.288 4.65138 0.733714L2.90883 4.8H1.62593C0.727207 4.8 0 5.52686 0 6.42514V10.3817C0 11.2731 0.734068 12 1.62593 12H9.5566C10.3044 12 10.9424 11.4651 11.0728 10.7246L11.9783 5.58171C12.0538 5.12914 11.9303 4.66971 11.6353 4.32H11.6422ZM1.62593 10.9714C1.29662 10.9714 1.02907 10.704 1.02907 10.3817V6.42514C1.02907 6.096 1.29662 5.82857 1.62593 5.82857H2.73046V10.9714H1.62593ZM10.0643 10.5463C10.0231 10.7931 9.81044 10.9714 9.5566 10.9714H3.76639V5.41714L5.59812 1.13143C5.62557 1.06971 5.68731 1.02171 5.81766 1.02171C6.29103 1.02171 6.66835 1.40571 6.66835 1.87886V4.79314H10.4622C10.62 4.79314 10.7572 4.85486 10.8532 4.97143C10.9493 5.088 10.9904 5.23886 10.963 5.39657L10.0574 10.5394L10.0643 10.5463Z"
+                                fill="#848F9A"
+                            />
+                        </svg>
+                        <span>도움돼요</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

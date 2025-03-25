@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+@layer components {
+    .detail-info {
+        @apply flex flex-col gap-20;
+        .item-wrapper {
+            @apply text-center;
+
+            .item-pic {
+                @apply bg-[url('/image/item-detail/item-pic.png')] w-full h-[100vh] bg-cover bg-center mb-10;
+
+                @media (min-width: 1024px) {
+                    @apply bg-[url('/image/item-detail/item-pic-wide.png')] w-[1050px] h-[670px] bg-center bg-cover bg-no-repeat mb-10;
+                }
+            }
+
+            .item-name-wrapper {
+                @apply border-b-1 border-ui-gray-light pb-6;
+                h2 {
+                    @apply text-2xl;
+
+                    @media (min-width: 1024px) {
+                        @apply font-bold;
+                    }
+                }
+
+                .item-name {
+                    @apply text-[2rem] font-bold;
+
+                    @media (min-width: 1024px) {
+                        @apply text-5xl pt-2;
+                    }
+                }
+            }
+
+            p {
+                @apply text-ui-gray-dark pt-7;
+            }
+
+            h3 {
+                @apply text-[1.75rem] font-bold text-ui-gray-dark;
+            }
+        }
+
+        .check-point-wrapper {
+            @apply contents;
+
+            .check-point-title {
+                @apply bg-white w-full flex items-center text-2xl font-bold text-ui-gray-dark whitespace-nowrap;
+
+                .line {
+                    @apply w-full h-[.0625rem] bg-ui-gray-light flex-grow;
+                }
+                h3 {
+                    @apply text-[1.75rem] font-bold text-ui-gray-dark text-center mr-4 mx-4;
+                    @media (min-width: 1024px) {
+                        @apply text-5xl text-black;
+                    }
+                }
+            }
+
+            .check-point {
+                @apply bg-[url('/image/item-detail/check-point.png')] w-full h-[310px] bg-center bg-contain bg-no-repeat;
+
+                @media (min-width: 1024px) {
+                    @apply bg-[url('/image/item-detail/check-point-wide.png')] w-[1050px] h-[283px] bg-center bg-contain bg-no-repeat;
+                }
+            }
+        }
+    }
+    .nutrition-wrapper {
+        .nutrition {
+            @apply bg-[url('/image/item-detail/nutrition.png')] w-full h-[588px] bg-center bg-contain bg-no-repeat pb-6;
+
+            @media (min-width: 1024px) {
+                @apply bg-[url('/image/item-detail/nutrition-wide.png')] w-full h-[1066px] bg-center bg-contain bg-no-repeat pb-6;
+            }
+        }
+    }
+}

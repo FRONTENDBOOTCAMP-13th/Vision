@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+@import '../style.css';
+
+.item-detail {
+    @apply grid;
+    grid-template-columns: repeat(auto-fit);
+
+    * {
+        @apply m-0 p-0;
+    }
+
+    .item-img {
+        @apply w-full aspect-[125/163] bg-[url('/image/item-search/Jjolmyeon.png')] bg-center bg-cover bg-no-repeat;
+    }
+
+    .info-box {
+        @apply p-4;
+
+        @media (min-width: 64rem) {
+            @apply px-0;
+        }
+
+        .driver {
+            @apply text-[12px] font-semibold;
+        }
+    }
+
+    .info {
+        @apply relative;
+
+        .title {
+            @apply text-[18px] font-semibold;
+        }
+
+        .title-info {
+            @apply text-[14px];
+        }
+
+        .save-icon {
+            @apply absolute top-0 right-0;
+        }
+    }
+
+    .price {
+        @apply my-3 text-[24px] font-bold;
+    }
+
+    .reward-info {
+        @apply text-[#5F0080] text-[16px] font-semibold;
+    }
+
+    .driver,
+    .title {
+        @apply mb-2;
+    }
+
+    .driver,
+    .title-info {
+        @apply text-[#848F9A] font-normal;
+    }
+
+    .item-deail-info {
+        @apply grid gap-3 border-t-1 border-[#dfe4eb] p-[1.5rem_1rem] text-[#898989] border-[#dfe4eb];
+
+        &.mobile-only {
+            @apply border-b-5;
+        }
+
+        @media (min-width: 64rem) {
+            @apply px-0;
+        }
+
+        .item-deail-box.pc-only {
+            display: none;
+        }
+
+        .title {
+            @apply text-[1.125rem] font-bold;
+        }
+
+        .item-deail-box {
+            @apply grid grid-cols-[3fr_7fr] text-[14px];
+
+            span {
+                @apply block;
+            }
+
+            .bold {
+                @apply font-semibold;
+            }
+        }
+
+        .item-choose,
+        .total-price {
+            @apply hidden;
+        }
+    }
+
+    /* pc 버전 */
+    @media (min-width: 64rem) {
+        @apply grid grid-cols-[2fr_8fr] max-w-[1050px] gap-[5.625rem];
+
+        .item-img {
+            @apply w-[400px] h-[514px] bg-center;
+        }
+
+        .save-icon {
+            @apply hidden;
+        }
+
+        .item-deail-info {
+            @apply border-b-0;
+
+            &.mobile-only {
+                @apply hidden;
+            }
+
+            .item-deail-box.pc-only {
+                @apply grid;
+            }
+
+            .title {
+                @apply hidden;
+            }
+
+            .item-deail-box {
+                &:nth-of-type(1) {
+                    @apply border-t border-gray-300;
+                }
+
+                @apply py-[20px] border-b border-gray-300;
+            }
+
+            .item-choose {
+                @apply grid;
+
+                .item-choose-box {
+                    @apply relative;
+
+                    .count-set {
+                        @apply mt-[.75rem];
+                    }
+
+                    /* form 요소 추가 */
+                    .item-choose-count {
+                        @apply h-[30px] appearance-none inline-flex items-center border border-ui-gray-light text-base content-center text-ui-black;
+
+                        input::-webkit-inner-spin-button {
+                            appearance: none;
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                        }
+                    }
+
+                    [type='button'] {
+                        @apply w-[2rem];
+                    }
+                }
+
+                .price {
+                    @apply absolute m-0 right-0 bottom-0 text-gray-800 text-xs;
+                }
+            }
+
+            .total-price {
+                @apply block text-right py-[2.3438rem];
+
+                .all-price {
+                    @apply text-base text-black font-semibold;
+                }
+
+                .all-price-number {
+                    @apply text-[1.7769rem] font-semibold text-gray-800 ml-[1.0625rem];
+                }
+
+                .unit {
+                    @apply text-base font-bold text-gray-800;
+                }
+
+                .point-save {
+                    @apply w-[2.125rem] h-[1.5rem] text-white py-[.375rem] px-[.5rem] bg-[#FA622F] text-[.625rem] rounded-[.75rem];
+                }
+
+                .login-point-save {
+                    @apply text-base text-black font-semibold;
+                }
+            }
+
+            .item-deail-box:nth-child(1) {
+                @apply border-t-0;
+            }
+        }
+    }
+}
